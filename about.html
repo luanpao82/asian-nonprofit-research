@@ -35,7 +35,7 @@
            ============================================================ -->
       <h2 id="data">Data Overview</h2>
 
-      <p>The total number of articles in the final sample across all countries is 16,155. Each country's dataset was compiled from local academic databases and bibliographic sources. Where the original language was not English, article titles were translated into English to enable cross-country comparison.</p>
+      <p>The total number of articles in the final sample across all countries is 16,158. Each country's dataset was compiled from local academic databases and bibliographic sources. Where the original language was not English, article titles were translated into English to enable cross-country comparison.</p>
 
       <div class="table-wrap">
         <table>
@@ -50,7 +50,7 @@
             <tr><td>China</td><td>1,500</td><td>2008&ndash;2019</td><td>More bounded temporal window</td></tr>
             <tr><td>Nepal</td><td>166</td><td>2001&ndash;2025</td><td>Smaller but growing corpus</td></tr>
             <tr><td>Bangladesh</td><td>103</td><td>1988&ndash;2025</td><td>Predominantly English-language sources</td></tr>
-            <tr><td>Vietnam</td><td>58</td><td>2005&ndash;2024</td><td>Smallest corpus; emerging field</td></tr>
+            <tr><td>Vietnam</td><td>61</td><td>2005&ndash;2024</td><td>Smallest corpus; emerging field</td></tr>
           </tbody>
         </table>
       </div>
@@ -150,8 +150,8 @@
 
       <p><strong>Model specification:</strong></p>
       <ul>
-        <li><strong>Number of topics:</strong> <em>k</em> = 5 per country (default), adjusted based on perplexity diagnostics and qualitative inspection</li>
-        <li><strong>Estimation:</strong> Gibbs sampling with 2,000 iterations, 1,000 burn-in, thinning every 10 iterations, yielding 100 posterior samples</li>
+        <li><strong>Number of topics:</strong> Selected per country via perplexity elbow analysis across <em>k</em> = 2 through 8 (e.g., Japan: k=7, Korea: k=3, China: k=4)</li>
+        <li><strong>Estimation:</strong> Variational Bayes inference via scikit-learn's <code>LatentDirichletAllocation</code> with default priors</li>
         <li><strong>Minimum term frequency:</strong> Terms appearing fewer than 2 times in the document-term matrix are excluded</li>
         <li><strong>Exclusion criteria:</strong> Countries with fewer than 20 valid documents or insufficient unique terms are excluded from topic modeling</li>
       </ul>
@@ -170,7 +170,7 @@
         <li>For each country, the LDA model produces a topic-term matrix (rows = topics, columns = terms, values = beta probabilities)</li>
         <li>Cosine similarity is computed between all pairs of topic vectors across countries</li>
         <li>Country-level similarity is calculated as the symmetrized average of maximum per-topic cosine matches: for each topic in Country A, the maximum cosine similarity to any topic in Country B is identified, and these maxima are averaged in both directions</li>
-        <li>Only countries with at least 100 valid documents are included in this comparison to ensure stable topic estimates</li>
+        <li>Only countries with at least 1,000 articles are included in this comparison to ensure stable LDA topic estimates (see <a href="comparison.html">Comparison page</a> for details)</li>
       </ol>
       <p>The resulting similarity matrix is visualized as a heatmap, where higher values indicate greater thematic overlap between two countries' nonprofit research agendas.</p>
 
@@ -180,20 +180,14 @@
            SOFTWARE
            ============================================================ -->
       <h2 id="software">Software</h2>
-      <p>Original analyses were conducted in R (version 4.3.2). Key packages:</p>
+      <p>Data processing and analysis were conducted in Python. Key libraries:</p>
       <ul>
-        <li><strong>tidytext</strong> &mdash; Text tokenization, stopwords, tidy text mining</li>
-        <li><strong>textstem</strong> &mdash; Word lemmatization</li>
-        <li><strong>topicmodels</strong> &mdash; LDA topic modeling via Gibbs sampling</li>
-        <li><strong>tm</strong> &mdash; Document-term matrix construction</li>
-        <li><strong>tidygraph, ggraph, igraph</strong> &mdash; Network construction, layout, and visualization</li>
-        <li><strong>widyr</strong> &mdash; Pairwise co-occurrence computation</li>
-        <li><strong>lsa</strong> &mdash; Cosine similarity for cross-country comparison</li>
-        <li><strong>slam</strong> &mdash; Sparse matrix operations for document-term matrices</li>
-        <li><strong>ggplot2, ggrepel</strong> &mdash; Statistical graphics and label placement</li>
-        <li><strong>wordcloud</strong> &mdash; Word cloud generation</li>
+        <li><strong>openpyxl</strong> &mdash; Excel file reading for source data</li>
+        <li><strong>NLTK</strong> &mdash; Tokenization, lemmatization (WordNetLemmatizer), stopword removal</li>
+        <li><strong>scikit-learn</strong> &mdash; LDA topic modeling (<code>LatentDirichletAllocation</code>), document-term matrix construction (<code>CountVectorizer</code>), cosine similarity computation</li>
+        <li><strong>NumPy / SciPy</strong> &mdash; Matrix operations and distance calculations</li>
       </ul>
-      <p>This interactive website reproduces the frequency analyses using Python for data processing and Chart.js for visualization.</p>
+      <p>The interactive website uses <strong>Chart.js v4</strong> for bar charts and line charts, <strong>D3.js v7</strong> for force-directed network graphs with community detection, and <strong>Canvas API</strong> for word cloud rendering.</p>
 
       <hr>
 
@@ -205,6 +199,8 @@
         <li style="margin-bottom:0.75rem;">Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent Dirichlet allocation. <em>Journal of Machine Learning Research</em>, 3, 993&ndash;1022.</li>
         <li style="margin-bottom:0.75rem;">Chang, J., Gerrish, S., Wang, C., Boyd-Graber, J., &amp; Blei, D. (2009). Reading tea leaves: How humans interpret topic models. <em>Advances in Neural Information Processing Systems</em>, 22.</li>
         <li style="margin-bottom:0.75rem;">Mimno, D., Wallach, H., Talley, E., Leenders, M., &amp; McCallum, A. (2011). Optimizing semantic coherence in topic models. <em>Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing</em>.</li>
+        <li style="margin-bottom:0.75rem;">Onishi, T., Liu, H. K., Moldavanova, A. V., &amp; Yamauchi, N. (2025). What do we know about Asian nonprofit research? A systematic review and bibliometric analysis of 60 years of progress and regional variations. <em>Nonprofit and Voluntary Sector Quarterly</em>. DOI: 10.1177/08997640251375973</li>
+        <li style="margin-bottom:0.75rem;">Singh, V. K., Singh, P., Karmakar, M., Leta, J., &amp; Mayr, P. (2021). The journal coverage of Web of Science, Scopus and Dimensions: A comparative analysis. <em>Scientometrics</em>, 126(6), 5113&ndash;5142.</li>
         <li style="margin-bottom:0.75rem;">Wallach, H. M., Murray, I., Salakhutdinov, R., &amp; Mimno, D. (2009). Evaluation methods for topic models. <em>Proceedings of the 26th International Conference on Machine Learning</em>.</li>
       </ul>
 

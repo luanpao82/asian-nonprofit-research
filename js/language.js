@@ -60,7 +60,7 @@
     var container = document.getElementById('summary-table');
     if (!container) return;
     var html = '<div class="table-wrap"><table><thead><tr>' +
-      '<th>Country</th><th>English (NVSQ)</th><th>Local Language</th>' +
+      '<th>Country</th><th>English (WoS)</th><th>Local Language</th>' +
       '<th>Jaccard</th><th>LDA Cosine</th><th>Interpretation</th></tr></thead><tbody>';
 
     countries.forEach(function (c) {
@@ -101,7 +101,7 @@
 
       // Top 15 words side by side
       html += '<h3>Top 15 Keywords Comparison</h3>';
-      html += '<div class="table-wrap"><table><thead><tr><th>#</th><th>English (NVSQ)</th><th>Freq</th><th>Local Language</th><th>Freq</th></tr></thead><tbody>';
+      html += '<div class="table-wrap"><table><thead><tr><th>#</th><th>English (WoS)</th><th>Freq</th><th>Local Language</th><th>Freq</th></tr></thead><tbody>';
       for (var i = 0; i < 15; i++) {
         var nw = d.nvsq_top15[i] || ['—', ''];
         var lw = d.local_top15[i] || ['—', ''];
