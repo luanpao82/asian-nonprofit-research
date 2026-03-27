@@ -46,6 +46,7 @@
       renderPairs(country);
       renderNetwork('bigram-network', country.bigram_network, 'Bigram Network: ' + country.name);
       renderNetwork('pair-network', country.pair_network, 'Co-occurrence Network: ' + country.name);
+      renderLDA(countryKey);
       renderWordCloud(country);
     })
     .catch(function (err) { console.error(err); });
@@ -343,6 +344,127 @@
         .attr('x', function (d) { return d.x; })
         .attr('y', function (d) { return d.y; });
     });
+  }
+
+  // ---- LDA Topic Modeling ----
+  function renderLDA(countryKey) {
+    fetch('data/lda_results.json')
+      .then(function (r) { return r.json(); })
+      .then(function (ldaData) {
+        var result = ldaData[countryKey];
+        if (!result || !result.selected_k) {
+          document.getElementById('lda-topics').innerHTML = '<p style="color:#999;">Topic modeling not available for this country. ' + (result ? result.rationale : '') + '</p>';
+          return;
+        }
+
+        // Rationale
+        var rationaleEl = document.getElementById('lda-rationale');
+        rationaleEl.style.display = 'block';
+        rationaleEl.innerHTML = '<p><strong>Model selection (k=' + result.selected_k + '):</strong> ' + esc(result.rationale) + '</p>';
+
+        // Perplexity chart
+        var perpScores = result.perplexity_scores;
+        var perpKeys = Object.keys(perpScores).sort(function (a, b) { return parseInt(a) - parseInt(b); });
+        if (perpKeys.length >= 2) {
+          document.getElementById('lda-perplexity').style.display = 'block';
+          new Chart(document.getElementById('perplexity-chart').getContext('2d'), {
+            type: 'line',
+            data: {
+              labels: perpKeys.map(function (k) { return 'k=' + k; }),
+              datasets: [{
+                label: 'Perplexity',
+                data: perpKeys.map(function (k) { return perpScores[k]; }),
+                borderColor: '#283593',
+                backgroundColor: 'rgba(40,53,147,0.1)',
+                tension: 0.3,
+                fill: true,
+                pointRadius: 5,
+                pointBackgroundColor: perpKeys.map(function (k) {
+                  return parseInt(k) === result.selected_k ? '#c62828' : '#283593';
+                }),
+                pointBorderColor: perpKeys.map(function (k) {
+                  return parseInt(k) === result.selected_k ? '#c62828' : '#283593';
+                }),
+                pointBorderWidth: perpKeys.map(function (k) {
+                  return parseInt(k) === result.selected_k ? 3 : 1;
+                }),
+              }]
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: { display: false },
+                title: { display: true, text: 'Perplexity by Number of Topics (lower = better fit)', font: { size: 14, weight: '600' } },
+                tooltip: {
+                  callbacks: {
+                    label: function (ctx) {
+                      var k = perpKeys[ctx.dataIndex];
+                      var suffix = parseInt(k) === result.selected_k ? ' (selected)' : '';
+                      return 'Perplexity: ' + ctx.raw.toFixed(1) + suffix;
+                    }
+                  }
+                }
+              },
+              scales: {
+                y: { grid: { color: 'rgba(0,0,0,0.06)' }, title: { display: true, text: 'Perplexity' } },
+                x: { grid: { display: false } }
+              }
+            }
+          });
+        }
+
+        // Topic tables + charts
+        var topicsContainer = document.getElementById('lda-topics');
+        var html = '';
+
+        result.topics.forEach(function (topic) {
+          html += '<h3>Topic ' + topic.topic_id + '</h3>';
+          html += '<div class="chart-container"><div style="height:280px;"><canvas id="topic-chart-' + topic.topic_id + '"></canvas></div></div>';
+          html += '<div class="table-wrap"><table><thead><tr><th>Rank</th><th>Term</th><th>&beta; (probability)</th></tr></thead><tbody>';
+          topic.terms.forEach(function (t, i) {
+            html += '<tr><td>' + (i + 1) + '</td><td><strong>' + esc(t[0]) + '</strong></td><td>' + t[1].toFixed(4) + '</td></tr>';
+          });
+          html += '</tbody></table></div>';
+        });
+
+        topicsContainer.innerHTML = html;
+
+        // Render topic bar charts
+        result.topics.forEach(function (topic) {
+          var canvas = document.getElementById('topic-chart-' + topic.topic_id);
+          if (!canvas) return;
+          var terms = topic.terms.slice(0, 10);
+          new Chart(canvas.getContext('2d'), {
+            type: 'bar',
+            data: {
+              labels: terms.map(function (t) { return t[0]; }),
+              datasets: [{
+                label: 'Beta',
+                data: terms.map(function (t) { return t[1]; }),
+                backgroundColor: COLORS[topic.topic_id - 1] + 'cc',
+                borderColor: COLORS[topic.topic_id - 1],
+                borderWidth: 1,
+                borderRadius: 3,
+              }]
+            },
+            options: {
+              indexAxis: 'y',
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: { display: false },
+                title: { display: true, text: 'Topic ' + topic.topic_id + ': Top 10 Terms', font: { size: 13, weight: '600' } }
+              },
+              scales: {
+                x: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.06)' }, title: { display: true, text: 'Beta (probability)' } },
+                y: { ticks: { font: { size: 11 } } }
+              }
+            }
+          });
+        });
+      })
+      .catch(function (err) { console.error('LDA load failed:', err); });
   }
 
   // ---- Canvas Word Cloud ----
