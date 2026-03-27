@@ -1,265 +1,101 @@
 {
   "countries": [
-    "Bangladesh",
     "China",
     "Japan",
     "Korea",
-    "Nepal",
     "Taiwan",
-    "Turkey",
-    "Vietnam"
+    "Turkey"
   ],
+  "excluded": [
+    {
+      "name": "Bangladesh",
+      "n_docs": 103
+    },
+    {
+      "name": "Nepal",
+      "n_docs": 165
+    },
+    {
+      "name": "Vietnam",
+      "n_docs": 61
+    }
+  ],
+  "min_docs_threshold": 1000,
   "matrix": [
     [
       1.0,
-      0.5051,
-      0.3499,
-      0.4067,
-      0.3387,
-      0.3093,
-      0.2549,
-      0.2761
-    ],
-    [
-      0.5051,
-      1.0,
       0.4249,
       0.5067,
-      0.3483,
       0.4488,
-      0.3601,
-      0.3758
+      0.3601
     ],
     [
-      0.3499,
       0.4249,
       1.0,
       0.5631,
-      0.3161,
       0.3905,
-      0.3552,
-      0.3256
+      0.3552
     ],
     [
-      0.4067,
       0.5067,
       0.5631,
       1.0,
-      0.3869,
       0.5369,
-      0.4301,
-      0.4763
+      0.4301
     ],
     [
-      0.3387,
-      0.3483,
-      0.3161,
-      0.3869,
-      1.0,
-      0.3946,
-      0.4117,
-      0.4822
-    ],
-    [
-      0.3093,
       0.4488,
       0.3905,
       0.5369,
-      0.3946,
       1.0,
-      0.5054,
-      0.4959
+      0.5054
     ],
     [
-      0.2549,
       0.3601,
       0.3552,
       0.4301,
-      0.4117,
       0.5054,
-      1.0,
-      0.5382
-    ],
-    [
-      0.2761,
-      0.3758,
-      0.3256,
-      0.4763,
-      0.4822,
-      0.4959,
-      0.5382,
       1.0
     ]
   ],
   "word_jaccard_matrix": [
     [
       1.0,
-      0.2121,
-      0.1765,
-      0.3333,
-      0.4286,
-      0.25,
-      0.1765,
-      0.25
+      0.1429,
+      0.3793,
+      0.3793,
+      0.1429
     ],
     [
-      0.2121,
+      0.1429,
       1.0,
-      0.1429,
-      0.3793,
-      0.25,
-      0.3793,
-      0.1429,
+      0.3333,
+      0.2121,
       0.1111
     ],
     [
-      0.1765,
-      0.1429,
-      1.0,
-      0.3333,
-      0.2121,
-      0.2121,
-      0.1111,
-      0.1765
-    ],
-    [
-      0.3333,
       0.3793,
       0.3333,
       1.0,
-      0.3793,
       0.4286,
-      0.2121,
-      0.25
-    ],
-    [
-      0.4286,
-      0.25,
-      0.2121,
-      0.3793,
-      1.0,
-      0.3333,
-      0.2121,
-      0.25
-    ],
-    [
-      0.25,
-      0.3793,
-      0.2121,
-      0.4286,
-      0.3333,
-      1.0,
-      0.25,
       0.2121
     ],
     [
-      0.1765,
+      0.3793,
+      0.2121,
+      0.4286,
+      1.0,
+      0.25
+    ],
+    [
       0.1429,
       0.1111,
       0.2121,
-      0.2121,
       0.25,
-      1.0,
-      0.1765
-    ],
-    [
-      0.25,
-      0.1111,
-      0.1765,
-      0.25,
-      0.25,
-      0.2121,
-      0.1765,
       1.0
     ]
   ],
   "shared_terms": {
-    "Bangladesh_China": [
-      "development",
-      "government",
-      "ngo",
-      "organization",
-      "poverty",
-      "role",
-      "rural",
-      "sector",
-      "social",
-      "society"
-    ],
-    "Bangladesh_Japan": [
-      "activity",
-      "civil",
-      "community",
-      "development",
-      "government",
-      "health",
-      "ngo",
-      "organization",
-      "social",
-      "society"
-    ],
-    "Bangladesh_Korea": [
-      "activity",
-      "change",
-      "civil",
-      "development",
-      "government",
-      "ngo",
-      "organization",
-      "political",
-      "role",
-      "social",
-      "society"
-    ],
-    "Bangladesh_Nepal": [
-      "change",
-      "civil",
-      "community",
-      "development",
-      "ngo",
-      "non",
-      "organization",
-      "political",
-      "role",
-      "rural",
-      "social",
-      "society",
-      "state",
-      "women"
-    ],
-    "Bangladesh_Taiwan": [
-      "civil",
-      "community",
-      "development",
-      "government",
-      "ngo",
-      "non",
-      "organization",
-      "social",
-      "society"
-    ],
-    "Bangladesh_Turkey": [
-      "activity",
-      "civil",
-      "community",
-      "government",
-      "non",
-      "organization",
-      "role",
-      "social",
-      "society"
-    ],
-    "Bangladesh_Vietnam": [
-      "activity",
-      "civil",
-      "community",
-      "development",
-      "non",
-      "organization",
-      "role",
-      "social",
-      "society"
-    ],
     "China_Japan": [
       "development",
       "education",
@@ -292,16 +128,6 @@
       "society",
       "system"
     ],
-    "China_Nepal": [
-      "development",
-      "governance",
-      "ngo",
-      "organization",
-      "role",
-      "rural",
-      "social",
-      "society"
-    ],
     "China_Taiwan": [
       "development",
       "education",
@@ -327,13 +153,6 @@
       "social",
       "society"
     ],
-    "China_Vietnam": [
-      "development",
-      "organization",
-      "role",
-      "social",
-      "society"
-    ],
     "Japan_Korea": [
       "activity",
       "civil",
@@ -354,15 +173,6 @@
       "system",
       "volunteer",
       "welfare"
-    ],
-    "Japan_Nepal": [
-      "civil",
-      "community",
-      "development",
-      "ngo",
-      "organization",
-      "social",
-      "society"
     ],
     "Japan_Taiwan": [
       "city",
@@ -398,28 +208,6 @@
       "university",
       "volunteer"
     ],
-    "Japan_Vietnam": [
-      "activity",
-      "civil",
-      "community",
-      "development",
-      "organization",
-      "social",
-      "society"
-    ],
-    "Korea_Nepal": [
-      "change",
-      "civil",
-      "democracy",
-      "development",
-      "movement",
-      "ngo",
-      "organization",
-      "political",
-      "role",
-      "social",
-      "society"
-    ],
     "Korea_Taiwan": [
       "civil",
       "development",
@@ -446,46 +234,6 @@
       "society",
       "volunteer"
     ],
-    "Korea_Vietnam": [
-      "activity",
-      "civil",
-      "development",
-      "organization",
-      "role",
-      "social",
-      "society"
-    ],
-    "Nepal_Taiwan": [
-      "civil",
-      "community",
-      "development",
-      "governance",
-      "human",
-      "ngo",
-      "non",
-      "organization",
-      "social",
-      "society"
-    ],
-    "Nepal_Turkey": [
-      "civil",
-      "community",
-      "non",
-      "organization",
-      "role",
-      "social",
-      "society"
-    ],
-    "Nepal_Vietnam": [
-      "civil",
-      "community",
-      "development",
-      "non",
-      "organization",
-      "role",
-      "social",
-      "society"
-    ],
     "Taiwan_Turkey": [
       "association",
       "civil",
@@ -496,30 +244,6 @@
       "social",
       "society",
       "university"
-    ],
-    "Taiwan_Vietnam": [
-      "civil",
-      "community",
-      "development",
-      "enterprise",
-      "market",
-      "non",
-      "organization",
-      "profit",
-      "social",
-      "society"
-    ],
-    "Turkey_Vietnam": [
-      "activity",
-      "civil",
-      "community",
-      "law",
-      "non",
-      "organization",
-      "role",
-      "social",
-      "society"
     ]
-  },
-  "min_docs_threshold": 50
+  }
 }

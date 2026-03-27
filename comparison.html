@@ -27,13 +27,36 @@
       <h1>Cross-Country Comparison</h1>
       <p>Thematic similarity between countries based on LDA topic distributions and shared vocabulary.</p>
 
+      <!-- Inclusion Criteria -->
+      <div class="callout">
+        <p><strong>Sample size requirement:</strong> Only countries with at least 1,000 articles are included in the cross-country similarity analysis. Countries with smaller corpora (Bangladesh: 103, Nepal: 165, Vietnam: 61) are excluded because LDA topic estimates from small samples are statistically unstable&mdash;the same data can yield different topic structures on repeated runs, and the resulting similarity scores would not be reliable enough for meaningful cross-country comparison. Individual country analyses (word frequency, bigrams, co-occurrence) are still available for all eight countries on their respective pages.</p>
+      </div>
+
+      <div class="table-wrap" style="margin:1.5rem 0;">
+        <table>
+          <thead>
+            <tr><th>Country</th><th>N</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Japan</strong></td><td>5,627</td><td style="color:#2e7d32;">Included</td></tr>
+            <tr><td><strong>Korea</strong></td><td>5,105</td><td style="color:#2e7d32;">Included</td></tr>
+            <tr><td><strong>Turkey</strong></td><td>2,039</td><td style="color:#2e7d32;">Included</td></tr>
+            <tr><td><strong>Taiwan</strong></td><td>1,557</td><td style="color:#2e7d32;">Included</td></tr>
+            <tr><td><strong>China</strong></td><td>1,500</td><td style="color:#2e7d32;">Included</td></tr>
+            <tr><td>Nepal</td><td>166</td><td style="color:#999;">Excluded (N &lt; 1,000)</td></tr>
+            <tr><td>Bangladesh</td><td>103</td><td style="color:#999;">Excluded (N &lt; 1,000)</td></tr>
+            <tr><td>Vietnam</td><td>61</td><td style="color:#999;">Excluded (N &lt; 1,000)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <hr>
 
       <!-- Topic Similarity Heatmap -->
       <div class="section">
         <p class="section-label">Topic Similarity</p>
         <h2 style="border-bottom:none;margin-top:0.5rem;">LDA Topic Cosine Similarity</h2>
-        <p>Each cell shows the cosine similarity between two countries' LDA topic-term probability vectors. Higher values (darker) indicate greater thematic overlap. Similarity is computed as the symmetrized average of maximum per-topic cosine matches.</p>
+        <p>Each cell shows the cosine similarity between two countries' LDA topic-term probability vectors. Higher values (darker green) indicate greater thematic overlap in the latent research agenda. Values range from 0 (completely different topic structures) to 1 (identical topic structures).</p>
         <div class="chart-container">
           <div id="heatmap-topic" style="overflow-x:auto;"></div>
         </div>
@@ -45,7 +68,7 @@
       <div class="section">
         <p class="section-label">Vocabulary Overlap</p>
         <h2 style="border-bottom:none;margin-top:0.5rem;">Top-20 Word Jaccard Similarity</h2>
-        <p>Jaccard index of the top 20 most frequent words between each pair of countries. Measures how much the dominant vocabulary overlaps, independent of topic modeling.</p>
+        <p>The Jaccard index measures the overlap between each country's 20 most frequent keywords, independent of topic modeling. Values range from 0 (no shared top words) to 1 (identical top-20 word lists).</p>
         <div class="chart-container">
           <div id="heatmap-jaccard" style="overflow-x:auto;"></div>
         </div>
@@ -57,22 +80,66 @@
       <div class="section">
         <p class="section-label">Shared Vocabulary</p>
         <h2 style="border-bottom:none;margin-top:0.5rem;">Shared Topic Terms Between Countries</h2>
-        <p>Terms that appear in the top-10 LDA topic terms of both countries. Click a cell in the heatmap above to see details.</p>
-        <div id="shared-terms-detail"></div>
+        <p>Terms that appear among the top-10 LDA topic terms in both countries. These shared anchors reveal which concepts bridge the two countries' nonprofit research agendas.</p>
         <div id="shared-terms-table"></div>
       </div>
 
       <hr>
 
-      <!-- Methodology -->
+      <!-- Detailed Methodology -->
       <div class="section">
-        <p class="section-label">Method</p>
-        <h2 style="border-bottom:none;margin-top:0.5rem;">Methodology</h2>
+        <p class="section-label">Methodology</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">How Similarity Is Computed</h2>
+
+        <h3>Step 1: LDA Topic Models</h3>
+        <p>For each included country, a Latent Dirichlet Allocation (LDA) model is fitted to the preprocessed article titles, producing <em>k</em> topics. Each topic is a probability distribution over the full vocabulary&mdash;a vector of &beta; values indicating how strongly each word is associated with that topic. The number of topics <em>k</em> is selected per country via perplexity elbow analysis (see individual country pages for details).</p>
+
+        <h3>Step 2: Unified Vocabulary Space</h3>
+        <p>Each country's LDA model uses its own vocabulary (the set of words appearing in its titles). To enable cross-country comparison, all country vocabularies are merged into a single <strong>unified vocabulary</strong> (4,250 unique terms across 5 countries). Each country's topic-term vectors are then projected onto this shared space: words not present in a country's original vocabulary receive a probability of zero.</p>
+
+        <h3>Step 3: Topic-Level Cosine Similarity</h3>
+        <p>Cosine similarity measures the angle between two vectors, ignoring their magnitude. For two topic-term probability vectors <strong>A</strong> and <strong>B</strong>:</p>
+        <pre><code>cosine(A, B) = (A &middot; B) / (|A| &times; |B|)</code></pre>
+        <p>The result ranges from 0 to 1:</p>
+        <ul>
+          <li><strong>1.0</strong> = the two topics assign probability to exactly the same words in exactly the same proportions (identical thematic content)</li>
+          <li><strong>0.5</strong> = moderate overlap in vocabulary and proportions</li>
+          <li><strong>0.0</strong> = the two topics share no vocabulary at all (completely different themes)</li>
+        </ul>
+        <p>Cosine similarity is computed between <em>every</em> topic in Country A and <em>every</em> topic in Country B, producing a matrix of pairwise topic similarities.</p>
+
+        <h3>Step 4: Country-Level Aggregation</h3>
+        <p>To reduce the topic-level similarity matrix to a single country-level score, we use <strong>symmetrized average of maximum per-topic cosine matches</strong>:</p>
+        <ol>
+          <li><strong>A &rarr; B direction:</strong> For each topic in Country A, find the most similar topic in Country B (maximum cosine). Average these maxima across all of A's topics.</li>
+          <li><strong>B &rarr; A direction:</strong> Repeat in reverse: for each topic in B, find the best match in A. Average the maxima.</li>
+          <li><strong>Symmetrize:</strong> Take the mean of the two directional scores.</li>
+        </ol>
+        <p>This approach accounts for the fact that countries may have different numbers of topics. It asks: &ldquo;On average, how well can each country's topics be matched to the other country's topics?&rdquo;</p>
+
         <div class="callout">
-          <p><strong>Topic Similarity (Cosine):</strong> For each country, an LDA model produces topic-term probability vectors over a unified vocabulary. Cosine similarity is computed between all topic pairs across two countries. Country-level similarity = symmetrized average of maximum per-topic matches: for each topic in Country A, the maximum cosine similarity to any topic in Country B is found, averaged in both directions.</p>
-          <p><strong>Vocabulary Overlap (Jaccard):</strong> The Jaccard index of the top 20 most frequent unigrams between each country pair. Jaccard = |A &cap; B| / |A &cup; B|, ranging from 0 (no overlap) to 1 (identical sets).</p>
-          <p><strong>Minimum threshold:</strong> Countries with fewer than 50 valid documents are excluded from similarity analysis.</p>
+          <p><strong>Interpreting the scores:</strong></p>
+          <ul style="margin-bottom:0;">
+            <li><strong>0.55&ndash;0.60:</strong> High similarity. The two countries' research agendas share substantial thematic overlap (e.g., Korea &harr; Japan = 0.563).</li>
+            <li><strong>0.45&ndash;0.55:</strong> Moderate similarity. Countries share some research themes but also have distinct sub-fields (e.g., Korea &harr; Taiwan = 0.537).</li>
+            <li><strong>0.35&ndash;0.45:</strong> Low-moderate similarity. Countries have partially overlapping but largely distinct research agendas (e.g., Japan &harr; Turkey = 0.355).</li>
+            <li><strong>Below 0.35:</strong> Low similarity. The countries' nonprofit research focuses on substantially different topics.</li>
+          </ul>
         </div>
+
+        <h3>Jaccard Vocabulary Overlap (Second Heatmap)</h3>
+        <p>As a complementary, model-free measure, we compute the <strong>Jaccard index</strong> between each country pair's top 20 most frequent words:</p>
+        <pre><code>Jaccard(A, B) = |A &cap; B| / |A &cup; B|</code></pre>
+        <p>Where A and B are the sets of top-20 words for each country. This measures raw vocabulary overlap without the assumptions of topic modeling. A Jaccard score of 0.4 means that 40% of the combined unique words in both top-20 lists appear in both countries' lists.</p>
+
+        <h3>Why Exclude Countries Below 1,000 Articles?</h3>
+        <p>LDA is a statistical model that estimates latent topic distributions from observed word co-occurrence patterns. Its reliability depends on having sufficient data:</p>
+        <ul>
+          <li><strong>Topic instability:</strong> With fewer than ~500&ndash;1,000 documents, LDA topics vary substantially across random seeds and runs. The same corpus can produce different topic structures, making any single run's results unreliable for comparison.</li>
+          <li><strong>Vocabulary sparsity:</strong> Small corpora have limited vocabularies. When projected onto a unified vocabulary of 4,250+ terms, most entries are zero, making cosine similarity less meaningful.</li>
+          <li><strong>Perplexity diagnostics fail:</strong> In small corpora, perplexity scores across different <em>k</em> values tend to plateau, providing no reliable signal for selecting the number of topics (Chang et al., 2009).</li>
+        </ul>
+        <p>Individual country analyses (frequency, bigram, co-occurrence) remain valid at any sample size because they are descriptive counts rather than statistical model estimates.</p>
       </div>
 
     </div>
