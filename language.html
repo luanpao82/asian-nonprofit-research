@@ -26,10 +26,56 @@
   <main>
     <div class="container">
       <h1>English vs Local Language</h1>
-      <p>Do researchers in each country publish on the same topics in English-language international journals as they do in their local-language domestic outlets? This page compares research themes between <strong>English-language publications</strong> (from NVSQ/Web of Science data) and <strong>local-language publications</strong> (from domestic academic databases) for each country.</p>
+      <p>Do researchers in each country publish on the same topics in English-language international journals as they do in their local-language domestic outlets? This page compares research themes between <strong>English-language publications</strong> (from a systematic review dataset) and <strong>local-language publications</strong> (from domestic academic databases) for each country.</p>
 
-      <div class="callout">
-        <p><strong>Data sources:</strong> English-language titles are drawn from NVSQ (Nonprofit and Voluntary Sector Quarterly) Web of Science data, filtered by the first author's country. Local-language titles come from each country's domestic academic database (translated to English for comparability). Both sets undergo identical text preprocessing before comparison.</p>
+      <hr>
+
+      <!-- English Data Source -->
+      <div class="section">
+        <p class="section-label">Data Source</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">English-Language Article Data</h2>
+
+        <p>The English-language corpus is drawn from the dataset compiled by <strong>Onishi, Liu, Moldavanova, and Yamauchi (2025)</strong> in their systematic literature review:</p>
+
+        <div class="callout">
+          <p>Onishi, T., Liu, H. K., Moldavanova, A. V., &amp; Yamauchi, N. (2025). What do we know about Asian nonprofit research? A systematic review and bibliometric analysis of 60 years of progress and regional variations. <em>Nonprofit and Voluntary Sector Quarterly</em>. DOI: 10.1177/08997640251375973</p>
+        </div>
+
+        <h3>Data Collection Process</h3>
+        <p>Onishi et al. (2025) conducted a systematic literature review of <strong>2,188 Asian nonprofit studies</strong> published in English peer-reviewed journals from <strong>1958 to 2022</strong>. The data collection followed a four-phase process:</p>
+        <ol>
+          <li><strong>Identification:</strong> 3,670 articles were identified from the Web of Science (WoS) database using two categories of search keywords&mdash;nonprofit-related terms (e.g., &ldquo;nonprofit,&rdquo; &ldquo;NGO,&rdquo; &ldquo;philanthrop*,&rdquo; &ldquo;civil society organization,&rdquo; &ldquo;social enterprise&rdquo;) and geographic boundary terms covering all Asian countries. Keywords were applied to article titles, abstracts, and author-provided keywords.</li>
+          <li><strong>Screening:</strong> 232 non-English or non-research articles were excluded, yielding 3,438 peer-reviewed journal articles addressing Asian NPO-related studies.</li>
+          <li><strong>Eligibility:</strong> 168 articles about non-Asian countries (e.g., Georgia, USA) were removed. An additional 927 articles that only mentioned nonprofit keywords without substantial discussion were excluded through abstract and full-text review.</li>
+          <li><strong>Inclusion:</strong> The final sample of <strong>2,188 articles</strong> was retrieved for analysis, including 201 from nonprofit-focused journals and 297 comparative studies.</li>
+        </ol>
+
+        <h3>Why Web of Science?</h3>
+        <p>WoS was selected as the primary database because the study aimed to assess scholarly research published in impactful English-language journals. WoS is regarded as an authoritative database for capturing peer-reviewed scholarly articles and is widely used in bibliometric analyses (Singh et al., 2021).</p>
+
+        <h3>Country Classification</h3>
+        <p>Countries and regions were defined using the United Nations and World Bank classifications. Articles were assigned to countries based on the geographic focus of the research (the &ldquo;Country&rdquo; field in the dataset). The distribution is heavily skewed: China leads with 572 articles, followed by India (306), Bangladesh (149), South Korea (70), Taiwan (68), Japan (54), Turkey (44), Nepal (35), and Vietnam (24).</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Country</th><th>English (NVSQ/WoS)</th><th>Local Language</th><th>Notes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>China</td><td>572</td><td>1,500</td><td>Largest English corpus</td></tr>
+              <tr><td>Bangladesh</td><td>149</td><td>103</td><td>More English than local articles</td></tr>
+              <tr><td>Korea</td><td>70</td><td>5,105</td><td>Large local corpus, small English sample</td></tr>
+              <tr><td>Taiwan</td><td>68</td><td>1,557</td><td></td></tr>
+              <tr><td>Japan</td><td>54</td><td>5,627</td><td>Largest local corpus, small English sample</td></tr>
+              <tr><td>Turkey</td><td>44</td><td>2,039</td><td></td></tr>
+              <tr><td>Nepal</td><td>35</td><td>166</td><td></td></tr>
+              <tr><td>Vietnam</td><td>24</td><td>61</td><td>Smallest samples in both</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Local-Language Data</h3>
+        <p>Local-language articles were collected from each country's domestic academic databases (e.g., KCI and KISS for Korea, CiNii for Japan, CNKI for China). Article titles were translated to English (via DeepL or manual translation) to enable direct text comparison using the same preprocessing pipeline.</p>
       </div>
 
       <hr>
