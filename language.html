@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English vs Local Language | Asian Nonprofit Research</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-brand">Asian Nonprofit Research</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="language.html">English vs Local</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>English vs Local Language</h1>
+      <p>Do researchers in each country publish on the same topics in English-language international journals as they do in their local-language domestic outlets? This page compares research themes between <strong>English-language publications</strong> (from NVSQ/Web of Science data) and <strong>local-language publications</strong> (from domestic academic databases) for each country.</p>
+
+      <div class="callout">
+        <p><strong>Data sources:</strong> English-language titles are drawn from NVSQ (Nonprofit and Voluntary Sector Quarterly) Web of Science data, filtered by the first author's country. Local-language titles come from each country's domestic academic database (translated to English for comparability). Both sets undergo identical text preprocessing before comparison.</p>
+      </div>
+
+      <hr>
+
+      <!-- Summary Heatmap -->
+      <div class="section">
+        <p class="section-label">Overview</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Similarity Summary</h2>
+        <p>Two similarity measures for each country: <strong>Jaccard index</strong> (overlap of top-20 keywords) and <strong>LDA cosine similarity</strong> (thematic similarity via topic modeling). Higher values indicate more similar research agendas between English and local-language publications.</p>
+        <div class="chart-container">
+          <div style="height:350px;">
+            <canvas id="summary-chart"></canvas>
+          </div>
+        </div>
+        <div id="summary-table"></div>
+      </div>
+
+      <hr>
+
+      <!-- Per-country details -->
+      <div id="country-details"></div>
+
+      <hr>
+
+      <!-- Methodology -->
+      <div class="section">
+        <p class="section-label">Methodology</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">How This Comparison Works</h2>
+
+        <h3>What is being compared?</h3>
+        <p>For each country, we have two corpora of article titles:</p>
+        <ul>
+          <li><strong>English corpus:</strong> Titles from NVSQ/Web of Science where the first author's country matches. These represent research published in English-language international journals.</li>
+          <li><strong>Local corpus:</strong> Titles from domestic academic databases, originally in the local language but translated to English. These represent research published in local-language journals.</li>
+        </ul>
+
+        <h3>Jaccard Index of Top-20 Words</h3>
+        <p>The simplest comparison: after preprocessing, we take the 20 most frequent words from each corpus and compute their Jaccard similarity (|shared| / |union|). This measures whether the same concepts dominate both literatures, regardless of how those concepts are distributed.</p>
+
+        <h3>LDA Cosine Similarity</h3>
+        <p>A deeper comparison using topic modeling. Separate LDA models are fitted to each corpus using a <strong>shared vocabulary</strong> (built from both corpora combined). The resulting topic-term probability vectors are compared via cosine similarity, aggregated using symmetrized max-topic matching&mdash;the same procedure used in the cross-country comparison.</p>
+
+        <h3>Interpreting the Results</h3>
+        <ul>
+          <li><strong>High similarity (>0.55):</strong> English and local publications share substantial thematic overlap. Researchers publish on similar topics regardless of language venue.</li>
+          <li><strong>Moderate similarity (0.35&ndash;0.55):</strong> Some shared themes but also distinct research agendas. Certain topics may be &ldquo;exported&rdquo; to international journals while others remain in local literature.</li>
+          <li><strong>Low similarity (<0.35):</strong> Substantially different research agendas. English-language publications may reflect international academic trends rather than domestic research priorities.</li>
+        </ul>
+
+        <h3>Caveats</h3>
+        <ul>
+          <li><strong>Sample size imbalance:</strong> NVSQ samples are much smaller than local corpora (e.g., Korea: 70 vs 5,105). LDA estimates from small samples are less stable.</li>
+          <li><strong>NVSQ ≠ all English publications:</strong> NVSQ is one journal; English-language publications in other journals are not captured.</li>
+          <li><strong>Translation effects:</strong> Local-language titles were machine-translated (DeepL or similar), which may introduce vocabulary differences unrelated to thematic content.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner"><p>Asian Nonprofit Research Database</p></div>
+    <div class="footer-bottom">Data compiled from local academic databases and NVSQ/Web of Science.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/language.js"></script>
+</body>
+</html>
