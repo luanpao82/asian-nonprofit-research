@@ -6,6 +6,7 @@
   <title>Country Analysis | Asian Nonprofit Research</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 </head>
 <body>
 
@@ -71,6 +72,12 @@
           </div>
         </div>
         <div id="bigrams-table"></div>
+
+        <h3>Bigram Network</h3>
+        <p>Nodes are words; edges connect words that appear consecutively. Node size reflects degree centrality. Colors indicate community clusters (Louvain algorithm).</p>
+        <div class="chart-container">
+          <div id="bigram-network" style="height:550px;"></div>
+        </div>
       </div>
 
       <hr>
@@ -86,6 +93,24 @@
           </div>
         </div>
         <div id="pairs-table"></div>
+
+        <h3>Co-occurrence Network</h3>
+        <p>Edges connect words that appear together within the same title. Hub nodes (large, highly connected) bridge multiple thematic clusters.</p>
+        <div class="chart-container">
+          <div id="pair-network" style="height:550px;"></div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Word Cloud -->
+      <div class="section">
+        <p class="section-label">Word Cloud</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Word Cloud</h2>
+        <p>Visual summary of the most prominent terms. Larger words appear more frequently.</p>
+        <div class="chart-container" style="text-align:center;">
+          <canvas id="wordcloud-canvas" width="800" height="500" style="max-width:100%;"></canvas>
+        </div>
       </div>
 
     </div>
