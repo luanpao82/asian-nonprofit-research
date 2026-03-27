@@ -315,17 +315,13 @@
         .on('end', function (event, d) { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
       );
 
-    // Labels for top nodes
-    var labelThreshold = Math.max(3, Math.floor(nodes.length * 0.3));
-    var topNodes = nodes.slice().sort(function (a, b) { return b.degree - a.degree; }).slice(0, labelThreshold);
-    var topIds = new Set(topNodes.map(function (n) { return n.id; }));
-
+    // Labels for ALL nodes
     var label = svg.append('g')
       .selectAll('text')
-      .data(nodes.filter(function (n) { return topIds.has(n.id); }))
+      .data(nodes)
       .join('text')
       .text(function (d) { return d.id; })
-      .attr('font-size', '11px')
+      .attr('font-size', function (d) { return Math.max(9, Math.min(13, 8 + d.degree * 0.5)) + 'px'; })
       .attr('font-family', 'Inter, sans-serif')
       .attr('font-weight', '600')
       .attr('fill', '#222')
