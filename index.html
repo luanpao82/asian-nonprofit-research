@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asian Nonprofit Research Database</title>
+  <meta name="description" content="Text analysis of nonprofit research across 8 Asian countries: 16,000+ article titles analyzed for trends, keywords, and thematic patterns.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-brand">Asian Nonprofit Research</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <h1>Asian Nonprofit<br>Research Database</h1>
+      <p class="subtitle">A comprehensive text analysis of nonprofit research article titles across eight Asian countries. Explore publication trends, dominant research themes, and cross-country comparisons.</p>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <span class="number" id="stat-total">16,158</span>
+      <span class="label">Articles</span>
+    </div>
+    <div class="stat-card">
+      <span class="number" id="stat-countries">8</span>
+      <span class="label">Countries</span>
+    </div>
+    <div class="stat-card">
+      <span class="number" id="stat-years">1984–2026</span>
+      <span class="label">Year Range</span>
+    </div>
+    <div class="stat-card">
+      <span class="number" id="stat-peak">Japan</span>
+      <span class="label">Most Papers</span>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <div class="section">
+        <p class="section-label">Overview</p>
+        <h2 id="overview" style="border-bottom:none;margin-top:0.5rem;">Data Summary</h2>
+        <p>This database compiles nonprofit-related research articles from eight Asian countries. Each country's data was collected from local academic databases, translated to English titles where necessary, and analyzed for thematic patterns using text mining techniques.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Country</th><th>Articles</th><th>Year Range</th><th>Top Term</th></tr>
+            </thead>
+            <tbody id="overview-table"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="section">
+        <p class="section-label">Trends</p>
+        <h2 id="trends" style="border-bottom:none;margin-top:0.5rem;">Publication Trends</h2>
+        <div class="chart-container">
+          <div style="height:350px;">
+            <canvas id="overview-chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="section">
+        <p class="section-label">Countries</p>
+        <h2 id="countries" style="border-bottom:none;margin-top:0.5rem;">Explore by Country</h2>
+        <p>Click a country to see detailed analysis: top keywords, bigrams, co-occurrence pairs, and publication trends.</p>
+        <div id="country-grid" class="country-grid"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Asian Nonprofit Research Database &mdash; Text analysis of nonprofit scholarship across 8 Asian countries.</p>
+    </div>
+    <div class="footer-bottom">
+      Data compiled from local academic databases. Part of a collaborative research project on Asian nonprofit studies.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Fill overview table after data loads
+    (function () {
+      var check = setInterval(function () {
+        var grid = document.getElementById('country-grid');
+        if (!grid || !grid.innerHTML) return;
+        clearInterval(check);
+
+        fetch('data/site_data.json').then(function (r) { return r.json(); }).then(function (data) {
+          var tbody = document.getElementById('overview-table');
+          if (!tbody) return;
+          var entries = Object.entries(data.countries).sort(function (a, b) { return b[1].total_papers - a[1].total_papers; });
+          var html = '';
+          entries.forEach(function (e) {
+            var c = e[1];
+            var yr = c.year_range[0] + '–' + c.year_range[1];
+            var top = c.top_words[0] ? c.top_words[0][0] : '—';
+            html += '<tr><td><a href="country.html?c=' + encodeURIComponent(e[0]) + '"><strong>' + c.name + '</strong></a></td>';
+            html += '<td>' + c.total_papers.toLocaleString() + '</td>';
+            html += '<td>' + yr + '</td>';
+            html += '<td><code>' + top + '</code></td></tr>';
+          });
+          tbody.innerHTML = html;
+        });
+      }, 100);
+    })();
+  </script>
+</body>
+</html>

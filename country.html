@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Analysis | Asian Nonprofit Research</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-brand">Asian Nonprofit Research</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container" id="country-content">
+
+      <h1 id="country-title" style="margin-bottom:0.25rem;"></h1>
+      <p id="country-subtitle" style="color:#666;font-size:1.1rem;margin-bottom:1.5rem;"></p>
+
+      <!-- Country navigation -->
+      <nav id="country-nav" class="country-nav"></nav>
+
+      <hr>
+
+      <!-- Publication Trend -->
+      <div class="section">
+        <p class="section-label">Trend</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Publications by Year</h2>
+        <div class="chart-container">
+          <div style="height:300px;">
+            <canvas id="year-chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Top Words -->
+      <div class="section">
+        <p class="section-label">Unigrams</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Top 25 Keywords</h2>
+        <p>Most frequent lemmatized words in article titles after stopword removal.</p>
+        <div class="chart-container">
+          <div style="height:550px;">
+            <canvas id="words-chart"></canvas>
+          </div>
+        </div>
+        <div id="words-table"></div>
+      </div>
+
+      <hr>
+
+      <!-- Bigrams -->
+      <div class="section">
+        <p class="section-label">Bigrams</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Top Bigrams (Two-word Phrases)</h2>
+        <p>Consecutive two-word phrases that capture thematic collocations.</p>
+        <div class="chart-container">
+          <div style="height:450px;">
+            <canvas id="bigrams-chart"></canvas>
+          </div>
+        </div>
+        <div id="bigrams-table"></div>
+      </div>
+
+      <hr>
+
+      <!-- Co-occurrence Pairs -->
+      <div class="section">
+        <p class="section-label">Co-occurrence</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Top Co-occurrence Pairs</h2>
+        <p>Words appearing together within the same title (not necessarily adjacent), revealing conceptual associations.</p>
+        <div class="chart-container">
+          <div style="height:450px;">
+            <canvas id="pairs-chart"></canvas>
+          </div>
+        </div>
+        <div id="pairs-table"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Asian Nonprofit Research Database</p>
+    </div>
+    <div class="footer-bottom">
+      Data compiled from local academic databases. Part of a collaborative research project on Asian nonprofit studies.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/country.js"></script>
+</body>
+</html>

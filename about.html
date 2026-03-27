@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Asian Nonprofit Research</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-brand">Asian Nonprofit Research</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>About This Project</h1>
+
+      <p>This database presents a comprehensive text analysis of nonprofit research article titles across eight Asian countries: Bangladesh, China, Japan, Korea, Nepal, Taiwan, Turkey, and Vietnam.</p>
+
+      <h2 id="methodology">Methodology</h2>
+
+      <h3>Data Collection</h3>
+      <p>Research articles were collected from each country's local academic databases and bibliographic sources. Article titles were translated to English where the original language was not English. The dataset comprises over 16,000 articles spanning from 1984 to 2026.</p>
+
+      <h3>Text Analysis</h3>
+      <p>All text was preprocessed by:</p>
+      <ol>
+        <li>Converting to lowercase</li>
+        <li>Removing non-alphabetic tokens</li>
+        <li>Lemmatizing words</li>
+        <li>Collapsing synonyms (e.g., nonprofit / non-profit / nonprofits)</li>
+        <li>Removing English stopwords</li>
+        <li>Removing domain-generic terms (e.g., study, research, analysis, method)</li>
+      </ol>
+
+      <h3>Analysis Components</h3>
+      <p>For each country, the following analyses are provided:</p>
+      <ul>
+        <li><strong>Publication trend</strong> &mdash; Papers by year</li>
+        <li><strong>Unigram frequency</strong> &mdash; Top 25 most frequent single words</li>
+        <li><strong>Bigram frequency</strong> &mdash; Top 30 two-word phrases</li>
+        <li><strong>Co-occurrence pairs</strong> &mdash; Words appearing together within the same title</li>
+      </ul>
+
+      <h2 id="countries">Country Data Sources</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Country</th><th>Articles</th><th>Years</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Japan</td><td>5,627</td><td>1990–2025</td></tr>
+            <tr><td>Korea</td><td>5,105</td><td>1987–2019</td></tr>
+            <tr><td>Turkey</td><td>2,039</td><td>1938–2026</td></tr>
+            <tr><td>Taiwan</td><td>1,557</td><td>1984–2025</td></tr>
+            <tr><td>China</td><td>1,500</td><td>2008–2019</td></tr>
+            <tr><td>Nepal</td><td>166</td><td>2001–2025</td></tr>
+            <tr><td>Bangladesh</td><td>103</td><td>1988–2025</td></tr>
+            <tr><td>Vietnam</td><td>61</td><td>2005–2024</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="software">Software</h2>
+      <p>Original analyses were conducted in R. This interactive website reproduces the analyses using Python for data processing and Chart.js for visualization.</p>
+
+      <h2 id="references">References</h2>
+      <ul>
+        <li>Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent Dirichlet allocation. <em>Journal of Machine Learning Research</em>, 3, 993&ndash;1022.</li>
+        <li>Chang, J., Gerrish, S., Wang, C., Boyd-Graber, J., &amp; Blei, D. (2009). Reading tea leaves: How humans interpret topic models. <em>Advances in Neural Information Processing Systems</em>, 22.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Asian Nonprofit Research Database</p>
+    </div>
+    <div class="footer-bottom">
+      Data compiled from local academic databases. Part of a collaborative research project on Asian nonprofit studies.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
