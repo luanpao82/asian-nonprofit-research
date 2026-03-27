@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Country Comparison | Asian Nonprofit Research</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-brand">Asian Nonprofit Research</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Cross-Country Comparison</h1>
+      <p>Thematic similarity between countries based on LDA topic distributions and shared vocabulary.</p>
+
+      <hr>
+
+      <!-- Topic Similarity Heatmap -->
+      <div class="section">
+        <p class="section-label">Topic Similarity</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">LDA Topic Cosine Similarity</h2>
+        <p>Each cell shows the cosine similarity between two countries' LDA topic-term probability vectors. Higher values (darker) indicate greater thematic overlap. Similarity is computed as the symmetrized average of maximum per-topic cosine matches.</p>
+        <div class="chart-container">
+          <div id="heatmap-topic" style="overflow-x:auto;"></div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Vocabulary Similarity -->
+      <div class="section">
+        <p class="section-label">Vocabulary Overlap</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Top-20 Word Jaccard Similarity</h2>
+        <p>Jaccard index of the top 20 most frequent words between each pair of countries. Measures how much the dominant vocabulary overlaps, independent of topic modeling.</p>
+        <div class="chart-container">
+          <div id="heatmap-jaccard" style="overflow-x:auto;"></div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Shared Terms -->
+      <div class="section">
+        <p class="section-label">Shared Vocabulary</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Shared Topic Terms Between Countries</h2>
+        <p>Terms that appear in the top-10 LDA topic terms of both countries. Click a cell in the heatmap above to see details.</p>
+        <div id="shared-terms-detail"></div>
+        <div id="shared-terms-table"></div>
+      </div>
+
+      <hr>
+
+      <!-- Methodology -->
+      <div class="section">
+        <p class="section-label">Method</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Methodology</h2>
+        <div class="callout">
+          <p><strong>Topic Similarity (Cosine):</strong> For each country, an LDA model produces topic-term probability vectors over a unified vocabulary. Cosine similarity is computed between all topic pairs across two countries. Country-level similarity = symmetrized average of maximum per-topic matches: for each topic in Country A, the maximum cosine similarity to any topic in Country B is found, averaged in both directions.</p>
+          <p><strong>Vocabulary Overlap (Jaccard):</strong> The Jaccard index of the top 20 most frequent unigrams between each country pair. Jaccard = |A &cap; B| / |A &cup; B|, ranging from 0 (no overlap) to 1 (identical sets).</p>
+          <p><strong>Minimum threshold:</strong> Countries with fewer than 50 valid documents are excluded from similarity analysis.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Asian Nonprofit Research Database</p>
+    </div>
+    <div class="footer-bottom">
+      Data compiled from local academic databases. Part of a collaborative research project on Asian nonprofit studies.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/comparison.js"></script>
+</body>
+</html>
