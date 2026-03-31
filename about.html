@@ -68,9 +68,10 @@
       <ol>
         <li><strong>Lowercase conversion</strong> &mdash; All text is converted to lowercase to ensure consistent matching (e.g., &ldquo;Social&rdquo; and &ldquo;social&rdquo; are treated as the same word).</li>
         <li><strong>Non-alphabetic token removal</strong> &mdash; Numbers, punctuation, and special characters are removed, retaining only alphabetic words.</li>
+        <li><strong>Text normalization</strong> &mdash; Before tokenization, multi-word variants are unified: &ldquo;non profit&rdquo; and &ldquo;non-profit&rdquo; &rarr; &ldquo;nonprofit&rdquo;; &ldquo;non government&rdquo;, &ldquo;non-governmental&rdquo;, etc. &rarr; &ldquo;nongovernment&rdquo;; British spelling &ldquo;organisation(s)&rdquo; &rarr; &ldquo;organization(s)&rdquo;.</li>
         <li><strong>Lemmatization</strong> &mdash; Words are reduced to their base form (e.g., &ldquo;organizations&rdquo; &rarr; &ldquo;organization&rdquo;, &ldquo;volunteering&rdquo; &rarr; &ldquo;volunteer&rdquo;). This ensures that inflected variants of the same concept are counted together.</li>
         <li><strong>Synonym collapsing</strong> &mdash; Variant spellings and abbreviations are mapped to a single canonical form to prevent artificial fragmentation of key concepts (see table below).</li>
-        <li><strong>English stopword removal</strong> &mdash; Standard English stopwords (the, and, of, in, etc.) are removed using the tidytext stopword lexicon.</li>
+        <li><strong>English stopword removal</strong> &mdash; Standard English stopwords (the, and, of, in, etc.) are removed using the NLTK stopword lexicon.</li>
         <li><strong>Domain-generic term removal</strong> &mdash; Additional terms that are common across all academic research regardless of field are removed to ensure that the frequency analysis surfaces substantively meaningful vocabulary rather than generic research terminology.</li>
       </ol>
 
@@ -82,9 +83,10 @@
             <tr><th>Canonical Form</th><th>Collapsed Variants</th></tr>
           </thead>
           <tbody>
-            <tr><td><code>government</code></td><td>government, governments, governmental</td></tr>
-            <tr><td><code>nonprofit</code></td><td>nonprofit, non-profit, nonprofits</td></tr>
+            <tr><td><code>nonprofit</code></td><td>nonprofit, non-profit, non profit, nonprofits</td></tr>
+            <tr><td><code>nongovernment</code></td><td>nongovernment, non-government, non government, non-governmental, non governmental</td></tr>
             <tr><td><code>organization</code></td><td>organization, organizations, organisation, organisations</td></tr>
+            <tr><td><code>government</code></td><td>government, governments, governmental</td></tr>
             <tr><td><code>npo</code></td><td>npo, npos</td></tr>
             <tr><td><code>ngo</code></td><td>ngo, ngos</td></tr>
           </tbody>
