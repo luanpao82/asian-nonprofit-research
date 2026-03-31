@@ -3404,15 +3404,15 @@
     "skip": false,
     "nvsq_n": 34,
     "local_n": 2039,
-    "jaccard": 0.0811,
+    "jaccard": 0.1111,
     "shared_top20": [
       "civil society",
+      "education",
       "organization",
       "public"
     ],
     "nvsq_only": [
       "csr",
-      "education",
       "empowerment",
       "european",
       "health",
@@ -3445,7 +3445,6 @@
       "social",
       "th",
       "waqf",
-      "waqfs",
       "woman"
     ],
     "nvsq_top15": [
@@ -3524,6 +3523,10 @@
         423
       ],
       [
+        "waqf",
+        326
+      ],
+      [
         "civil society",
         306
       ],
@@ -3536,16 +3539,8 @@
         196
       ],
       [
-        "waqfs",
-        182
-      ],
-      [
         "association",
         167
-      ],
-      [
-        "waqf",
-        144
       ],
       [
         "role",
@@ -3570,9 +3565,13 @@
       [
         "relationship",
         85
+      ],
+      [
+        "th",
+        85
       ]
     ],
-    "lda_cosine": 0.2831,
+    "lda_cosine": 0.2695,
     "lda_detail": {
       "nvsq_k": 2,
       "local_k": 2,
@@ -3713,64 +3712,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "social",
-              0.0484
+              "foundation",
+              0.0815
             ],
             [
-              "organization",
-              0.0469
+              "waqf",
+              0.05
             ],
             [
-              "civil society",
-              0.0339
+              "ottoman",
+              0.0301
             ],
             [
-              "nongovernment",
-              0.0255
+              "century",
+              0.0192
             ],
             [
-              "association",
-              0.0185
+              "th",
+              0.0131
             ],
             [
-              "entrepreneurship",
-              0.0144
+              "period",
+              0.0097
             ],
             [
-              "role",
-              0.0135
+              "cash",
+              0.0096
             ],
             [
-              "relationship",
+              "law",
               0.0094
             ],
             [
-              "public",
-              0.0088
-            ],
-            [
-              "context",
-              0.0083
-            ],
-            [
-              "ngo",
-              0.0078
-            ],
-            [
-              "education",
-              0.0078
-            ],
-            [
-              "evaluation",
+              "institution",
               0.0076
             ],
             [
-              "activity",
-              0.0075
+              "example",
+              0.0076
             ],
             [
-              "volunteering",
-              0.007
+              "al",
+              0.0071
+            ],
+            [
+              "book",
+              0.0068
+            ],
+            [
+              "empire",
+              0.0067
+            ],
+            [
+              "n",
+              0.0066
+            ],
+            [
+              "pasha",
+              0.006
             ]
           ]
         },
@@ -3778,64 +3777,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "foundation",
-              0.0803
+              "social",
+              0.0479
             ],
             [
-              "ottoman",
-              0.0296
+              "organization",
+              0.0464
             ],
             [
-              "waqfs",
-              0.0275
+              "civil society",
+              0.0336
             ],
             [
-              "waqf",
-              0.0218
+              "nongovernment",
+              0.0252
             ],
             [
-              "century",
-              0.0189
+              "association",
+              0.0183
             ],
             [
-              "th",
-              0.0129
+              "entrepreneurship",
+              0.0143
             ],
             [
-              "period",
-              0.0096
+              "role",
+              0.0133
             ],
             [
-              "cash",
-              0.0094
-            ],
-            [
-              "law",
+              "relationship",
               0.0093
             ],
             [
-              "example",
+              "public",
+              0.0087
+            ],
+            [
+              "context",
+              0.0082
+            ],
+            [
+              "evaluation",
               0.0078
             ],
             [
-              "institution",
-              0.0076
+              "ngo",
+              0.0077
             ],
             [
-              "al",
+              "education",
+              0.0077
+            ],
+            [
+              "activity",
+              0.0074
+            ],
+            [
+              "volunteering",
               0.007
-            ],
-            [
-              "book",
-              0.0067
-            ],
-            [
-              "empire",
-              0.0066
-            ],
-            [
-              "n",
-              0.0065
             ]
           ]
         }
