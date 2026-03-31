@@ -2,79 +2,79 @@
   "Bangladesh": {
     "selected_k": 2,
     "n_docs": 103,
-    "rationale": "Small corpus (n=103). Perplexity: k=2: 92.9, k=3: 103.0, k=4: 107.4, k=5: 115.8, k=6: 119.5, k=7: 121.3, k=8: 129.5. k=2 selected via elbow method.",
+    "rationale": "Small corpus (n=103). Perplexity: k=2: 92.4, k=3: 103.9, k=4: 114.4, k=5: 127.2, k=6: 123.3, k=7: 135.2, k=8: 121.8. k=2 selected via elbow method.",
     "perplexity_scores": {
-      "2": 92.9,
-      "3": 103.0,
-      "4": 107.4,
-      "5": 115.8,
-      "6": 119.5,
-      "7": 121.3,
-      "8": 129.5
+      "2": 92.4,
+      "3": 103.9,
+      "4": 114.4,
+      "5": 127.2,
+      "6": 123.3,
+      "7": 135.2,
+      "8": 121.8
     },
     "topics": [
       {
         "topic_id": 1,
         "terms": [
           [
+            "ngo",
+            0.1208
+          ],
+          [
             "microfinance",
-            0.0579
+            0.0478
           ],
           [
             "microcredit",
-            0.0499
-          ],
-          [
-            "programme",
-            0.0379
-          ],
-          [
-            "credit",
-            0.0339
-          ],
-          [
-            "poverty",
-            0.0337
+            0.0412
           ],
           [
             "woman",
-            0.0267
+            0.038
           ],
           [
             "rural",
-            0.0262
+            0.0313
+          ],
+          [
+            "programme",
+            0.0312
+          ],
+          [
+            "role",
+            0.0285
+          ],
+          [
+            "credit",
+            0.0281
+          ],
+          [
+            "poverty",
+            0.028
+          ],
+          [
+            "empowerment",
+            0.0248
           ],
           [
             "micro",
-            0.026
+            0.0214
           ],
           [
-            "non",
-            0.0258
-          ],
-          [
-            "government",
-            0.0258
-          ],
-          [
-            "organization",
-            0.0258
-          ],
-          [
-            "sustainability",
-            0.0217
-          ],
-          [
-            "district",
-            0.0216
-          ],
-          [
-            "two",
+            "local",
             0.0213
           ],
           [
-            "sector",
-            0.0179
+            "district",
+            0.0182
+          ],
+          [
+            "participation",
+            0.0181
+          ],
+          [
+            "two",
+            0.018
           ]
         ]
       },
@@ -83,63 +83,63 @@
         "terms": [
           [
             "ngo",
-            0.1978
-          ],
-          [
-            "role",
-            0.0508
-          ],
-          [
-            "development",
-            0.035
+            0.0979
           ],
           [
             "social",
-            0.0348
+            0.0436
           ],
           [
             "civil",
-            0.0284
+            0.0355
           ],
           [
-            "activity",
-            0.0249
-          ],
-          [
-            "community",
-            0.0217
-          ],
-          [
-            "society",
-            0.0217
-          ],
-          [
-            "local",
-            0.0217
-          ],
-          [
-            "empowerment",
-            0.0185
-          ],
-          [
-            "health",
-            0.0184
-          ],
-          [
-            "woman",
-            0.0178
-          ],
-          [
-            "participation",
-            0.0171
+            "role",
+            0.0308
           ],
           [
             "climate",
-            0.0154
+            0.0271
           ],
           [
-            "governance",
-            0.0152
+            "community",
+            0.0271
+          ],
+          [
+            "society",
+            0.0271
+          ],
+          [
+            "organization",
+            0.027
+          ],
+          [
+            "nongovernment",
+            0.027
+          ],
+          [
+            "development",
+            0.0243
+          ],
+          [
+            "health",
+            0.0229
+          ],
+          [
+            "change",
+            0.0229
+          ],
+          [
+            "sustainability",
+            0.0228
+          ],
+          [
+            "activity",
+            0.0216
+          ],
+          [
+            "sector",
+            0.0186
           ]
         ]
       }
@@ -148,79 +148,79 @@
   "China": {
     "selected_k": 2,
     "n_docs": 1500,
-    "rationale": "Large corpus (n=1500). Perplexity: k=2: 249.7, k=3: 262.9, k=4: 283.1, k=5: 293.2, k=6: 303.2, k=7: 310.9, k=8: 317.9. k=2 selected via elbow method.",
+    "rationale": "Large corpus (n=1500). Perplexity: k=2: 257.4, k=3: 270.1, k=4: 283.7, k=5: 299.9, k=6: 309.7, k=7: 312.7, k=8: 318.9. k=2 selected via elbow method.",
     "perplexity_scores": {
-      "2": 249.7,
-      "3": 262.9,
-      "4": 283.1,
-      "5": 293.2,
-      "6": 303.2,
-      "7": 310.9,
-      "8": 317.9
+      "2": 257.4,
+      "3": 270.1,
+      "4": 283.7,
+      "5": 299.9,
+      "6": 309.7,
+      "7": 312.7,
+      "8": 318.9
     },
     "topics": [
       {
         "topic_id": 1,
         "terms": [
           [
-            "social",
-            0.1252
-          ],
-          [
-            "organization",
-            0.1151
+            "ngo",
+            0.0816
           ],
           [
             "government",
-            0.0369
+            0.0526
           ],
           [
-            "governance",
-            0.029
-          ],
-          [
-            "development",
-            0.0282
-          ],
-          [
-            "service",
-            0.0205
-          ],
-          [
-            "participation",
-            0.019
-          ],
-          [
-            "pathway",
-            0.0168
+            "nonprofit",
+            0.0401
           ],
           [
             "public",
-            0.0148
+            0.0315
           ],
           [
-            "building",
-            0.0123
+            "service",
+            0.0294
           ],
           [
-            "mechanism",
-            0.0096
+            "participation",
+            0.0184
+          ],
+          [
+            "international",
+            0.0176
           ],
           [
             "management",
-            0.0093
+            0.0161
           ],
           [
-            "dilemma",
-            0.0092
+            "governance",
+            0.0159
+          ],
+          [
+            "sector",
+            0.0131
+          ],
+          [
+            "role",
+            0.013
           ],
           [
             "contracting",
-            0.0089
+            0.0127
           ],
           [
-            "innovation",
-            0.0085
+            "third",
+            0.0121
+          ],
+          [
+            "environmental",
+            0.0093
+          ],
+          [
+            "function",
+            0.009
           ]
         ]
       },
@@ -228,632 +228,145 @@
         "topic_id": 2,
         "terms": [
           [
-            "ngo",
-            0.0887
+            "social",
+            0.1325
           ],
           [
-            "nonprofit",
-            0.0772
-          ],
-          [
-            "international",
-            0.0192
-          ],
-          [
-            "role",
-            0.0125
-          ],
-          [
-            "policy",
-            0.0115
-          ],
-          [
-            "governance",
-            0.0115
-          ],
-          [
-            "public",
-            0.0112
-          ],
-          [
-            "participation",
-            0.011
+            "organization",
+            0.1216
           ],
           [
             "development",
-            0.0104
+            0.0368
           ],
           [
-            "environmental",
-            0.0101
+            "governance",
+            0.0267
           ],
           [
-            "implication",
-            0.01
+            "nonprofit",
+            0.0229
           ],
           [
-            "education",
-            0.0087
+            "pathway",
+            0.0165
           ],
           [
-            "regulation",
-            0.0087
+            "policy",
+            0.0156
           ],
           [
-            "performance",
-            0.0085
+            "building",
+            0.0143
           ],
           [
-            "u",
-            0.0083
+            "participation",
+            0.014
+          ],
+          [
+            "dilemma",
+            0.0118
+          ],
+          [
+            "system",
+            0.0105
+          ],
+          [
+            "new",
+            0.009
+          ],
+          [
+            "mechanism",
+            0.0081
+          ],
+          [
+            "institutional",
+            0.0077
+          ],
+          [
+            "response",
+            0.0076
           ]
         ]
       }
     ]
   },
   "Japan": {
-    "selected_k": 3,
+    "selected_k": 6,
     "n_docs": 5627,
-    "rationale": "Large corpus (n=5627). Perplexity: k=2: 620.2, k=3: 616.2, k=4: 630.1, k=5: 640.5, k=6: 666.4, k=7: 670.3, k=8: 680.1. k=3 selected via elbow method.",
+    "rationale": "Large corpus (n=5627). Perplexity: k=2: 611.8, k=3: 620.7, k=4: 638.3, k=5: 664.7, k=6: 669.5, k=7: 687.8, k=8: 690.7. k=6 selected via elbow method.",
     "perplexity_scores": {
-      "2": 620.2,
-      "3": 616.2,
-      "4": 630.1,
-      "5": 640.5,
-      "6": 666.4,
-      "7": 670.3,
-      "8": 680.1
+      "2": 611.8,
+      "3": 620.7,
+      "4": 638.3,
+      "5": 664.7,
+      "6": 669.5,
+      "7": 687.8,
+      "8": 690.7
     },
     "topics": [
       {
         "topic_id": 1,
         "terms": [
           [
-            "ngo",
-            0.0469
-          ],
-          [
-            "society",
-            0.0344
-          ],
-          [
-            "disaster",
-            0.0291
-          ],
-          [
-            "civil",
-            0.0257
-          ],
-          [
-            "earthquake",
-            0.0189
-          ],
-          [
-            "activity",
-            0.016
-          ],
-          [
-            "area",
-            0.0159
-          ],
-          [
-            "development",
-            0.0152
-          ],
-          [
-            "international",
-            0.0139
-          ],
-          [
-            "great",
-            0.0136
-          ],
-          [
-            "east",
-            0.0135
-          ],
-          [
-            "role",
-            0.0124
-          ],
-          [
-            "support",
-            0.0092
-          ],
-          [
-            "state",
-            0.0079
-          ],
-          [
-            "woman",
-            0.0068
-          ]
-        ]
-      },
-      {
-        "topic_id": 2,
-        "terms": [
-          [
-            "npo",
-            0.0634
-          ],
-          [
-            "organization",
-            0.0333
-          ],
-          [
-            "nonprofit",
-            0.0303
-          ],
-          [
-            "social",
-            0.0195
-          ],
-          [
-            "community",
-            0.0169
-          ],
-          [
-            "system",
-            0.0148
-          ],
-          [
-            "collaboration",
-            0.0138
-          ],
-          [
-            "management",
-            0.0132
-          ],
-          [
-            "corporation",
-            0.0126
-          ],
-          [
-            "welfare",
-            0.0124
-          ],
-          [
-            "environmental",
-            0.0119
-          ],
-          [
-            "public",
-            0.0116
-          ],
-          [
-            "development",
-            0.0114
-          ],
-          [
-            "challenge",
-            0.0101
-          ],
-          [
-            "local",
-            0.0101
-          ]
-        ]
-      },
-      {
-        "topic_id": 3,
-        "terms": [
-          [
             "volunteer",
-            0.0922
+            0.0596
           ],
           [
             "activity",
-            0.0467
-          ],
-          [
-            "student",
-            0.03
-          ],
-          [
-            "support",
-            0.0258
-          ],
-          [
-            "university",
-            0.0195
-          ],
-          [
-            "school",
-            0.0189
-          ],
-          [
-            "learning",
-            0.0173
-          ],
-          [
-            "education",
-            0.0161
-          ],
-          [
-            "community",
-            0.016
+            0.0364
           ],
           [
             "child",
-            0.0128
-          ],
-          [
-            "survey",
-            0.0102
-          ],
-          [
-            "program",
-            0.009
-          ],
-          [
-            "challenge",
-            0.0088
-          ],
-          [
-            "training",
-            0.0085
-          ],
-          [
-            "practice",
-            0.0085
-          ]
-        ]
-      }
-    ]
-  },
-  "Korea": {
-    "selected_k": 4,
-    "n_docs": 5105,
-    "rationale": "Large corpus (n=5105). Perplexity: k=2: 529.2, k=3: 534.7, k=4: 539.3, k=5: 557.8, k=6: 568.6, k=7: 576.1, k=8: 577.9. k=4 selected via elbow method.",
-    "perplexity_scores": {
-      "2": 529.2,
-      "3": 534.7,
-      "4": 539.3,
-      "5": 557.8,
-      "6": 568.6,
-      "7": 576.1,
-      "8": 577.9
-    },
-    "topics": [
-      {
-        "topic_id": 1,
-        "terms": [
-          [
-            "ngo",
-            0.0374
-          ],
-          [
-            "policy",
-            0.0296
-          ],
-          [
-            "international",
-            0.0279
-          ],
-          [
-            "focusing",
-            0.0263
-          ],
-          [
-            "development",
-            0.0246
-          ],
-          [
-            "cooperation",
-            0.0173
-          ],
-          [
-            "system",
-            0.0168
-          ],
-          [
-            "right",
-            0.0168
-          ],
-          [
-            "north",
-            0.0164
-          ],
-          [
-            "human",
-            0.0149
-          ],
-          [
-            "role",
-            0.0137
-          ],
-          [
-            "woman",
-            0.0124
-          ],
-          [
-            "improvement",
-            0.0118
-          ],
-          [
-            "support",
-            0.0097
-          ],
-          [
-            "tax",
-            0.0094
-          ]
-        ]
-      },
-      {
-        "topic_id": 2,
-        "terms": [
-          [
-            "society",
-            0.0811
-          ],
-          [
-            "civil",
-            0.0767
-          ],
-          [
-            "movement",
-            0.0304
-          ],
-          [
-            "focusing",
-            0.0259
-          ],
-          [
-            "social",
-            0.0241
-          ],
-          [
-            "civic",
-            0.0229
-          ],
-          [
-            "education",
-            0.0213
-          ],
-          [
-            "political",
-            0.0191
-          ],
-          [
-            "democracy",
-            0.0171
-          ],
-          [
-            "state",
-            0.0131
-          ],
-          [
-            "theory",
-            0.0106
-          ],
-          [
-            "development",
-            0.0096
-          ],
-          [
-            "politics",
-            0.0092
-          ],
-          [
-            "participation",
-            0.0092
-          ],
-          [
-            "citizenship",
-            0.0088
-          ]
-        ]
-      },
-      {
-        "topic_id": 3,
-        "terms": [
-          [
-            "government",
-            0.045
-          ],
-          [
-            "focusing",
-            0.0377
-          ],
-          [
-            "local",
-            0.0334
-          ],
-          [
-            "organization",
-            0.0328
-          ],
-          [
-            "ngo",
-            0.0322
-          ],
-          [
-            "public",
-            0.0269
-          ],
-          [
-            "nonprofit",
-            0.0206
-          ],
-          [
-            "private",
-            0.0164
-          ],
-          [
-            "sector",
-            0.0155
-          ],
-          [
-            "governance",
-            0.0148
-          ],
-          [
-            "social",
-            0.0147
-          ],
-          [
-            "community",
-            0.0137
-          ],
-          [
-            "citizen",
-            0.0132
-          ],
-          [
-            "support",
-            0.0106
-          ],
-          [
-            "non",
-            0.0104
-          ]
-        ]
-      },
-      {
-        "topic_id": 4,
-        "terms": [
-          [
-            "social",
-            0.0582
-          ],
-          [
-            "organization",
-            0.0484
-          ],
-          [
-            "nonprofit",
-            0.0432
-          ],
-          [
-            "focusing",
             0.0303
           ],
           [
+            "survey",
+            0.0297
+          ],
+          [
+            "city",
+            0.0237
+          ],
+          [
+            "support",
+            0.0207
+          ],
+          [
+            "prefecture",
+            0.0201
+          ],
+          [
             "welfare",
-            0.0224
+            0.0178
           ],
           [
-            "organizational",
-            0.0182
-          ],
-          [
-            "enterprise",
-            0.0166
-          ],
-          [
-            "activity",
-            0.014
-          ],
-          [
-            "service",
+            "finding",
             0.0136
           ],
           [
-            "donation",
-            0.0134
+            "center",
+            0.0103
           ],
           [
-            "corporate",
-            0.0134
+            "social",
+            0.0097
           ],
           [
-            "performance",
-            0.0118
+            "questionnaire",
+            0.0092
           ],
           [
-            "factor",
-            0.0117
+            "participation",
+            0.0087
           ],
           [
-            "volunteer",
-            0.0102
+            "resident",
+            0.0083
           ],
           [
-            "management",
-            0.0096
-          ]
-        ]
-      }
-    ]
-  },
-  "Nepal": {
-    "selected_k": 6,
-    "n_docs": 166,
-    "rationale": "Small corpus (n=166). Perplexity: k=2: 187.0, k=3: 214.8, k=4: 247.5, k=5: 276.5, k=6: 276.9, k=7: 295.3, k=8: 315.6. k=6 selected via elbow method.",
-    "perplexity_scores": {
-      "2": 187.0,
-      "3": 214.8,
-      "4": 247.5,
-      "5": 276.5,
-      "6": 276.9,
-      "7": 295.3,
-      "8": 315.6
-    },
-    "topics": [
-      {
-        "topic_id": 1,
-        "terms": [
-          [
-            "political",
-            0.0765
-          ],
-          [
-            "strategy",
-            0.0269
-          ],
-          [
-            "health",
-            0.0269
-          ],
-          [
-            "mobilization",
-            0.0269
-          ],
-          [
-            "challenge",
-            0.0269
-          ],
-          [
-            "right",
-            0.0269
-          ],
-          [
-            "factor",
-            0.0269
-          ],
-          [
-            "policy",
-            0.0269
-          ],
-          [
-            "influence",
-            0.0269
-          ],
-          [
-            "surkhet",
-            0.0269
-          ],
-          [
-            "activism",
-            0.0269
-          ],
-          [
-            "historical",
-            0.0268
-          ],
-          [
-            "movement",
-            0.0153
-          ],
-          [
-            "development",
-            0.0148
-          ],
-          [
-            "disease",
-            0.0145
+            "area",
+            0.0082
           ]
         ]
       },
@@ -861,64 +374,64 @@
         "topic_id": 2,
         "terms": [
           [
-            "community",
-            0.108
+            "ngo",
+            0.0711
+          ],
+          [
+            "society",
+            0.0522
+          ],
+          [
+            "civil",
+            0.039
+          ],
+          [
+            "development",
+            0.0257
+          ],
+          [
+            "international",
+            0.021
+          ],
+          [
+            "role",
+            0.0132
+          ],
+          [
+            "activity",
+            0.0132
+          ],
+          [
+            "environmental",
+            0.0108
+          ],
+          [
+            "cooperation",
+            0.0098
+          ],
+          [
+            "civic",
+            0.0086
+          ],
+          [
+            "focusing",
+            0.0081
           ],
           [
             "social",
-            0.0759
+            0.0081
           ],
           [
-            "governance",
-            0.048
+            "community",
+            0.0074
           ],
           [
-            "woman",
-            0.0437
+            "policy",
+            0.0073
           ],
           [
-            "movement",
-            0.0434
-          ],
-          [
-            "forest",
-            0.0288
-          ],
-          [
-            "system",
-            0.0277
-          ],
-          [
-            "forestry",
-            0.0277
-          ],
-          [
-            "rural",
-            0.0277
-          ],
-          [
-            "action",
-            0.0223
-          ],
-          [
-            "collective",
-            0.017
-          ],
-          [
-            "participation",
-            0.017
-          ],
-          [
-            "western",
-            0.017
-          ],
-          [
-            "female",
-            0.017
-          ],
-          [
-            "redd",
-            0.0116
+            "state",
+            0.0073
           ]
         ]
       },
@@ -926,64 +439,64 @@
         "topic_id": 3,
         "terms": [
           [
-            "organization",
-            0.0762
+            "npo",
+            0.0984
           ],
           [
-            "development",
-            0.0694
+            "community",
+            0.0381
           ],
           [
-            "government",
-            0.0547
+            "collaboration",
+            0.0291
           ],
           [
-            "non",
-            0.0468
-          ],
-          [
-            "ngo",
-            0.0446
-          ],
-          [
-            "rural",
-            0.0395
+            "social",
+            0.0253
           ],
           [
             "local",
-            0.0318
+            0.0238
           ],
           [
-            "forest",
-            0.0302
+            "development",
+            0.0158
           ],
           [
-            "role",
-            0.0269
+            "environmental",
+            0.0152
           ],
           [
-            "resource",
-            0.0242
+            "regional",
+            0.0151
           ],
           [
-            "perception",
-            0.0242
+            "citizen",
+            0.0146
           ],
           [
-            "district",
-            0.0165
+            "government",
+            0.0141
           ],
           [
-            "hill",
-            0.0165
+            "management",
+            0.0136
           ],
           [
-            "nongovernmental",
-            0.0165
+            "challenge",
+            0.0104
           ],
           [
-            "inquiry",
-            0.0165
+            "welfare",
+            0.0103
+          ],
+          [
+            "process",
+            0.0095
+          ],
+          [
+            "activity",
+            0.0092
           ]
         ]
       },
@@ -991,64 +504,64 @@
         "topic_id": 4,
         "terms": [
           [
-            "society",
-            0.1118
+            "volunteer",
+            0.091
           ],
           [
-            "civil",
-            0.0918
+            "student",
+            0.0567
           ],
           [
-            "role",
-            0.0639
+            "activity",
+            0.0489
           ],
           [
-            "challenge",
-            0.0336
+            "education",
+            0.0388
           ],
           [
-            "disaster",
-            0.0272
+            "school",
+            0.0374
           ],
           [
-            "state",
-            0.0271
+            "university",
+            0.0346
           ],
           [
-            "governance",
-            0.0219
+            "learning",
+            0.0342
           ],
           [
-            "people",
-            0.0206
+            "support",
+            0.017
           ],
           [
-            "development",
-            0.0145
+            "volunteering",
+            0.0153
           ],
           [
-            "analyzing",
-            0.0141
+            "training",
+            0.0151
           ],
           [
-            "understanding",
-            0.0141
+            "practice",
+            0.0123
           ],
           [
-            "covid",
-            0.0141
+            "experience",
+            0.0121
           ],
           [
-            "comprehensive",
-            0.0141
+            "educational",
+            0.012
           ],
           [
-            "towards",
-            0.0141
+            "program",
+            0.0117
           ],
           [
-            "need",
-            0.0141
+            "teacher",
+            0.0099
           ]
         ]
       },
@@ -1056,64 +569,64 @@
         "topic_id": 5,
         "terms": [
           [
-            "relation",
-            0.0364
+            "volunteer",
+            0.0623
           ],
           [
-            "military",
-            0.0364
+            "support",
+            0.0484
           ],
           [
-            "civil",
-            0.0283
+            "activity",
+            0.0385
           ],
           [
-            "democracy",
-            0.0278
+            "disaster",
+            0.0356
           ],
           [
-            "economic",
-            0.0277
+            "earthquake",
+            0.0231
           ],
           [
-            "employment",
-            0.0277
+            "community",
+            0.0205
           ],
           [
-            "helix",
-            0.0277
+            "great",
+            0.0167
           ],
           [
-            "opportunity",
-            0.0277
+            "elderly",
+            0.0159
           ],
           [
-            "kathmandu",
-            0.0277
+            "east",
+            0.0152
           ],
           [
-            "crisis",
-            0.0277
+            "language",
+            0.0145
           ],
           [
-            "among",
-            0.027
+            "disability",
+            0.0117
           ],
           [
-            "change",
-            0.0266
+            "health",
+            0.0116
           ],
           [
-            "microfinance",
-            0.0189
+            "child",
+            0.0107
           ],
           [
-            "discourse",
-            0.0189
+            "area",
+            0.0098
           ],
           [
-            "quadruple",
-            0.0189
+            "care",
+            0.0095
           ]
         ]
       },
@@ -1121,64 +634,421 @@
         "topic_id": 6,
         "terms": [
           [
-            "social",
-            0.0476
+            "organization",
+            0.0869
           ],
           [
-            "water",
-            0.0475
+            "nonprofit",
+            0.0773
           ],
           [
-            "human",
-            0.0321
+            "npo",
+            0.0379
+          ],
+          [
+            "corporation",
+            0.0301
+          ],
+          [
+            "system",
+            0.021
+          ],
+          [
+            "public",
+            0.0183
           ],
           [
             "management",
-            0.0291
+            0.0158
           ],
           [
-            "medium",
-            0.0244
+            "accounting",
+            0.0153
           ],
           [
-            "security",
-            0.0244
+            "private",
+            0.0146
           ],
           [
-            "critical",
-            0.0244
+            "social",
+            0.014
           ],
           [
-            "conflict",
-            0.0244
+            "sector",
+            0.0139
+          ],
+          [
+            "welfare",
+            0.0125
+          ],
+          [
+            "focusing",
+            0.0113
+          ],
+          [
+            "theory",
+            0.0111
           ],
           [
             "challenge",
-            0.0244
+            0.0103
+          ]
+        ]
+      }
+    ]
+  },
+  "Korea": {
+    "selected_k": 3,
+    "n_docs": 5105,
+    "rationale": "Large corpus (n=5105). Perplexity: k=2: 528.9, k=3: 528.7, k=4: 545.4, k=5: 570.8, k=6: 576.8, k=7: 589.8, k=8: 590.6. k=3 selected via elbow method.",
+    "perplexity_scores": {
+      "2": 528.9,
+      "3": 528.7,
+      "4": 545.4,
+      "5": 570.8,
+      "6": 576.8,
+      "7": 589.8,
+      "8": 590.6
+    },
+    "topics": [
+      {
+        "topic_id": 1,
+        "terms": [
+          [
+            "social",
+            0.0515
           ],
           [
-            "common",
-            0.0244
+            "nonprofit",
+            0.042
           ],
           [
-            "implication",
-            0.0244
+            "organization",
+            0.0395
+          ],
+          [
+            "focusing",
+            0.0307
+          ],
+          [
+            "welfare",
+            0.0251
+          ],
+          [
+            "organizational",
+            0.0147
+          ],
+          [
+            "system",
+            0.014
+          ],
+          [
+            "activity",
+            0.0135
+          ],
+          [
+            "enterprise",
+            0.0135
+          ],
+          [
+            "service",
+            0.0132
           ],
           [
             "factor",
-            0.024
+            0.0122
+          ],
+          [
+            "corporation",
+            0.0115
+          ],
+          [
+            "donation",
+            0.0108
+          ],
+          [
+            "corporate",
+            0.0108
+          ],
+          [
+            "management",
+            0.0107
+          ]
+        ]
+      },
+      {
+        "topic_id": 2,
+        "terms": [
+          [
+            "society",
+            0.0675
+          ],
+          [
+            "civil",
+            0.0638
+          ],
+          [
+            "movement",
+            0.0271
+          ],
+          [
+            "social",
+            0.0265
+          ],
+          [
+            "focusing",
+            0.026
+          ],
+          [
+            "civic",
+            0.0223
+          ],
+          [
+            "education",
+            0.0197
+          ],
+          [
+            "state",
+            0.0177
+          ],
+          [
+            "political",
+            0.0159
+          ],
+          [
+            "democracy",
+            0.0142
+          ],
+          [
+            "change",
+            0.0107
+          ],
+          [
+            "global",
+            0.01
+          ],
+          [
+            "citizen",
+            0.0092
+          ],
+          [
+            "theory",
+            0.0088
+          ],
+          [
+            "development",
+            0.0084
+          ]
+        ]
+      },
+      {
+        "topic_id": 3,
+        "terms": [
+          [
+            "ngo",
+            0.0477
+          ],
+          [
+            "focusing",
+            0.0342
+          ],
+          [
+            "government",
+            0.0291
+          ],
+          [
+            "local",
+            0.0263
+          ],
+          [
+            "organization",
+            0.0255
+          ],
+          [
+            "policy",
+            0.0247
+          ],
+          [
+            "development",
+            0.0231
+          ],
+          [
+            "role",
+            0.0215
+          ],
+          [
+            "international",
+            0.0167
+          ],
+          [
+            "governance",
+            0.0156
+          ],
+          [
+            "private",
+            0.0152
+          ],
+          [
+            "cooperation",
+            0.013
+          ],
+          [
+            "support",
+            0.0124
+          ],
+          [
+            "sector",
+            0.0123
+          ],
+          [
+            "right",
+            0.01
+          ]
+        ]
+      }
+    ]
+  },
+  "Nepal": {
+    "selected_k": 2,
+    "n_docs": 166,
+    "rationale": "Small corpus (n=166). Perplexity: k=2: 186.6, k=3: 230.0, k=4: 240.2, k=5: 266.7, k=6: 301.0, k=7: 317.8, k=8: 295.8. k=2 selected via elbow method.",
+    "perplexity_scores": {
+      "2": 186.6,
+      "3": 230.0,
+      "4": 240.2,
+      "5": 266.7,
+      "6": 301.0,
+      "7": 317.8,
+      "8": 295.8
+    },
+    "topics": [
+      {
+        "topic_id": 1,
+        "terms": [
+          [
+            "social",
+            0.0707
+          ],
+          [
+            "movement",
+            0.0344
+          ],
+          [
+            "woman",
+            0.0256
           ],
           [
             "ngo",
-            0.0179
+            0.0209
+          ],
+          [
+            "political",
+            0.0196
+          ],
+          [
+            "economic",
+            0.0194
+          ],
+          [
+            "challenge",
+            0.0172
+          ],
+          [
+            "strategy",
+            0.0165
+          ],
+          [
+            "change",
+            0.0164
+          ],
+          [
+            "democracy",
+            0.0162
+          ],
+          [
+            "health",
+            0.0161
+          ],
+          [
+            "media",
+            0.0135
+          ],
+          [
+            "influence",
+            0.0135
+          ],
+          [
+            "analyzing",
+            0.0135
+          ],
+          [
+            "entrepreneurship",
+            0.0135
+          ]
+        ]
+      },
+      {
+        "topic_id": 2,
+        "terms": [
+          [
+            "community",
+            0.0442
+          ],
+          [
+            "civil",
+            0.038
+          ],
+          [
+            "society",
+            0.0379
+          ],
+          [
+            "development",
+            0.0309
+          ],
+          [
+            "role",
+            0.0293
+          ],
+          [
+            "governance",
+            0.0265
+          ],
+          [
+            "organization",
+            0.025
+          ],
+          [
+            "forest",
+            0.0206
+          ],
+          [
+            "rural",
+            0.0193
+          ],
+          [
+            "water",
+            0.0163
+          ],
+          [
+            "management",
+            0.0162
           ],
           [
             "district",
-            0.0167
+            0.0161
           ],
           [
-            "sustainable",
-            0.0167
+            "human",
+            0.014
+          ],
+          [
+            "security",
+            0.0139
+          ],
+          [
+            "challenge",
+            0.0137
           ]
         ]
       }
@@ -1187,79 +1057,79 @@
   "Taiwan": {
     "selected_k": 2,
     "n_docs": 1557,
-    "rationale": "Large corpus (n=1557). Perplexity: k=2: 696.1, k=3: 755.3, k=4: 805.9, k=5: 869.4, k=6: 917.0, k=7: 918.7, k=8: 961.0. k=2 selected via elbow method.",
+    "rationale": "Large corpus (n=1557). Perplexity: k=2: 717.6, k=3: 763.9, k=4: 815.9, k=5: 874.0, k=6: 920.9, k=7: 969.6, k=8: 988.8. k=2 selected via elbow method.",
     "perplexity_scores": {
-      "2": 696.1,
-      "3": 755.3,
-      "4": 805.9,
-      "5": 869.4,
-      "6": 917.0,
-      "7": 918.7,
-      "8": 961.0
+      "2": 717.6,
+      "3": 763.9,
+      "4": 815.9,
+      "5": 874.0,
+      "6": 920.9,
+      "7": 969.6,
+      "8": 988.8
     },
     "topics": [
       {
         "topic_id": 1,
         "terms": [
           [
-            "society",
-            0.0252
+            "organization",
+            0.0401
           ],
           [
-            "development",
-            0.025
-          ],
-          [
-            "civil",
-            0.0222
-          ],
-          [
-            "governance",
-            0.019
+            "nonprofit",
+            0.0326
           ],
           [
             "social",
-            0.0119
+            0.0206
           ],
           [
             "community",
-            0.0116
+            0.015
           ],
           [
-            "right",
-            0.0106
+            "management",
+            0.0131
           ],
           [
-            "local",
-            0.0096
+            "service",
+            0.0125
           ],
           [
-            "human",
-            0.0092
+            "example",
+            0.011
           ],
           [
             "public",
-            0.009
+            0.0104
           ],
           [
-            "international",
-            0.0089
+            "development",
+            0.0096
           ],
           [
-            "education",
-            0.0084
+            "museum",
+            0.0085
           ],
           [
-            "ngo",
+            "strategy",
             0.0082
           ],
           [
-            "participation",
+            "care",
             0.008
           ],
           [
-            "policy",
-            0.0074
+            "local",
+            0.0079
+          ],
+          [
+            "enterprise",
+            0.0078
+          ],
+          [
+            "nongovernment",
+            0.0078
           ]
         ]
       },
@@ -1267,64 +1137,64 @@
         "topic_id": 2,
         "terms": [
           [
-            "organization",
-            0.0431
+            "society",
+            0.0285
           ],
           [
-            "non",
-            0.029
+            "civil",
+            0.0251
           ],
           [
-            "profit",
-            0.0217
-          ],
-          [
-            "social",
-            0.0209
-          ],
-          [
-            "government",
+            "governance",
             0.0187
           ],
           [
-            "nonprofit",
-            0.0158
+            "development",
+            0.0152
           ],
           [
-            "service",
-            0.0134
-          ],
-          [
-            "management",
+            "right",
             0.0119
           ],
           [
-            "example",
-            0.0118
+            "social",
+            0.0119
+          ],
+          [
+            "human",
+            0.0103
+          ],
+          [
+            "international",
+            0.0095
+          ],
+          [
+            "ngo",
+            0.0093
           ],
           [
             "public",
-            0.0099
-          ],
-          [
-            "museum",
-            0.0092
-          ],
-          [
-            "care",
             0.0086
           ],
           [
-            "enterprise",
-            0.0084
+            "global",
+            0.0078
           ],
           [
-            "marketing",
-            0.0081
+            "new",
+            0.0075
           ],
           [
-            "strategy",
-            0.0076
+            "state",
+            0.0074
+          ],
+          [
+            "challenge",
+            0.0073
+          ],
+          [
+            "democracy",
+            0.0069
           ]
         ]
       }
@@ -1333,31 +1203,96 @@
   "Turkey": {
     "selected_k": 2,
     "n_docs": 2039,
-    "rationale": "Large corpus (n=2039). Perplexity: k=2: 524.0, k=3: 555.0, k=4: 570.7, k=5: 640.6, k=6: 641.2, k=7: 662.7, k=8: 649.4. k=2 selected via elbow method.",
+    "rationale": "Large corpus (n=2039). Perplexity: k=2: 543.1, k=3: 555.1, k=4: 595.2, k=5: 637.0, k=6: 664.0, k=7: 688.9, k=8: 686.1. k=2 selected via elbow method.",
     "perplexity_scores": {
-      "2": 524.0,
-      "3": 555.0,
-      "4": 570.7,
-      "5": 640.6,
-      "6": 641.2,
-      "7": 662.7,
-      "8": 649.4
+      "2": 543.1,
+      "3": 555.1,
+      "4": 595.2,
+      "5": 637.0,
+      "6": 664.0,
+      "7": 688.9,
+      "8": 686.1
     },
     "topics": [
       {
         "topic_id": 1,
         "terms": [
           [
+            "social",
+            0.0465
+          ],
+          [
+            "organization",
+            0.0451
+          ],
+          [
+            "society",
+            0.0371
+          ],
+          [
+            "civil",
+            0.0343
+          ],
+          [
+            "nongovernment",
+            0.0245
+          ],
+          [
+            "association",
+            0.0178
+          ],
+          [
+            "entrepreneurship",
+            0.0139
+          ],
+          [
+            "role",
+            0.0129
+          ],
+          [
+            "relationship",
+            0.0091
+          ],
+          [
+            "public",
+            0.0085
+          ],
+          [
+            "context",
+            0.008
+          ],
+          [
+            "ngo",
+            0.0075
+          ],
+          [
+            "evaluation",
+            0.0072
+          ],
+          [
+            "activity",
+            0.0072
+          ],
+          [
+            "volunteering",
+            0.0068
+          ]
+        ]
+      },
+      {
+        "topic_id": 2,
+        "terms": [
+          [
             "foundation",
-            0.0805
+            0.0802
           ],
           [
             "ottoman",
-            0.0297
+            0.0296
           ],
           [
             "waqfs",
-            0.0276
+            0.0275
           ],
           [
             "waqf",
@@ -1365,7 +1300,7 @@
           ],
           [
             "century",
-            0.019
+            0.0189
           ],
           [
             "th",
@@ -1377,7 +1312,7 @@
           ],
           [
             "period",
-            0.0096
+            0.0095
           ],
           [
             "cash",
@@ -1385,15 +1320,15 @@
           ],
           [
             "law",
-            0.0093
+            0.0092
           ],
           [
             "institution",
-            0.0077
+            0.008
           ],
           [
             "example",
-            0.0077
+            0.0078
           ],
           [
             "al",
@@ -1405,72 +1340,7 @@
           ],
           [
             "empire",
-            0.0066
-          ]
-        ]
-      },
-      {
-        "topic_id": 2,
-        "terms": [
-          [
-            "social",
-            0.0452
-          ],
-          [
-            "organization",
-            0.0437
-          ],
-          [
-            "society",
-            0.036
-          ],
-          [
-            "civil",
-            0.0333
-          ],
-          [
-            "non",
-            0.0292
-          ],
-          [
-            "government",
-            0.0255
-          ],
-          [
-            "association",
-            0.0173
-          ],
-          [
-            "entrepreneurship",
-            0.0135
-          ],
-          [
-            "role",
-            0.0125
-          ],
-          [
-            "relationship",
-            0.0088
-          ],
-          [
-            "public",
-            0.0082
-          ],
-          [
-            "context",
-            0.0078
-          ],
-          [
-            "ngo",
-            0.0073
-          ],
-          [
-            "evaluation",
-            0.0072
-          ],
-          [
-            "education",
-            0.0072
+            0.0065
           ]
         ]
       }
@@ -1479,13 +1349,13 @@
   "Vietnam": {
     "selected_k": 2,
     "n_docs": 61,
-    "rationale": "Small corpus (n=61). Perplexity: k=2: 60.6, k=3: 66.8, k=4: 73.1, k=5: 76.5, k=6: 86.7. k=2 selected via elbow method.",
+    "rationale": "Small corpus (n=61). Perplexity: k=2: 57.9, k=3: 66.3, k=4: 75.9, k=5: 76.4, k=6: 84.4. k=2 selected via elbow method.",
     "perplexity_scores": {
-      "2": 60.6,
-      "3": 66.8,
-      "4": 73.1,
-      "5": 76.5,
-      "6": 86.7
+      "2": 57.9,
+      "3": 66.3,
+      "4": 75.9,
+      "5": 76.4,
+      "6": 84.4
     },
     "topics": [
       {
@@ -1493,63 +1363,63 @@
         "terms": [
           [
             "social",
-            0.2104
+            0.1628
           ],
           [
             "enterprise",
-            0.115
+            0.1318
           ],
           [
             "development",
-            0.0452
+            0.0521
           ],
           [
             "organization",
-            0.037
+            0.0398
           ],
           [
-            "charity",
-            0.0359
-          ],
-          [
-            "non",
-            0.0326
+            "nonprofit",
+            0.0274
           ],
           [
             "delta",
-            0.0237
-          ],
-          [
-            "buddhism",
-            0.0196
+            0.0266
           ],
           [
             "legal",
-            0.0194
+            0.0255
           ],
           [
             "rural",
-            0.0187
+            0.0214
           ],
           [
             "university",
-            0.0187
+            0.0214
           ],
           [
-            "profit",
-            0.0187
+            "capital",
+            0.0213
           ],
           [
-            "law",
-            0.0184
-          ],
-          [
-            "developing",
-            0.0183
+            "experience",
+            0.0212
           ],
           [
             "mekong",
-            0.0181
+            0.0195
+          ],
+          [
+            "developing",
+            0.0191
+          ],
+          [
+            "law",
+            0.0176
+          ],
+          [
+            "entity",
+            0.0156
           ]
         ]
       },
@@ -1557,64 +1427,64 @@
         "topic_id": 2,
         "terms": [
           [
-            "activity",
-            0.0823
+            "social",
+            0.0801
           ],
           [
-            "society",
-            0.0632
+            "activity",
+            0.0743
           ],
           [
             "civil",
-            0.0632
+            0.0565
           ],
           [
-            "charitable",
-            0.063
-          ],
-          [
-            "community",
-            0.0428
-          ],
-          [
-            "role",
-            0.0363
-          ],
-          [
-            "state",
-            0.0296
-          ],
-          [
-            "buddhism",
-            0.0289
-          ],
-          [
-            "promoting",
-            0.0232
-          ],
-          [
-            "concept",
-            0.0228
+            "society",
+            0.0565
           ],
           [
             "charity",
-            0.022
+            0.0564
           ],
           [
-            "experience",
-            0.0171
+            "charitable",
+            0.056
+          ],
+          [
+            "buddhism",
+            0.0445
+          ],
+          [
+            "community",
+            0.038
+          ],
+          [
+            "role",
+            0.0326
+          ],
+          [
+            "state",
+            0.0266
+          ],
+          [
+            "promoting",
+            0.0208
+          ],
+          [
+            "concept",
+            0.0208
+          ],
+          [
+            "assistance",
+            0.0206
+          ],
+          [
+            "today",
+            0.0199
           ],
           [
             "law",
-            0.017
-          ],
-          [
-            "right",
-            0.0166
-          ],
-          [
-            "direction",
-            0.0166
+            0.0186
           ]
         ]
       }
