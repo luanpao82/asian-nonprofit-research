@@ -13,7 +13,7 @@
     },
     {
       "name": "Nepal",
-      "n_docs": 165
+      "n_docs": 166
     },
     {
       "name": "Vietnam",
@@ -24,37 +24,37 @@
   "matrix": [
     [
       1.0,
-      0.4249,
-      0.5067,
-      0.4488,
-      0.3601
+      0.3652,
+      0.6607,
+      0.6975,
+      0.4114
     ],
     [
-      0.4249,
+      0.3652,
       1.0,
-      0.5631,
-      0.3905,
-      0.3552
+      0.4448,
+      0.362,
+      0.2088
     ],
     [
-      0.5067,
-      0.5631,
+      0.6607,
+      0.4448,
       1.0,
-      0.5369,
-      0.4301
+      0.6838,
+      0.4489
     ],
     [
-      0.4488,
-      0.3905,
-      0.5369,
+      0.6975,
+      0.362,
+      0.6838,
       1.0,
-      0.5054
+      0.5209
     ],
     [
-      0.3601,
-      0.3552,
-      0.4301,
-      0.5054,
+      0.4114,
+      0.2088,
+      0.4489,
+      0.5209,
       1.0
     ]
   ],
@@ -71,25 +71,25 @@
       1.0,
       0.3333,
       0.2121,
-      0.1111
+      0.0811
     ],
     [
       0.3793,
       0.3333,
       1.0,
-      0.4286,
+      0.3793,
       0.2121
     ],
     [
       0.3793,
       0.2121,
-      0.4286,
+      0.3793,
       1.0,
       0.25
     ],
     [
       0.1429,
-      0.1111,
+      0.0811,
       0.2121,
       0.25,
       1.0
@@ -98,26 +98,15 @@
   "shared_terms": {
     "China_Japan": [
       "development",
-      "education",
-      "environmental",
-      "government",
-      "international",
-      "management",
       "ngo",
       "nonprofit",
       "organization",
-      "participation",
-      "policy",
-      "public",
-      "social",
-      "society",
-      "system"
+      "social"
     ],
     "China_Korea": [
       "development",
-      "education",
+      "governance",
       "government",
-      "international",
       "ngo",
       "nonprofit",
       "organization",
@@ -125,125 +114,85 @@
       "public",
       "role",
       "social",
-      "society",
       "system"
     ],
     "China_Taiwan": [
       "development",
-      "education",
       "governance",
       "government",
       "international",
       "management",
-      "ngo",
       "nonprofit",
       "organization",
-      "participation",
+      "policy",
       "public",
       "service",
-      "social",
-      "society",
-      "system"
+      "social"
     ],
     "China_Turkey": [
       "government",
       "organization",
-      "policy",
+      "public",
       "role",
-      "social",
-      "society"
+      "social"
     ],
     "Japan_Korea": [
       "activity",
-      "civil",
-      "corporation",
       "development",
       "education",
-      "government",
-      "international",
-      "local",
+      "focusing",
       "ngo",
       "nonprofit",
       "organization",
-      "policy",
-      "private",
-      "public",
       "social",
       "society",
-      "system",
-      "volunteer",
       "welfare"
     ],
     "Japan_Taiwan": [
-      "city",
-      "civil",
       "community",
       "development",
       "education",
-      "government",
-      "international",
-      "local",
-      "management",
-      "ngo",
       "nonprofit",
       "organization",
-      "participation",
-      "public",
       "social",
-      "society",
-      "sport",
-      "system",
-      "university"
+      "society"
     ],
     "Japan_Turkey": [
-      "activity",
-      "civil",
-      "community",
-      "government",
       "organization",
-      "policy",
       "social",
-      "society",
-      "student",
-      "university",
-      "volunteer"
+      "society"
     ],
     "Korea_Taiwan": [
       "civil",
       "development",
       "education",
+      "governance",
       "government",
-      "international",
-      "local",
-      "ngo",
       "nonprofit",
       "organization",
+      "policy",
       "public",
       "social",
-      "society",
-      "system"
+      "society"
     ],
     "Korea_Turkey": [
-      "activity",
       "civil",
       "government",
       "organization",
-      "policy",
+      "public",
       "role",
       "social",
-      "society",
-      "volunteer"
+      "society"
     ],
     "Taiwan_Turkey": [
-      "association",
       "civil",
-      "community",
+      "example",
       "government",
       "non",
       "organization",
+      "public",
       "social",
-      "society",
-      "university"
+      "society"
     ]
   }
 }
