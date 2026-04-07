@@ -114,7 +114,6 @@
 
       var topics = allK[String(k)];
       topics.forEach(function (topic) {
-        var color = COLORS[(topic.topic_id - 1) % COLORS.length];
         panelHtml += '<h3>Topic ' + topic.topic_id + '</h3>';
         panelHtml += '<div class="chart-container"><div style="height:280px;"><canvas id="tc-k' + k + '-t' + topic.topic_id + '"></canvas></div></div>';
         panelHtml += '<div class="table-wrap"><table><thead><tr><th>Rank</th><th>Term</th><th>&beta;</th></tr></thead><tbody>';
