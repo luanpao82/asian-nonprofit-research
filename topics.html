@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topic Model Explorer | Asian Nonprofit Research</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    .k-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0 1rem;
+    }
+    .k-tab {
+      padding: 0.45rem 1.1rem;
+      border: 2px solid #283593;
+      border-radius: 20px;
+      background: #fff;
+      color: #283593;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .k-tab:hover { background: #e8eaf6; }
+    .k-tab.active { background: #283593; color: #fff; }
+    .k-tab.selected-k {
+      border-color: #c62828;
+      color: #c62828;
+    }
+    .k-tab.selected-k.active {
+      background: #c62828;
+      color: #fff;
+      border-color: #c62828;
+    }
+    .k-panel { display: none; }
+    .k-panel.active { display: block; }
+    .k-badge {
+      display: inline-block;
+      margin-left: 0.4rem;
+      font-size: 0.75rem;
+      background: #c62828;
+      color: #fff;
+      border-radius: 10px;
+      padding: 0.1rem 0.45rem;
+      vertical-align: middle;
+    }
+    .perplexity-bar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .perp-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+      min-width: 70px;
+    }
+    .perp-label { font-size: 0.78rem; color: #666; }
+    .perp-value {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #283593;
+      padding: 0.3rem 0.7rem;
+      border: 2px solid #c5cae9;
+      border-radius: 8px;
+      background: #f5f5ff;
+    }
+    .perp-item.selected .perp-value {
+      border-color: #c62828;
+      color: #c62828;
+      background: #fff5f5;
+    }
+    .perp-item.selected .perp-label { color: #c62828; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-brand">Asian Nonprofit Research</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="language.html">English vs Local</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container" id="topics-content">
+
+      <p style="margin-bottom:0.5rem;">
+        <a id="back-link" href="country.html" style="color:#283593;font-size:0.9rem;">&#8592; Back to Country Analysis</a>
+      </p>
+      <h1 id="page-title" style="margin-bottom:0.25rem;"></h1>
+      <p id="page-subtitle" style="color:#666;font-size:1.05rem;margin-bottom:0.5rem;"></p>
+      <p style="color:#555;font-size:0.95rem;">
+        Each tab shows the LDA topic model with a different number of topics (k).
+        The <span style="color:#c62828;font-weight:700;">red tab</span> is the automatically selected best k based on perplexity.
+      </p>
+
+      <!-- Country nav -->
+      <nav id="country-nav" class="country-nav" style="margin-top:1rem;"></nav>
+
+      <hr>
+
+      <!-- Perplexity summary -->
+      <div class="section">
+        <p class="section-label">Model Selection</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Perplexity by k</h2>
+        <p>Lower perplexity indicates better fit to the data. The selected k minimises perplexity (or finds the elbow point).</p>
+        <div id="perplexity-summary" class="perplexity-bar"></div>
+      </div>
+
+      <hr>
+
+      <!-- k tabs -->
+      <div class="section">
+        <p class="section-label">Topic Solutions</p>
+        <h2 style="border-bottom:none;margin-top:0.5rem;">Topics by Number of Topics (k)</h2>
+        <div id="k-tabs" class="k-tabs"></div>
+        <div id="k-panels"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Asian Nonprofit Research Database</p>
+    </div>
+    <div class="footer-bottom">
+      Data compiled from local academic databases. Part of a collaborative research project on Asian nonprofit studies.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/topics.js"></script>
+</body>
+</html>

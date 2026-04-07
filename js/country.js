@@ -40,6 +40,12 @@
         nav.innerHTML = html;
       }
 
+      // Set topics explorer link
+      var explorerLink = document.getElementById('topics-explorer-link');
+      if (explorerLink) {
+        explorerLink.href = 'topics.html?c=' + encodeURIComponent(countryKey);
+      }
+
       renderYearChart(country);
       renderTopWords(country);
       renderBigrams(country);
