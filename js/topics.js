@@ -13,7 +13,7 @@
   var params = new URLSearchParams(window.location.search);
   var countryKey = params.get('c');
   if (!countryKey) {
-    document.getElementById('topics-content').innerHTML = '<p>No country selected. <a href="index.html">Go back</a>.</p>';
+    document.getElementById('topics-content').innerHTML = '<p>No location selected. <a href="index.html">Go back</a>.</p>';
     return;
   }
 
@@ -32,7 +32,7 @@
     var ldaResult = ldaData[countryKey];
 
     if (!country) {
-      document.getElementById('topics-content').innerHTML = '<p>Country not found. <a href="index.html">Go back</a>.</p>';
+      document.getElementById('topics-content').innerHTML = '<p>Location not found. <a href="index.html">Go back</a>.</p>';
       return;
     }
 

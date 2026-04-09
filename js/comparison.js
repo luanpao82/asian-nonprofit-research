@@ -93,7 +93,7 @@
     pairs.sort(function (a, b) { return b.similarity - a.similarity; });
 
     var html = '<div class="table-wrap"><table>';
-    html += '<thead><tr><th>Country Pair</th><th>Topic Similarity</th><th>Shared LDA Terms</th></tr></thead><tbody>';
+    html += '<thead><tr><th>Location Pair</th><th>Topic Similarity</th><th>Shared LDA Terms</th></tr></thead><tbody>';
 
     pairs.forEach(function (p) {
       var simVal = (p.similarity !== null && !isNaN(p.similarity)) ? p.similarity.toFixed(3) : '—';

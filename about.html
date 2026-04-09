@@ -14,7 +14,7 @@
       <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html">Overview</a></li>
-        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="country.html?c=Japan">Locations</a></li>
         <li><a href="comparison.html">Comparison</a></li>
         <li><a href="language.html">English vs Local</a></li>
         <li><a href="about.html">About</a></li>
@@ -26,7 +26,7 @@
     <div class="container">
       <h1>About &amp; Methodology</h1>
 
-      <p>This database presents a comprehensive text analysis of research article titles across eight Asian countries: Bangladesh, China, Japan, Korea, Nepal, Taiwan, Turkey, and Vietnam. The analysis encompasses over 16,000 articles spanning from 1984 to 2026, representing the breadth of nonprofit and voluntary sector scholarship in each country.</p>
+      <p>This database presents a comprehensive text analysis of research article titles across eight Asian locations: Bangladesh, China, Japan, Korea, Nepal, Taiwan, Turkey, and Vietnam. The analysis encompasses over 16,000 articles spanning from 1984 to 2026, representing the breadth of nonprofit and voluntary sector scholarship in each location.</p>
 
       <hr>
 
@@ -35,12 +35,12 @@
            ============================================================ -->
       <h2 id="data">Data Overview</h2>
 
-      <p>The total number of articles in the final sample across all countries is 16,158. Each country's dataset was compiled from local academic databases and bibliographic sources. Where the original language was not English, article titles were translated into English to enable cross-country comparison.</p>
+      <p>The total number of articles in the final sample across all locations is 16,158. Each location's dataset was compiled from local academic databases and bibliographic sources. Where the original language was not English, article titles were translated into English to enable cross-location comparison.</p>
 
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Country</th><th>N</th><th>Year Range</th><th>Notes</th></tr>
+            <tr><th>Location</th><th>N</th><th>Year Range</th><th>Notes</th></tr>
           </thead>
           <tbody>
             <tr><td>Japan</td><td>5,627</td><td>1990&ndash;2025</td><td>Largest corpus; titles translated from Japanese via DeepL</td></tr>
@@ -99,10 +99,10 @@
       <div class="callout">
         <p><strong>Research process terms:</strong> analysis, approach, approaches, method, methods, model, models, perspective, review, reviews, study, studies, dissertation, report</p>
         <p><strong>Generic descriptors:</strong> article, articles, paper, papers, base, based, case, cases, data, evidence, result, results, effect, effects, focus, focusing, according, impact, use, used, using, status, current status, special feature, special issue</p>
-        <p><strong>Country names and demonyms:</strong> korea, korean, japan, japanese, china, chinese, taiwan, taiwanese, vietnam, vietnamese, bangladesh, bangladeshi, nepal, nepalese, nepali, turkey, turkish</p>
+        <p><strong>Location names and demonyms:</strong> korea, korean, japan, japanese, china, chinese, taiwan, taiwanese, vietnam, vietnamese, bangladesh, bangladeshi, nepal, nepalese, nepali, turkey, turkish</p>
       </div>
 
-      <p>Country names and their adjectival forms are excluded because they would trivially dominate the frequency counts for their respective countries without providing thematic insight.</p>
+      <p>Location names and their adjectival forms are excluded because they would trivially dominate the frequency counts for their respective locations without providing thematic insight.</p>
 
       <hr>
 
@@ -113,15 +113,15 @@
 
       <!-- Unigram -->
       <h3 id="unigrams">Unigram Frequency Analysis</h3>
-      <p>Unigram frequency analysis counts the occurrence of individual words (after preprocessing) across all article titles within a country. The top 25 most frequent words are reported for each country.</p>
-      <p><strong>What it reveals:</strong> The most common single words reflect the dominant themes and concerns in a country's nonprofit research literature. High-frequency terms identify the core conceptual vocabulary of the field. The concentration ratio (what proportion of total word occurrences the top 10 terms account for) indicates whether the field has a narrow focus around a few key concepts or a broadly distributed vocabulary across diverse topics.</p>
+      <p>Unigram frequency analysis counts the occurrence of individual words (after preprocessing) across all article titles within a location. The top 25 most frequent words are reported for each location.</p>
+      <p><strong>What it reveals:</strong> The most common single words reflect the dominant themes and concerns in a location's nonprofit research literature. High-frequency terms identify the core conceptual vocabulary of the field. The concentration ratio (what proportion of total word occurrences the top 10 terms account for) indicates whether the field has a narrow focus around a few key concepts or a broadly distributed vocabulary across diverse topics.</p>
       <p><strong>Example interpretation:</strong> If &ldquo;volunteer&rdquo; is the top term in Japan with 2,399 occurrences, this suggests that volunteerism is central to Japanese nonprofit discourse. A high concentration ratio (e.g., top 10 terms = 19% of all words) indicates diverse research foci, while a very high ratio (e.g., 61%) suggests a field dominated by a handful of key concepts.</p>
 
       <!-- Bigram -->
       <h3 id="bigrams">Bigram Frequency Analysis</h3>
-      <p>Bigrams are consecutive two-word phrases extracted from titles after the same preprocessing pipeline. The top 30 most frequent bigrams are reported for each country.</p>
+      <p>Bigrams are consecutive two-word phrases extracted from titles after the same preprocessing pipeline. The top 30 most frequent bigrams are reported for each location.</p>
       <p><strong>What it reveals:</strong> Bigrams capture thematic collocations that single words miss. They reveal how individual concepts combine into established research constructs and recognizable sub-fields. For instance, while &ldquo;civil&rdquo; and &ldquo;society&rdquo; each appear frequently as unigrams, the bigram &ldquo;civil society&rdquo; demonstrates that these words are used together as a compound concept rather than independently.</p>
-      <p><strong>How to interpret frequency gaps:</strong> A substantial frequency gap between the leading bigram and the third-ranked bigram indicates a clearly dominant phrasal theme in the country's literature. A moderate gap suggests several competing thematic phrases of roughly comparable prominence.</p>
+      <p><strong>How to interpret frequency gaps:</strong> A substantial frequency gap between the leading bigram and the third-ranked bigram indicates a clearly dominant phrasal theme in the location's literature. A moderate gap suggests several competing thematic phrases of roughly comparable prominence.</p>
 
       <!-- Co-occurrence -->
       <h3 id="cooccurrence">Co-occurrence Pair Analysis</h3>
@@ -131,7 +131,7 @@
 
       <!-- Network -->
       <h3 id="networks">Network Visualization</h3>
-      <p>Network graphs provide a visual representation of the relational structure of vocabulary. Two types of networks are constructed for each country:</p>
+      <p>Network graphs provide a visual representation of the relational structure of vocabulary. Two types of networks are constructed for each location:</p>
       <ul>
         <li><strong>Bigram networks:</strong> Nodes are words; edges connect words that appear consecutively. Tightly connected clusters reveal thematic groupings where terms are frequently used in sequence.</li>
         <li><strong>Co-occurrence networks:</strong> Nodes are words; edges connect words that appear together within the same title. The topology reveals which concepts occupy central (hub) positions and which form peripheral clusters.</li>
@@ -148,33 +148,33 @@
 
       <!-- LDA -->
       <h3 id="lda">Topic Modeling (LDA)</h3>
-      <p>Latent Dirichlet Allocation (LDA) is used to identify latent thematic structures within each country's title corpus (Blei et al., 2003). LDA is a generative probabilistic model that discovers groups of words (&ldquo;topics&rdquo;) that tend to co-occur across documents.</p>
+      <p>Latent Dirichlet Allocation (LDA) is used to identify latent thematic structures within each location's title corpus (Blei et al., 2003). LDA is a generative probabilistic model that discovers groups of words (&ldquo;topics&rdquo;) that tend to co-occur across documents.</p>
 
       <p><strong>Model specification:</strong></p>
       <ul>
-        <li><strong>Number of topics:</strong> Selected per country via perplexity elbow analysis across <em>k</em> = 2 through 8 (e.g., Japan: k=7, Korea: k=3, China: k=4)</li>
+        <li><strong>Number of topics:</strong> Selected per location via perplexity elbow analysis across <em>k</em> = 2 through 8 (e.g., Japan: k=7, Korea: k=3, China: k=4)</li>
         <li><strong>Estimation:</strong> Variational Bayes inference via scikit-learn's <code>LatentDirichletAllocation</code> with default priors</li>
         <li><strong>Minimum term frequency:</strong> Terms appearing fewer than 2 times in the document-term matrix are excluded</li>
-        <li><strong>Exclusion criteria:</strong> Countries with fewer than 20 valid documents or insufficient unique terms are excluded from topic modeling</li>
+        <li><strong>Exclusion criteria:</strong> Locations with fewer than 20 valid documents or insufficient unique terms are excluded from topic modeling</li>
       </ul>
 
       <p><strong>Topic selection:</strong> To determine the optimal number of topics, model fit is evaluated across candidate values (<em>k</em> = 2 through 8) using perplexity as a diagnostic criterion, where lower perplexity indicates better generalization of the model to the data (Wallach et al., 2009). When perplexity diagnostics are inconclusive (as often occurs with small corpora), the number of topics is determined through direct qualitative inspection of frequency analysis results. This hybrid approach&mdash;combining quantitative diagnostics where data permit and content-based judgment where they do not&mdash;is consistent with recommended practice for topic modeling in small or domain-specific corpora (Mimno et al., 2011).</p>
 
       <p><strong>Interpreting beta (&beta;) values:</strong> In the topic modeling results, the beta value represents the per-topic word probability&mdash;the estimated probability that a given term is generated by a particular topic. Beta ranges from 0 to 1, where higher values indicate that the term is more strongly associated with and more characteristic of that topic. For example, if &ldquo;social&rdquo; carries a beta of 0.405 in Topic 2, this means approximately 40.5% of the word tokens assigned to Topic 2 are estimated to be the word &ldquo;social,&rdquo; making it the dominant defining term. Lower-beta terms contribute marginally to that topic's identity. Readers should focus on the highest-beta terms as the primary conceptual anchors of each topic.</p>
 
-      <p><strong>Topic distinctiveness:</strong> The degree of overlap in top-ranked terms across topics indicates how sharply differentiated a country's research sub-fields are. Some overlap (e.g., 10&ndash;15% of top-5 terms recurring) is expected and interpretable rather than problematic: in a limited vocabulary, some high-frequency anchor terms will naturally distribute across multiple topics. The remaining terms should be largely distinct across topics to support meaningful thematic interpretation.</p>
+      <p><strong>Topic distinctiveness:</strong> The degree of overlap in top-ranked terms across topics indicates how sharply differentiated a location's research sub-fields are. Some overlap (e.g., 10&ndash;15% of top-5 terms recurring) is expected and interpretable rather than problematic: in a limited vocabulary, some high-frequency anchor terms will naturally distribute across multiple topics. The remaining terms should be largely distinct across topics to support meaningful thematic interpretation.</p>
 
       <!-- Cross-country -->
-      <h3 id="similarity">Cross-Country Similarity</h3>
-      <p>Cross-country comparison is conducted through cosine similarity of LDA topic-term probability vectors. This method quantifies the thematic overlap between countries' nonprofit research landscapes.</p>
+      <h3 id="similarity">Cross-Location Similarity</h3>
+      <p>Cross-location comparison is conducted through cosine similarity of LDA topic-term probability vectors. This method quantifies the thematic overlap between locations' nonprofit research landscapes.</p>
       <p><strong>Procedure:</strong></p>
       <ol>
-        <li>For each country, the LDA model produces a topic-term matrix (rows = topics, columns = terms, values = beta probabilities)</li>
-        <li>Cosine similarity is computed between all pairs of topic vectors across countries</li>
-        <li>Country-level similarity is calculated as the symmetrized average of maximum per-topic cosine matches: for each topic in Country A, the maximum cosine similarity to any topic in Country B is identified, and these maxima are averaged in both directions</li>
-        <li>Only countries with at least 1,000 articles are included in this comparison to ensure stable LDA topic estimates (see <a href="comparison.html">Comparison page</a> for details)</li>
+        <li>For each location, the LDA model produces a topic-term matrix (rows = topics, columns = terms, values = beta probabilities)</li>
+        <li>Cosine similarity is computed between all pairs of topic vectors across locations</li>
+        <li>Location-level similarity is calculated as the symmetrized average of maximum per-topic cosine matches: for each topic in Location A, the maximum cosine similarity to any topic in Location B is identified, and these maxima are averaged in both directions</li>
+        <li>Only locations with at least 1,000 articles are included in this comparison to ensure stable LDA topic estimates (see <a href="comparison.html">Comparison page</a> for details)</li>
       </ol>
-      <p>The resulting similarity matrix is visualized as a heatmap, where higher values indicate greater thematic overlap between two countries' nonprofit research agendas.</p>
+      <p>The resulting similarity matrix is visualized as a heatmap, where higher values indicate greater thematic overlap between two locations' nonprofit research agendas.</p>
 
       <hr>
 

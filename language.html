@@ -15,7 +15,7 @@
       <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html">Overview</a></li>
-        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="country.html?c=Japan">Locations</a></li>
         <li><a href="comparison.html">Comparison</a></li>
         <li><a href="language.html">English vs Local</a></li>
         <li><a href="about.html">About</a></li>
@@ -26,7 +26,7 @@
   <main>
     <div class="container">
       <h1>English vs Local Language</h1>
-      <p>Do researchers in each country publish on the same topics in English-language international journals as they do in their local-language domestic outlets? This page compares research themes between <strong>English-language publications</strong> (from a systematic review dataset) and <strong>local-language publications</strong> (from domestic academic databases) for each country.</p>
+      <p>Do researchers in each location publish on the same topics in English-language international journals as they do in their local-language domestic outlets? This page compares research themes between <strong>English-language publications</strong> (from a systematic review dataset) and <strong>local-language publications</strong> (from domestic academic databases) for each location.</p>
 
       <hr>
 
@@ -53,13 +53,13 @@
         <h3>Why Web of Science?</h3>
         <p>WoS was selected as the primary database because the study aimed to assess scholarly research published in impactful English-language journals. WoS is regarded as an authoritative database for capturing peer-reviewed scholarly articles and is widely used in bibliometric analyses (Singh et al., 2021).</p>
 
-        <h3>Country Classification</h3>
-        <p>Countries and regions were defined using the United Nations and World Bank classifications. Articles were assigned to countries based on the geographic focus of the research (the &ldquo;Country&rdquo; field in the dataset). The distribution is heavily skewed: China leads with 572 articles, followed by India (306), Bangladesh (149), South Korea (70), Taiwan (68), Japan (54), Turkey (44), Nepal (35), and Vietnam (24).</p>
+        <h3>Location Classification</h3>
+        <p>Locations and regions were defined using the United Nations and World Bank classifications. Articles were assigned to locations based on the geographic focus of the research (the &ldquo;Location&rdquo; field in the dataset). The distribution is heavily skewed: China leads with 572 articles, followed by India (306), Bangladesh (149), South Korea (70), Taiwan (68), Japan (54), Turkey (44), Nepal (35), and Vietnam (24).</p>
 
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>Country</th><th>English (Onishi et al./WoS)</th><th>Local Language</th><th>Notes</th></tr>
+              <tr><th>Location</th><th>English (Onishi et al./WoS)</th><th>Local Language</th><th>Notes</th></tr>
             </thead>
             <tbody>
               <tr><td>China</td><td>572</td><td>1,500</td><td>Largest English corpus</td></tr>
@@ -84,7 +84,7 @@
       <div class="section">
         <p class="section-label">Overview</p>
         <h2 style="border-bottom:none;margin-top:0.5rem;">Similarity Summary</h2>
-        <p>Two similarity measures for each country: <strong>Jaccard index</strong> (overlap of top-20 keywords) and <strong>LDA cosine similarity</strong> (thematic similarity via topic modeling). Higher values indicate more similar research agendas between English and local-language publications.</p>
+        <p>Two similarity measures for each location: <strong>Jaccard index</strong> (overlap of top-20 keywords) and <strong>LDA cosine similarity</strong> (thematic similarity via topic modeling). Higher values indicate more similar research agendas between English and local-language publications.</p>
         <div class="chart-container">
           <div style="height:350px;">
             <canvas id="summary-chart"></canvas>
@@ -106,9 +106,9 @@
         <h2 style="border-bottom:none;margin-top:0.5rem;">How This Comparison Works</h2>
 
         <h3>What is being compared?</h3>
-        <p>For each country, we have two corpora of article titles:</p>
+        <p>For each location, we have two corpora of article titles:</p>
         <ul>
-          <li><strong>English corpus:</strong> Titles from the Onishi et al. (2025) Web of Science systematic review, filtered by country. These represent research published in English-language international journals.</li>
+          <li><strong>English corpus:</strong> Titles from the Onishi et al. (2025) Web of Science systematic review, filtered by location. These represent research published in English-language international journals.</li>
           <li><strong>Local corpus:</strong> Titles from domestic academic databases, originally in the local language but translated to English. These represent research published in local-language journals.</li>
         </ul>
 
@@ -116,7 +116,7 @@
         <p>The simplest comparison: after preprocessing, we take the 20 most frequent words from each corpus and compute their Jaccard similarity (|shared| / |union|). This measures whether the same concepts dominate both literatures, regardless of how those concepts are distributed.</p>
 
         <h3>LDA Cosine Similarity</h3>
-        <p>A deeper comparison using topic modeling. Separate LDA models are fitted to each corpus using a <strong>shared vocabulary</strong> (built from both corpora combined). The resulting topic-term probability vectors are compared via cosine similarity, aggregated using symmetrized max-topic matching&mdash;the same procedure used in the cross-country comparison.</p>
+        <p>A deeper comparison using topic modeling. Separate LDA models are fitted to each corpus using a <strong>shared vocabulary</strong> (built from both corpora combined). The resulting topic-term probability vectors are compared via cosine similarity, aggregated using symmetrized max-topic matching&mdash;the same procedure used in the cross-location comparison.</p>
 
         <h3>Interpreting the Results</h3>
         <ul>

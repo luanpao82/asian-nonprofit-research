@@ -44,7 +44,7 @@
         options: {
           responsive: true, maintainAspectRatio: false,
           plugins: {
-            title: { display: true, text: 'English vs Local Language: Thematic Similarity by Country', font: { size: 14, weight: '600' } },
+            title: { display: true, text: 'English vs Local Language: Thematic Similarity by Location', font: { size: 14, weight: '600' } },
             legend: { position: 'bottom', labels: { font: { size: 11 }, boxWidth: 12, padding: 15 } }
           },
           scales: {
@@ -60,7 +60,7 @@
     var container = document.getElementById('summary-table');
     if (!container) return;
     var html = '<div class="table-wrap"><table><thead><tr>' +
-      '<th>Country</th><th>English (WoS)</th><th>Local Language</th>' +
+      '<th>Location</th><th>English (WoS)</th><th>Local Language</th>' +
       '<th>Jaccard</th><th>LDA Cosine</th><th>Interpretation</th></tr></thead><tbody>';
 
     countries.forEach(function (c) {

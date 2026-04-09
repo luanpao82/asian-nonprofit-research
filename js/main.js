@@ -109,7 +109,7 @@
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          title: { display: true, text: 'Total Publications Across All Countries by Year', font: { size: 14, weight: '600' } }
+          title: { display: true, text: 'Total Publications Across All Locations by Year', font: { size: 14, weight: '600' } }
         },
         scales: {
           y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.06)' } },

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asian Nonprofit Research Database</title>
-  <meta name="description" content="Text analysis of nonprofit research across 8 Asian countries: 16,000+ article titles analyzed for trends, keywords, and thematic patterns.">
+  <meta name="description" content="Text analysis of nonprofit research across 8 Asian locations: 16,000+ article titles analyzed for trends, keywords, and thematic patterns.">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
@@ -16,7 +16,7 @@
       <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html">Overview</a></li>
-        <li><a href="country.html?c=Japan">Countries</a></li>
+        <li><a href="country.html?c=Japan">Locations</a></li>
         <li><a href="comparison.html">Comparison</a></li>
         <li><a href="language.html">English vs Local</a></li>
         <li><a href="about.html">About</a></li>
@@ -27,7 +27,7 @@
   <div class="container">
     <div class="hero">
       <h1>Asian Nonprofit<br>Research Database</h1>
-      <p class="subtitle">A comprehensive text analysis of nonprofit research article titles across eight Asian countries. Explore publication trends, dominant research themes, and cross-country comparisons.</p>
+      <p class="subtitle">A comprehensive text analysis of nonprofit research article titles across eight Asian locations. Explore publication trends, dominant research themes, and cross-location comparisons.</p>
       <div class="callout" style="text-align:center; border-left:3px solid var(--accent); background:var(--primary-bg);">
         <p style="font-size:1.05rem; font-weight:600; color:var(--ink); margin-bottom:0.4rem;">Have suggestions or improvements?</p>
         <p style="margin-bottom:0;">Please contact <strong>Dr. Seongho An</strong> at <a href="mailto:Seongho.An@ucf.edu" style="font-weight:600;">Seongho.An@ucf.edu</a></p>
@@ -43,7 +43,7 @@
     </div>
     <div class="stat-card">
       <span class="number" id="stat-countries">8</span>
-      <span class="label">Countries</span>
+      <span class="label">Locations</span>
     </div>
     <div class="stat-card">
       <span class="number" id="stat-years">1984–2026</span>
@@ -61,12 +61,12 @@
       <div class="section">
         <p class="section-label">Overview</p>
         <h2 id="overview" style="border-bottom:none;margin-top:0.5rem;">Data Summary</h2>
-        <p>This database compiles nonprofit-related research articles from eight Asian countries. Each country's data was collected from local academic databases, translated to English titles where necessary, and analyzed for thematic patterns using text mining techniques.</p>
+        <p>This database compiles nonprofit-related research articles from eight Asian locations. Each location's data was collected from local academic databases, translated to English titles where necessary, and analyzed for thematic patterns using text mining techniques.</p>
 
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>Country</th><th>Articles</th><th>Year Range</th><th>Top Term</th></tr>
+              <tr><th>Location</th><th>Articles</th><th>Year Range</th><th>Top Term</th></tr>
             </thead>
             <tbody id="overview-table"></tbody>
           </table>
@@ -88,9 +88,9 @@
       <hr>
 
       <div class="section">
-        <p class="section-label">Countries</p>
-        <h2 id="countries" style="border-bottom:none;margin-top:0.5rem;">Explore by Country</h2>
-        <p>Click a country to see detailed analysis: top keywords, bigrams, co-occurrence pairs, and publication trends.</p>
+        <p class="section-label">Locations</p>
+        <h2 id="countries" style="border-bottom:none;margin-top:0.5rem;">Explore by Location</h2>
+        <p>Click a location to see detailed analysis: top keywords, bigrams, co-occurrence pairs, and publication trends.</p>
         <div id="country-grid" class="country-grid"></div>
       </div>
 
@@ -99,7 +99,7 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>Asian Nonprofit Research Database &mdash; Text analysis of nonprofit scholarship across 8 Asian countries.</p>
+      <p>Asian Nonprofit Research Database &mdash; Text analysis of nonprofit scholarship across 8 Asian locations.</p>
     </div>
     <div class="footer-bottom">
       Data compiled from local academic databases. Part of a collaborative research project on Asian nonprofit studies.
