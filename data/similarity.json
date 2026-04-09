@@ -24,34 +24,34 @@
   "matrix": [
     [
       1.0,
-      0.388,
-      0.7879,
-      0.6117,
-      0.415
+      0.2698,
+      0.6047,
+      0.5399,
+      0.3785
     ],
     [
-      0.388,
+      0.2698,
       1.0,
       0.448,
       0.4626,
       0.1919
     ],
     [
-      0.7879,
+      0.6047,
       0.448,
       1.0,
       0.6586,
       0.4252
     ],
     [
-      0.6117,
+      0.5399,
       0.4626,
       0.6586,
       1.0,
       0.3056
     ],
     [
-      0.415,
+      0.3785,
       0.1919,
       0.4252,
       0.3056,
@@ -61,34 +61,34 @@
   "word_jaccard_matrix": [
     [
       1.0,
-      0.1429,
-      0.3793,
-      0.4286,
-      0.1111
+      0.1111,
+      0.2903,
+      0.2903,
+      0.0811
     ],
     [
-      0.1429,
+      0.1111,
       1.0,
       0.2903,
       0.25,
       0.0811
     ],
     [
-      0.3793,
+      0.2903,
       0.2903,
       1.0,
       0.4286,
       0.1765
     ],
     [
-      0.4286,
+      0.2903,
       0.25,
       0.4286,
       1.0,
       0.1765
     ],
     [
-      0.1111,
+      0.0811,
       0.0811,
       0.1765,
       0.1765,
@@ -97,35 +97,29 @@
   ],
   "shared_terms": {
     "China_Japan": [
+      "community",
       "development",
-      "ngo",
-      "nonprofit",
       "organization",
       "social"
     ],
     "China_Korea": [
+      "community",
       "development",
       "governance",
       "government",
-      "ngo",
-      "nonprofit",
       "organization",
-      "policy",
       "public",
-      "role",
       "social",
+      "state",
       "system"
     ],
     "China_Taiwan": [
+      "community",
       "development",
       "governance",
       "government",
-      "international",
       "management",
-      "ngo",
-      "nonprofit",
       "organization",
-      "policy",
       "public",
       "service",
       "social"
@@ -133,7 +127,6 @@
     "China_Turkey": [
       "organization",
       "public",
-      "role",
       "social"
     ],
     "Japan_Korea": [
