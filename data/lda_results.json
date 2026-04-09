@@ -2437,81 +2437,81 @@
     }
   },
   "China": {
-    "selected_k": 6,
+    "selected_k": 2,
     "n_docs": 5712,
-    "rationale": "Large corpus (n=5712). Perplexity: k=2: 436.7, k=3: 450.6, k=4: 465.4, k=5: 482.5, k=6: 484.6, k=7: 493.1, k=8: 497.8. k=6 selected via elbow method.",
+    "rationale": "Large corpus (n=5712). Perplexity: k=2: 460.2, k=3: 471.9, k=4: 490.2, k=5: 504.6, k=6: 522.1, k=7: 526.2, k=8: 534.5. k=2 selected via elbow method.",
     "perplexity_scores": {
-      "2": 436.7,
-      "3": 450.6,
-      "4": 465.4,
-      "5": 482.5,
-      "6": 484.6,
-      "7": 493.1,
-      "8": 497.8
+      "2": 460.2,
+      "3": 471.9,
+      "4": 490.2,
+      "5": 504.6,
+      "6": 522.1,
+      "7": 526.2,
+      "8": 534.5
     },
     "topics": [
       {
         "topic_id": 1,
         "terms": [
           [
-            "social",
-            0.1184
-          ],
-          [
             "organization",
-            0.0459
+            0.0529
           ],
           [
-            "management",
-            0.0353
+            "public",
+            0.036
           ],
           [
-            "governance",
-            0.0345
+            "government",
+            0.0335
+          ],
+          [
+            "nongovernment",
+            0.0297
+          ],
+          [
+            "service",
+            0.0277
+          ],
+          [
+            "nonprofit",
+            0.0257
           ],
           [
             "development",
-            0.0235
+            0.0128
           ],
           [
-            "innovation",
-            0.0195
+            "system",
+            0.0121
           ],
           [
-            "responsibility",
-            0.0172
+            "legal",
+            0.0107
           ],
           [
-            "party",
-            0.0162
+            "international",
+            0.0107
           ],
           [
-            "npo",
-            0.0157
+            "sector",
+            0.0093
           ],
           [
-            "building",
-            0.0152
+            "education",
+            0.0087
           ],
           [
-            "new",
-            0.0143
+            "purchase",
+            0.0087
           ],
           [
-            "path",
-            0.0134
+            "right",
+            0.0085
           ],
           [
-            "countermeasure",
-            0.0118
-          ],
-          [
-            "community",
-            0.0112
-          ],
-          [
-            "corporate",
-            0.011
+            "management",
+            0.0085
           ]
         ]
       },
@@ -2519,324 +2519,64 @@
         "topic_id": 2,
         "terms": [
           [
-            "organization",
-            0.1106
-          ],
-          [
-            "government",
-            0.1097
-          ],
-          [
-            "non",
-            0.0812
-          ],
-          [
-            "development",
-            0.0282
-          ],
-          [
             "social",
-            0.0271
+            0.0797
           ],
-          [
-            "role",
-            0.0247
-          ],
-          [
-            "international",
-            0.0246
-          ],
-          [
-            "profit",
-            0.0131
-          ],
-          [
-            "ngo",
-            0.0125
-          ],
-          [
-            "function",
-            0.0119
-          ],
-          [
-            "relationship",
-            0.0113
-          ],
-          [
-            "management",
-            0.0103
-          ],
-          [
-            "poverty",
-            0.0091
-          ],
-          [
-            "participation",
-            0.0081
-          ],
-          [
-            "education",
-            0.0076
-          ]
-        ]
-      },
-      {
-        "topic_id": 3,
-        "terms": [
           [
             "governance",
-            0.0624
+            0.0627
+          ],
+          [
+            "organization",
+            0.0451
           ],
           [
             "society",
-            0.0596
-          ],
-          [
-            "civil",
-            0.0315
-          ],
-          [
-            "law",
-            0.0302
-          ],
-          [
-            "state",
-            0.0253
-          ],
-          [
-            "rural",
-            0.0206
-          ],
-          [
-            "construction",
-            0.0186
-          ],
-          [
-            "social",
-            0.0181
-          ],
-          [
-            "rule",
-            0.0171
-          ],
-          [
-            "system",
-            0.0164
+            0.0202
           ],
           [
             "community",
-            0.0112
+            0.0167
           ],
           [
-            "organizational",
-            0.0103
-          ],
-          [
-            "legal",
-            0.009
-          ],
-          [
-            "change",
-            0.0088
-          ],
-          [
-            "new",
-            0.0083
-          ]
-        ]
-      },
-      {
-        "topic_id": 4,
-        "terms": [
-          [
-            "governance",
-            0.0747
-          ],
-          [
-            "social",
-            0.0432
-          ],
-          [
-            "organization",
-            0.0364
-          ],
-          [
-            "public",
-            0.0261
-          ],
-          [
-            "participation",
-            0.0232
-          ],
-          [
-            "sector",
-            0.0213
-          ],
-          [
-            "third",
-            0.0201
-          ],
-          [
-            "environmental",
-            0.0178
-          ],
-          [
-            "area",
+            "government",
             0.0149
           ],
           [
-            "right",
+            "development",
             0.0139
           ],
           [
-            "global",
-            0.0124
-          ],
-          [
-            "crisis",
-            0.0117
-          ],
-          [
-            "government",
-            0.0116
-          ],
-          [
-            "mechanism",
-            0.0115
-          ],
-          [
-            "rural",
-            0.011
-          ]
-        ]
-      },
-      {
-        "topic_id": 5,
-        "terms": [
-          [
-            "non",
-            0.0655
-          ],
-          [
-            "profit",
-            0.0646
-          ],
-          [
-            "organization",
-            0.0516
-          ],
-          [
-            "private",
-            0.0267
-          ],
-          [
-            "public",
-            0.0225
-          ],
-          [
-            "system",
-            0.0215
-          ],
-          [
-            "university",
-            0.0187
-          ],
-          [
-            "education",
-            0.0143
-          ],
-          [
-            "legal",
-            0.0142
-          ],
-          [
-            "institution",
-            0.0137
-          ],
-          [
-            "financial",
-            0.0133
-          ],
-          [
-            "regulation",
-            0.0127
-          ],
-          [
             "management",
-            0.012
-          ],
-          [
-            "foundation",
-            0.012
-          ],
-          [
-            "good",
-            0.012
-          ]
-        ]
-      },
-      {
-        "topic_id": 6,
-        "terms": [
-          [
-            "service",
-            0.0718
-          ],
-          [
-            "government",
-            0.0654
-          ],
-          [
-            "public",
-            0.0516
-          ],
-          [
-            "social",
-            0.047
-          ],
-          [
-            "organization",
-            0.0331
-          ],
-          [
-            "community",
-            0.0289
-          ],
-          [
-            "governance",
-            0.0265
-          ],
-          [
-            "purchase",
-            0.0224
-          ],
-          [
-            "sport",
-            0.0159
-          ],
-          [
-            "city",
-            0.0152
-          ],
-          [
-            "example",
-            0.0149
+            0.0131
           ],
           [
             "path",
-            0.0132
+            0.0122
           ],
           [
-            "welfare",
-            0.0129
+            "new",
+            0.011
           ],
           [
-            "taking",
-            0.0128
+            "construction",
+            0.011
+          ],
+          [
+            "civil",
+            0.0107
+          ],
+          [
+            "innovation",
+            0.0106
+          ],
+          [
+            "rural",
+            0.0103
           ],
           [
             "participation",
-            0.01
+            0.0096
           ]
         ]
       }
@@ -2847,64 +2587,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "governance",
-              0.0664
-            ],
-            [
-              "social",
-              0.0315
-            ],
-            [
-              "society",
-              0.0214
-            ],
-            [
-              "community",
-              0.0177
-            ],
-            [
-              "law",
-              0.0131
-            ],
-            [
-              "civil",
-              0.0113
-            ],
-            [
-              "rural",
-              0.0109
+              "organization",
+              0.0529
             ],
             [
               "public",
-              0.0103
+              0.036
             ],
             [
-              "construction",
-              0.0099
+              "government",
+              0.0335
+            ],
+            [
+              "nongovernment",
+              0.0297
+            ],
+            [
+              "service",
+              0.0277
+            ],
+            [
+              "nonprofit",
+              0.0257
+            ],
+            [
+              "development",
+              0.0128
             ],
             [
               "system",
-              0.0093
+              0.0121
             ],
             [
-              "management",
-              0.0088
+              "legal",
+              0.0107
+            ],
+            [
+              "international",
+              0.0107
             ],
             [
               "sector",
-              0.0084
+              0.0093
             ],
             [
-              "urban",
-              0.0082
+              "education",
+              0.0087
             ],
             [
-              "new",
-              0.0082
+              "purchase",
+              0.0087
             ],
             [
               "right",
-              0.0078
+              0.0085
+            ],
+            [
+              "management",
+              0.0085
             ]
           ]
         },
@@ -2912,64 +2652,64 @@
           "topic_id": 2,
           "terms": [
             [
+              "social",
+              0.0797
+            ],
+            [
+              "governance",
+              0.0627
+            ],
+            [
               "organization",
-              0.0943
+              0.0451
+            ],
+            [
+              "society",
+              0.0202
+            ],
+            [
+              "community",
+              0.0167
             ],
             [
               "government",
-              0.072
-            ],
-            [
-              "social",
-              0.052
-            ],
-            [
-              "non",
-              0.0496
-            ],
-            [
-              "service",
-              0.0249
-            ],
-            [
-              "profit",
-              0.0227
+              0.0149
             ],
             [
               "development",
-              0.0225
-            ],
-            [
-              "public",
-              0.0221
+              0.0139
             ],
             [
               "management",
-              0.0126
+              0.0131
             ],
             [
-              "role",
-              0.0097
+              "path",
+              0.0122
+            ],
+            [
+              "new",
+              0.011
+            ],
+            [
+              "construction",
+              0.011
+            ],
+            [
+              "civil",
+              0.0107
+            ],
+            [
+              "innovation",
+              0.0106
+            ],
+            [
+              "rural",
+              0.0103
             ],
             [
               "participation",
               0.0096
-            ],
-            [
-              "international",
-              0.0096
-            ],
-            [
-              "system",
-              0.0093
-            ],
-            [
-              "purchase",
-              0.0078
-            ],
-            [
-              "policy",
-              0.0072
             ]
           ]
         }
@@ -2980,63 +2720,63 @@
           "terms": [
             [
               "public",
-              0.0377
-            ],
-            [
-              "service",
-              0.033
+              0.0521
             ],
             [
               "government",
-              0.0292
+              0.0475
             ],
             [
-              "social",
-              0.0284
+              "service",
+              0.0402
             ],
             [
-              "sector",
-              0.0139
+              "organization",
+              0.0399
             ],
             [
-              "education",
-              0.0131
+              "nonprofit",
+              0.0372
             ],
             [
-              "npo",
-              0.0126
+              "legal",
+              0.0155
             ],
             [
               "system",
-              0.0108
-            ],
-            [
-              "third",
-              0.0106
-            ],
-            [
-              "example",
-              0.0103
-            ],
-            [
-              "community",
-              0.0092
+              0.0151
             ],
             [
               "purchase",
-              0.0092
+              0.0126
             ],
             [
-              "city",
-              0.0089
+              "private",
+              0.0118
             ],
             [
-              "responsibility",
-              0.0088
+              "sport",
+              0.0112
             ],
             [
-              "university",
-              0.0086
+              "regulation",
+              0.0107
+            ],
+            [
+              "education",
+              0.0094
+            ],
+            [
+              "npo",
+              0.0094
+            ],
+            [
+              "management",
+              0.0085
+            ],
+            [
+              "mechanism",
+              0.0084
             ]
           ]
         },
@@ -3044,64 +2784,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "organization",
-              0.1403
-            ],
-            [
-              "government",
-              0.0813
-            ],
-            [
-              "non",
-              0.0739
-            ],
-            [
               "social",
-              0.0629
+              0.1051
             ],
             [
-              "profit",
-              0.0338
+              "governance",
+              0.0716
             ],
             [
-              "development",
-              0.0264
+              "organization",
+              0.0491
             ],
             [
-              "participation",
-              0.0148
+              "community",
+              0.0222
             ],
             [
               "management",
-              0.0147
-            ],
-            [
-              "role",
-              0.0144
-            ],
-            [
-              "international",
-              0.0126
-            ],
-            [
-              "sport",
-              0.0104
+              0.0204
             ],
             [
               "path",
-              0.0091
+              0.0142
+            ],
+            [
+              "innovation",
+              0.0141
+            ],
+            [
+              "rural",
+              0.0137
+            ],
+            [
+              "participation",
+              0.0124
+            ],
+            [
+              "government",
+              0.0117
+            ],
+            [
+              "new",
+              0.0117
+            ],
+            [
+              "development",
+              0.0115
+            ],
+            [
+              "urban",
+              0.0103
+            ],
+            [
+              "construction",
+              0.0101
             ],
             [
               "system",
-              0.0086
-            ],
-            [
-              "public",
-              0.0086
-            ],
-            [
-              "service",
-              0.0077
+              0.0091
             ]
           ]
         },
@@ -3109,64 +2849,64 @@
           "topic_id": 3,
           "terms": [
             [
-              "governance",
-              0.0912
+              "organization",
+              0.0583
             ],
             [
-              "social",
-              0.0333
+              "nongovernment",
+              0.0496
             ],
             [
               "society",
-              0.0294
+              0.0393
             ],
             [
               "state",
-              0.0182
+              0.0243
             ],
             [
-              "law",
-              0.018
-            ],
-            [
-              "community",
-              0.0166
+              "development",
+              0.024
             ],
             [
               "civil",
+              0.0208
+            ],
+            [
+              "international",
+              0.0179
+            ],
+            [
+              "governance",
+              0.0174
+            ],
+            [
+              "sector",
               0.0155
             ],
             [
-              "rural",
-              0.015
+              "environmental",
+              0.0134
             ],
             [
-              "construction",
+              "government",
+              0.0129
+            ],
+            [
+              "third",
+              0.0118
+            ],
+            [
+              "role",
+              0.0118
+            ],
+            [
+              "ngo",
               0.0109
             ],
             [
-              "new",
-              0.0098
-            ],
-            [
-              "urban",
-              0.0089
-            ],
-            [
-              "path",
-              0.0088
-            ],
-            [
-              "management",
-              0.0088
-            ],
-            [
-              "system",
-              0.0087
-            ],
-            [
-              "rule",
-              0.0085
+              "implication",
+              0.0108
             ]
           ]
         }
@@ -3176,64 +2916,64 @@
           "topic_id": 1,
           "terms": [
             [
+              "public",
+              0.0678
+            ],
+            [
+              "government",
+              0.0605
+            ],
+            [
+              "service",
+              0.0522
+            ],
+            [
+              "organization",
+              0.0321
+            ],
+            [
               "social",
-              0.0684
+              0.0225
             ],
             [
-              "governance",
-              0.0394
+              "nonprofit",
+              0.0199
             ],
             [
-              "community",
-              0.0388
+              "purchase",
+              0.0163
             ],
             [
-              "management",
-              0.0206
+              "sport",
+              0.0146
             ],
             [
-              "urban",
-              0.0178
+              "system",
+              0.0119
             ],
             [
               "npo",
-              0.0171
+              0.0116
             ],
             [
-              "innovation",
-              0.0153
-            ],
-            [
-              "practice",
-              0.0134
-            ],
-            [
-              "example",
-              0.0126
-            ],
-            [
-              "city",
-              0.0121
-            ],
-            [
-              "development",
-              0.0118
-            ],
-            [
-              "party",
-              0.0113
-            ],
-            [
-              "countermeasure",
-              0.0111
-            ],
-            [
-              "path",
+              "university",
               0.0108
             ],
             [
+              "legal",
+              0.0096
+            ],
+            [
               "welfare",
-              0.0102
+              0.0094
+            ],
+            [
+              "financial",
+              0.0094
+            ],
+            [
+              "mechanism",
+              0.0091
             ]
           ]
         },
@@ -3241,64 +2981,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "organization",
-              0.1274
-            ],
-            [
-              "non",
-              0.0885
-            ],
-            [
-              "government",
-              0.0704
-            ],
-            [
-              "profit",
-              0.0405
-            ],
-            [
               "social",
-              0.0362
+              0.0997
             ],
             [
-              "development",
-              0.0319
+              "governance",
+              0.08
+            ],
+            [
+              "organization",
+              0.0512
+            ],
+            [
+              "community",
+              0.0271
             ],
             [
               "management",
-              0.0141
+              0.0238
             ],
             [
-              "international",
-              0.0135
+              "path",
+              0.0168
             ],
             [
-              "sport",
-              0.0124
+              "participation",
+              0.0152
             ],
             [
-              "role",
-              0.0122
+              "innovation",
+              0.0148
             ],
             [
-              "education",
+              "rural",
+              0.0138
+            ],
+            [
+              "urban",
+              0.0126
+            ],
+            [
+              "development",
+              0.0123
+            ],
+            [
+              "new",
               0.0114
             ],
             [
+              "dilemma",
+              0.01
+            ],
+            [
+              "construction",
+              0.0098
+            ],
+            [
               "system",
-              0.0112
-            ],
-            [
-              "private",
-              0.0092
-            ],
-            [
-              "reform",
-              0.0075
-            ],
-            [
-              "united",
-              0.0074
+              0.0088
             ]
           ]
         },
@@ -3306,64 +3046,64 @@
           "topic_id": 3,
           "terms": [
             [
-              "governance",
-              0.0577
-            ],
-            [
               "society",
-              0.043
+              0.0559
             ],
             [
-              "law",
-              0.0264
+              "governance",
+              0.0372
+            ],
+            [
+              "government",
+              0.0297
             ],
             [
               "civil",
-              0.0227
-            ],
-            [
-              "state",
-              0.0186
+              0.0296
             ],
             [
               "social",
+              0.0222
+            ],
+            [
+              "sector",
+              0.0221
+            ],
+            [
+              "organization",
+              0.0217
+            ],
+            [
+              "development",
+              0.0196
+            ],
+            [
+              "third",
               0.0169
             ],
             [
-              "system",
-              0.0151
+              "state",
+              0.0162
             ],
             [
-              "legal",
-              0.0149
+              "relationship",
+              0.0128
+            ],
+            [
+              "theory",
+              0.0112
             ],
             [
               "construction",
-              0.014
+              0.011
             ],
             [
-              "right",
-              0.0135
+              "poverty",
+              0.0095
             ],
             [
-              "rural",
-              0.0126
-            ],
-            [
-              "rule",
-              0.0124
-            ],
-            [
-              "change",
-              0.0107
-            ],
-            [
-              "global",
-              0.0106
-            ],
-            [
-              "university",
-              0.0105
+              "building",
+              0.0092
             ]
           ]
         },
@@ -3371,64 +3111,64 @@
           "topic_id": 4,
           "terms": [
             [
-              "government",
-              0.0654
-            ],
-            [
-              "public",
-              0.0649
-            ],
-            [
-              "social",
-              0.0494
-            ],
-            [
               "organization",
-              0.046
+              0.0858
             ],
             [
-              "service",
-              0.0423
+              "nongovernment",
+              0.06
             ],
             [
-              "governance",
-              0.04
+              "nonprofit",
+              0.0305
             ],
             [
-              "participation",
-              0.023
+              "law",
+              0.0291
             ],
             [
-              "sector",
-              0.0167
+              "international",
+              0.0217
             ],
             [
-              "purchase",
+              "education",
+              0.0176
+            ],
+            [
+              "right",
+              0.0173
+            ],
+            [
+              "development",
+              0.0171
+            ],
+            [
+              "state",
               0.0156
             ],
             [
-              "third",
-              0.0128
+              "management",
+              0.0135
             ],
             [
-              "mechanism",
-              0.0122
+              "rule",
+              0.0125
             ],
             [
-              "institutional",
-              0.0106
+              "role",
+              0.0123
             ],
             [
-              "rural",
-              0.0093
+              "legal",
+              0.0114
             ],
             [
-              "path",
-              0.0088
+              "private",
+              0.0108
             ],
             [
-              "innovation",
-              0.0087
+              "system",
+              0.0105
             ]
           ]
         }
@@ -3438,64 +3178,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "social",
-              0.0559
+              "nonprofit",
+              0.0346
             ],
             [
-              "governance",
-              0.0456
-            ],
-            [
-              "community",
-              0.0425
-            ],
-            [
-              "service",
-              0.0246
-            ],
-            [
-              "urban",
-              0.0178
-            ],
-            [
-              "management",
-              0.017
-            ],
-            [
-              "practice",
-              0.0161
-            ],
-            [
-              "public",
-              0.0152
+              "legal",
+              0.0298
             ],
             [
               "npo",
-              0.0152
+              0.0232
             ],
             [
-              "city",
-              0.0145
+              "organization",
+              0.0213
             ],
             [
-              "example",
-              0.014
+              "public",
+              0.0204
             ],
             [
-              "party",
-              0.0136
+              "system",
+              0.0194
             ],
             [
-              "innovation",
+              "right",
+              0.017
+            ],
+            [
+              "university",
+              0.0159
+            ],
+            [
+              "foundation",
+              0.0159
+            ],
+            [
+              "private",
+              0.0151
+            ],
+            [
+              "regulation",
+              0.0139
+            ],
+            [
+              "financial",
+              0.0138
+            ],
+            [
+              "institution",
+              0.0133
+            ],
+            [
+              "reform",
               0.0129
             ],
             [
-              "province",
-              0.0112
-            ],
-            [
-              "taking",
-              0.0111
+              "management",
+              0.0108
             ]
           ]
         },
@@ -3503,64 +3243,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "organization",
-              0.1182
-            ],
-            [
-              "government",
-              0.1131
-            ],
-            [
-              "non",
-              0.0637
-            ],
-            [
               "social",
-              0.0544
+              0.1007
             ],
             [
-              "development",
-              0.0297
+              "governance",
+              0.0811
             ],
             [
-              "service",
-              0.0239
-            ],
-            [
-              "profit",
-              0.0143
-            ],
-            [
-              "purchase",
-              0.0141
-            ],
-            [
-              "role",
-              0.013
-            ],
-            [
-              "sport",
-              0.0126
+              "organization",
+              0.0522
             ],
             [
               "management",
-              0.0124
+              0.027
             ],
             [
-              "international",
-              0.0119
-            ],
-            [
-              "public",
-              0.0104
+              "community",
+              0.0266
             ],
             [
               "path",
-              0.0095
+              0.0192
             ],
             [
-              "relationship",
-              0.0087
+              "innovation",
+              0.0176
+            ],
+            [
+              "development",
+              0.0156
+            ],
+            [
+              "rural",
+              0.0152
+            ],
+            [
+              "participation",
+              0.0146
+            ],
+            [
+              "urban",
+              0.0131
+            ],
+            [
+              "example",
+              0.0125
+            ],
+            [
+              "taking",
+              0.0107
+            ],
+            [
+              "new",
+              0.0097
+            ],
+            [
+              "city",
+              0.0096
             ]
           ]
         },
@@ -3568,64 +3308,64 @@
           "topic_id": 3,
           "terms": [
             [
-              "governance",
-              0.0621
+              "society",
+              0.0658
             ],
             [
-              "society",
-              0.053
+              "governance",
+              0.0509
             ],
             [
               "civil",
-              0.028
-            ],
-            [
-              "state",
-              0.0267
-            ],
-            [
-              "law",
-              0.025
+              0.0348
             ],
             [
               "social",
-              0.0216
+              0.0254
             ],
             [
-              "system",
-              0.0156
+              "organization",
+              0.0247
             ],
             [
-              "rule",
-              0.0153
+              "building",
+              0.0221
             ],
             [
-              "construction",
+              "state",
+              0.0185
+            ],
+            [
+              "development",
+              0.0171
+            ],
+            [
+              "party",
+              0.0155
+            ],
+            [
+              "sector",
               0.0144
             ],
             [
-              "global",
-              0.011
+              "construction",
+              0.0135
             ],
             [
-              "rural",
-              0.0107
+              "government",
+              0.0127
             ],
             [
-              "association",
-              0.0098
+              "third",
+              0.0118
             ],
             [
               "new",
               0.0097
             ],
             [
-              "legal",
-              0.0095
-            ],
-            [
-              "change",
-              0.0087
+              "relationship",
+              0.0093
             ]
           ]
         },
@@ -3633,64 +3373,64 @@
           "topic_id": 4,
           "terms": [
             [
-              "governance",
-              0.065
-            ],
-            [
-              "social",
-              0.0649
-            ],
-            [
               "organization",
-              0.0486
+              0.1113
             ],
             [
-              "public",
-              0.0344
+              "nongovernment",
+              0.0764
             ],
             [
-              "government",
-              0.0257
+              "nonprofit",
+              0.0341
             ],
             [
-              "participation",
-              0.0252
+              "international",
+              0.0276
             ],
             [
-              "rural",
-              0.0176
+              "development",
+              0.0237
             ],
             [
-              "third",
-              0.0171
+              "state",
+              0.0204
             ],
             [
-              "sector",
+              "ngo",
               0.0168
             ],
             [
-              "responsibility",
-              0.0141
+              "role",
+              0.0161
             ],
             [
-              "area",
-              0.0127
+              "global",
+              0.0149
             ],
             [
-              "crisis",
-              0.0115
+              "united",
+              0.0128
             ],
             [
-              "mechanism",
-              0.0114
+              "governance",
+              0.0123
             ],
             [
-              "institutional",
-              0.0092
+              "participation",
+              0.0119
             ],
             [
-              "corporate",
-              0.0091
+              "dilemma",
+              0.0103
+            ],
+            [
+              "policy",
+              0.0096
+            ],
+            [
+              "environmental",
+              0.0083
             ]
           ]
         },
@@ -3698,64 +3438,64 @@
           "topic_id": 5,
           "terms": [
             [
-              "profit",
-              0.0494
+              "government",
+              0.1049
             ],
             [
-              "non",
-              0.0481
-            ],
-            [
-              "organization",
-              0.0365
+              "service",
+              0.0629
             ],
             [
               "public",
-              0.0276
+              0.0526
             ],
             [
-              "private",
-              0.0242
+              "social",
+              0.0489
             ],
             [
-              "right",
-              0.0229
+              "law",
+              0.0327
             ],
             [
-              "system",
-              0.0199
+              "organization",
+              0.0304
             ],
             [
-              "legal",
-              0.0194
+              "purchase",
+              0.0197
             ],
             [
-              "university",
-              0.017
+              "rule",
+              0.0153
+            ],
+            [
+              "responsibility",
+              0.0133
             ],
             [
               "education",
-              0.0149
+              0.0113
             ],
             [
-              "financial",
-              0.0148
+              "sport",
+              0.0097
             ],
             [
-              "institution",
-              0.0125
+              "relationship",
+              0.0097
             ],
             [
-              "management",
-              0.0117
+              "sector",
+              0.0093
             ],
             [
-              "regulation",
-              0.0112
+              "provision",
+              0.0092
             ],
             [
-              "college",
-              0.0104
+              "system",
+              0.009
             ]
           ]
         }
@@ -3765,64 +3505,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "social",
-              0.1184
+              "nonprofit",
+              0.0421
+            ],
+            [
+              "legal",
+              0.0359
             ],
             [
               "organization",
-              0.0459
+              0.0301
             ],
             [
-              "management",
-              0.0353
+              "system",
+              0.0226
             ],
             [
-              "governance",
-              0.0345
-            ],
-            [
-              "development",
-              0.0235
-            ],
-            [
-              "innovation",
-              0.0195
-            ],
-            [
-              "responsibility",
-              0.0172
-            ],
-            [
-              "party",
-              0.0162
+              "private",
+              0.022
             ],
             [
               "npo",
-              0.0157
+              0.0196
             ],
             [
-              "building",
-              0.0152
+              "university",
+              0.0191
             ],
             [
-              "new",
-              0.0143
+              "foundation",
+              0.0191
             ],
             [
-              "path",
-              0.0134
+              "regulation",
+              0.0174
             ],
             [
-              "countermeasure",
-              0.0118
+              "financial",
+              0.0166
             ],
             [
-              "community",
-              0.0112
+              "institution",
+              0.016
             ],
             [
-              "corporate",
-              0.011
+              "implication",
+              0.0159
+            ],
+            [
+              "state",
+              0.0144
+            ],
+            [
+              "management",
+              0.0141
+            ],
+            [
+              "u",
+              0.0125
             ]
           ]
         },
@@ -3830,64 +3570,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "organization",
-              0.1106
-            ],
-            [
-              "government",
-              0.1097
-            ],
-            [
-              "non",
-              0.0812
-            ],
-            [
-              "development",
-              0.0282
-            ],
-            [
               "social",
-              0.0271
+              0.1004
             ],
             [
-              "role",
-              0.0247
+              "governance",
+              0.0875
             ],
             [
-              "international",
-              0.0246
+              "organization",
+              0.0499
             ],
             [
-              "profit",
-              0.0131
-            ],
-            [
-              "ngo",
-              0.0125
-            ],
-            [
-              "function",
-              0.0119
-            ],
-            [
-              "relationship",
-              0.0113
+              "community",
+              0.0339
             ],
             [
               "management",
-              0.0103
+              0.0225
             ],
             [
-              "poverty",
-              0.0091
+              "path",
+              0.018
+            ],
+            [
+              "rural",
+              0.0178
+            ],
+            [
+              "innovation",
+              0.0164
+            ],
+            [
+              "urban",
+              0.0157
+            ],
+            [
+              "development",
+              0.0125
             ],
             [
               "participation",
-              0.0081
+              0.0121
             ],
             [
-              "education",
-              0.0076
+              "example",
+              0.0106
+            ],
+            [
+              "new",
+              0.0096
+            ],
+            [
+              "city",
+              0.0095
+            ],
+            [
+              "area",
+              0.0092
             ]
           ]
         },
@@ -3895,64 +3635,64 @@
           "topic_id": 3,
           "terms": [
             [
-              "governance",
-              0.0624
+              "society",
+              0.0746
             ],
             [
-              "society",
-              0.0596
+              "governance",
+              0.051
             ],
             [
               "civil",
-              0.0315
-            ],
-            [
-              "law",
-              0.0302
+              0.0394
             ],
             [
               "state",
-              0.0253
+              0.0325
             ],
             [
-              "rural",
-              0.0206
+              "development",
+              0.0209
             ],
             [
-              "construction",
-              0.0186
+              "organization",
+              0.0196
+            ],
+            [
+              "government",
+              0.0173
             ],
             [
               "social",
-              0.0181
-            ],
-            [
-              "rule",
               0.0171
             ],
             [
-              "system",
-              0.0164
+              "global",
+              0.0147
             ],
             [
-              "community",
-              0.0112
+              "association",
+              0.0147
             ],
             [
-              "organizational",
-              0.0103
-            ],
-            [
-              "legal",
-              0.009
-            ],
-            [
-              "change",
-              0.0088
+              "construction",
+              0.0129
             ],
             [
               "new",
-              0.0083
+              0.0112
+            ],
+            [
+              "building",
+              0.01
+            ],
+            [
+              "system",
+              0.0095
+            ],
+            [
+              "relationship",
+              0.0089
             ]
           ]
         },
@@ -3960,64 +3700,64 @@
           "topic_id": 4,
           "terms": [
             [
-              "governance",
-              0.0747
-            ],
-            [
-              "social",
-              0.0432
-            ],
-            [
               "organization",
-              0.0364
+              0.1354
             ],
             [
-              "public",
-              0.0261
+              "nongovernment",
+              0.0858
+            ],
+            [
+              "international",
+              0.031
+            ],
+            [
+              "development",
+              0.029
+            ],
+            [
+              "nonprofit",
+              0.0289
             ],
             [
               "participation",
-              0.0232
+              0.0251
             ],
             [
-              "sector",
-              0.0213
+              "social",
+              0.0244
             ],
             [
-              "third",
-              0.0201
+              "dilemma",
+              0.0203
             ],
             [
-              "environmental",
-              0.0178
+              "role",
+              0.018
             ],
             [
-              "area",
-              0.0149
+              "countermeasure",
+              0.0157
             ],
             [
-              "right",
-              0.0139
-            ],
-            [
-              "global",
-              0.0124
-            ],
-            [
-              "crisis",
-              0.0117
-            ],
-            [
-              "government",
-              0.0116
-            ],
-            [
-              "mechanism",
+              "ngo",
               0.0115
             ],
             [
-              "rural",
-              0.011
+              "management",
+              0.0102
+            ],
+            [
+              "policy",
+              0.0094
+            ],
+            [
+              "example",
+              0.0089
+            ],
+            [
+              "tax",
+              0.0087
             ]
           ]
         },
@@ -4025,64 +3765,64 @@
           "topic_id": 5,
           "terms": [
             [
-              "non",
-              0.0655
+              "government",
+              0.0878
             ],
             [
-              "profit",
-              0.0646
-            ],
-            [
-              "organization",
-              0.0516
-            ],
-            [
-              "private",
-              0.0267
+              "service",
+              0.0776
             ],
             [
               "public",
-              0.0225
+              0.065
             ],
             [
-              "system",
-              0.0215
+              "social",
+              0.0499
             ],
             [
-              "university",
-              0.0187
+              "law",
+              0.0403
+            ],
+            [
+              "organization",
+              0.0246
+            ],
+            [
+              "purchase",
+              0.0243
+            ],
+            [
+              "rule",
+              0.0189
+            ],
+            [
+              "responsibility",
+              0.0163
             ],
             [
               "education",
-              0.0143
+              0.0128
             ],
             [
-              "legal",
-              0.0142
-            ],
-            [
-              "institution",
-              0.0137
-            ],
-            [
-              "financial",
-              0.0133
-            ],
-            [
-              "regulation",
-              0.0127
-            ],
-            [
-              "management",
+              "system",
               0.012
             ],
             [
-              "foundation",
-              0.012
+              "provision",
+              0.0114
             ],
             [
-              "good",
-              0.012
+              "corporate",
+              0.0105
+            ],
+            [
+              "mechanism",
+              0.0098
+            ],
+            [
+              "construction",
+              0.0097
             ]
           ]
         },
@@ -4090,64 +3830,64 @@
           "topic_id": 6,
           "terms": [
             [
-              "service",
-              0.0718
-            ],
-            [
               "government",
-              0.0654
+              0.0509
             ],
             [
-              "public",
-              0.0516
+              "sector",
+              0.0339
             ],
             [
-              "social",
-              0.047
+              "right",
+              0.0312
             ],
             [
-              "organization",
-              0.0331
-            ],
-            [
-              "community",
-              0.0289
+              "third",
+              0.0259
             ],
             [
               "governance",
-              0.0265
+              0.025
             ],
             [
-              "purchase",
+              "relationship",
+              0.0236
+            ],
+            [
+              "public",
               0.0224
             ],
             [
-              "sport",
-              0.0159
+              "organization",
+              0.0219
             ],
             [
-              "city",
-              0.0152
+              "protection",
+              0.014
             ],
             [
-              "example",
-              0.0149
+              "social",
+              0.0134
             ],
             [
-              "path",
-              0.0132
-            ],
-            [
-              "welfare",
+              "environmental",
               0.0129
             ],
             [
-              "taking",
-              0.0128
+              "nonprofit",
+              0.0115
             ],
             [
-              "participation",
-              0.01
+              "management",
+              0.0112
+            ],
+            [
+              "cooperation",
+              0.0108
+            ],
+            [
+              "interest",
+              0.0107
             ]
           ]
         }
@@ -4157,64 +3897,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "social",
-              0.1469
+              "nonprofit",
+              0.0665
             ],
             [
               "organization",
-              0.0576
+              0.0458
             ],
             [
-              "management",
-              0.0404
+              "legal",
+              0.0312
             ],
             [
-              "governance",
-              0.0352
-            ],
-            [
-              "innovation",
-              0.0234
-            ],
-            [
-              "development",
-              0.021
+              "public",
+              0.0291
             ],
             [
               "system",
-              0.0199
+              0.0288
             ],
             [
-              "npo",
-              0.0181
+              "private",
+              0.0273
             ],
             [
-              "building",
-              0.0177
+              "education",
+              0.0254
             ],
             [
-              "responsibility",
-              0.0157
+              "university",
+              0.0192
             ],
             [
-              "party",
-              0.0154
+              "foundation",
+              0.0192
             ],
             [
-              "construction",
-              0.0133
+              "regulation",
+              0.0178
             ],
             [
-              "new",
-              0.0117
+              "financial",
+              0.0167
             ],
             [
-              "enterprise",
-              0.0117
+              "management",
+              0.0149
+            ],
+            [
+              "institution",
+              0.0148
             ],
             [
               "reform",
-              0.0106
+              0.014
+            ],
+            [
+              "development",
+              0.0126
             ]
           ]
         },
@@ -4222,64 +3962,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "government",
-              0.1406
+              "social",
+              0.1025
+            ],
+            [
+              "governance",
+              0.1018
             ],
             [
               "organization",
-              0.1259
+              0.047
             ],
             [
-              "non",
-              0.0811
+              "community",
+              0.0399
             ],
             [
-              "social",
-              0.037
+              "management",
+              0.0285
             ],
             [
-              "development",
-              0.0282
+              "rural",
+              0.0222
             ],
             [
-              "role",
-              0.0261
+              "innovation",
+              0.0214
             ],
             [
-              "international",
-              0.0223
+              "path",
+              0.0175
             ],
             [
-              "relationship",
-              0.0132
+              "urban",
+              0.017
             ],
             [
               "participation",
-              0.0123
+              0.0151
             ],
             [
-              "sport",
-              0.0119
+              "development",
+              0.0122
             ],
             [
-              "ngo",
-              0.0117
+              "grassroots",
+              0.0099
             ],
             [
-              "function",
-              0.0115
+              "construction",
+              0.0098
             ],
             [
-              "cooperation",
-              0.0103
+              "new",
+              0.0096
             ],
             [
-              "poverty",
-              0.0101
-            ],
-            [
-              "youth",
-              0.0063
+              "area",
+              0.0095
             ]
           ]
         },
@@ -4288,63 +4028,63 @@
           "terms": [
             [
               "governance",
-              0.0579
+              0.0596
             ],
             [
-              "law",
-              0.0488
+              "state",
+              0.0396
             ],
             [
-              "rural",
-              0.0275
-            ],
-            [
-              "rule",
-              0.0229
+              "implication",
+              0.0258
             ],
             [
               "environmental",
-              0.0171
+              0.0234
             ],
             [
-              "legal",
-              0.0153
+              "united",
+              0.0192
             ],
             [
-              "mechanism",
-              0.0147
+              "poverty",
+              0.0182
             ],
             [
-              "system",
+              "government",
+              0.0149
+            ],
+            [
+              "enterprise",
               0.0145
             ],
             [
-              "construction",
-              0.014
+              "experience",
+              0.0135
             ],
             [
-              "theoretical",
-              0.0138
+              "ngo",
+              0.0135
             ],
             [
-              "right",
-              0.0136
+              "system",
+              0.0124
             ],
             [
-              "framework",
-              0.0119
+              "youth",
+              0.0124
             ],
             [
-              "protection",
-              0.0114
+              "country",
+              0.0124
             ],
             [
-              "subject",
-              0.011
+              "social",
+              0.012
             ],
             [
-              "institutional",
-              0.011
+              "comparative",
+              0.0117
             ]
           ]
         },
@@ -4352,64 +4092,64 @@
           "topic_id": 4,
           "terms": [
             [
-              "governance",
-              0.0725
-            ],
-            [
-              "social",
-              0.0701
-            ],
-            [
               "organization",
-              0.0519
+              0.1274
+            ],
+            [
+              "nongovernment",
+              0.1012
+            ],
+            [
+              "international",
+              0.0366
+            ],
+            [
+              "development",
+              0.0247
             ],
             [
               "participation",
-              0.033
+              0.0239
             ],
             [
-              "public",
-              0.024
+              "countermeasure",
+              0.0186
             ],
             [
-              "sector",
-              0.0193
+              "dilemma",
+              0.0182
             ],
             [
-              "third",
-              0.0188
+              "nonprofit",
+              0.017
             ],
             [
-              "example",
+              "role",
               0.0166
             ],
             [
-              "area",
-              0.0155
+              "global",
+              0.0139
             ],
             [
-              "taking",
-              0.0134
+              "governance",
+              0.0137
             ],
             [
-              "rural",
-              0.0126
+              "ngo",
+              0.0122
             ],
             [
-              "crisis",
-              0.0124
+              "policy",
+              0.011
             ],
             [
-              "management",
-              0.0089
+              "public",
+              0.0105
             ],
             [
-              "path",
-              0.0088
-            ],
-            [
-              "ethnic",
-              0.0085
+              "tax",
+              0.0103
             ]
           ]
         },
@@ -4417,64 +4157,64 @@
           "topic_id": 5,
           "terms": [
             [
-              "profit",
-              0.0903
+              "government",
+              0.0966
             ],
             [
-              "non",
-              0.0836
+              "service",
+              0.0962
+            ],
+            [
+              "public",
+              0.0597
+            ],
+            [
+              "law",
+              0.05
+            ],
+            [
+              "social",
+              0.0395
+            ],
+            [
+              "purchase",
+              0.0301
             ],
             [
               "organization",
-              0.0682
+              0.0266
             ],
             [
-              "private",
-              0.0289
+              "rule",
+              0.0234
             ],
             [
               "system",
-              0.0241
+              0.0145
             ],
             [
-              "university",
-              0.019
+              "evaluation",
+              0.0117
             ],
             [
-              "legal",
-              0.0186
+              "provision",
+              0.0115
             ],
             [
-              "financial",
-              0.0177
-            ],
-            [
-              "right",
-              0.0161
-            ],
-            [
-              "management",
-              0.0148
-            ],
-            [
-              "regulation",
-              0.0133
-            ],
-            [
-              "college",
-              0.0124
-            ],
-            [
-              "development",
+              "project",
               0.0111
             ],
             [
-              "institution",
-              0.0111
+              "sport",
+              0.0108
             ],
             [
-              "tax",
-              0.0107
+              "performance",
+              0.0102
+            ],
+            [
+              "local",
+              0.0101
             ]
           ]
         },
@@ -4482,64 +4222,64 @@
           "topic_id": 6,
           "terms": [
             [
-              "public",
-              0.0993
+              "sector",
+              0.0442
             ],
             [
-              "service",
-              0.0962
+              "third",
+              0.0337
+            ],
+            [
+              "public",
+              0.0337
             ],
             [
               "government",
-              0.0842
+              0.0321
             ],
             [
-              "purchase",
-              0.0301
+              "governance",
+              0.0307
             ],
             [
-              "community",
-              0.0167
+              "npo",
+              0.0259
             ],
             [
-              "provision",
-              0.0141
+              "right",
+              0.0243
             ],
             [
-              "example",
-              0.0137
+              "relationship",
+              0.0188
+            ],
+            [
+              "theory",
+              0.0177
+            ],
+            [
+              "management",
+              0.0126
+            ],
+            [
+              "crisis",
+              0.0109
+            ],
+            [
+              "human",
+              0.0105
+            ],
+            [
+              "conflict",
+              0.01
+            ],
+            [
+              "institutional",
+              0.0095
             ],
             [
               "good",
-              0.0133
-            ],
-            [
-              "market",
-              0.0129
-            ],
-            [
-              "social",
-              0.0129
-            ],
-            [
-              "welfare",
-              0.0127
-            ],
-            [
-              "taking",
-              0.0114
-            ],
-            [
-              "strategy",
-              0.0112
-            ],
-            [
-              "sport",
-              0.0107
-            ],
-            [
-              "supply",
-              0.0097
+              0.0089
             ]
           ]
         },
@@ -4547,64 +4287,64 @@
           "topic_id": 7,
           "terms": [
             [
+              "social",
+              0.0781
+            ],
+            [
+              "organization",
+              0.0643
+            ],
+            [
               "society",
-              0.0807
+              0.0636
             ],
             [
-              "governance",
-              0.0719
-            ],
-            [
-              "state",
-              0.0498
+              "government",
+              0.0349
             ],
             [
               "civil",
-              0.0375
-            ],
-            [
-              "community",
-              0.0368
-            ],
-            [
-              "urban",
-              0.028
-            ],
-            [
-              "education",
-              0.0223
+              0.0336
             ],
             [
               "development",
-              0.0165
+              0.0245
             ],
             [
-              "united",
-              0.013
+              "building",
+              0.0171
             ],
             [
-              "change",
-              0.0117
+              "state",
+              0.0159
             ],
             [
-              "reform",
-              0.0109
+              "responsibility",
+              0.0158
             ],
             [
-              "higher",
-              0.0097
+              "relationship",
+              0.0158
             ],
             [
-              "contemporary",
-              0.0087
+              "party",
+              0.0149
+            ],
+            [
+              "function",
+              0.0126
+            ],
+            [
+              "construction",
+              0.0118
+            ],
+            [
+              "new",
+              0.0118
             ],
             [
               "transformation",
-              0.0083
-            ],
-            [
-              "system",
-              0.0083
+              0.0109
             ]
           ]
         }
@@ -4614,64 +4354,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "social",
-              0.14
-            ],
-            [
-              "governance",
-              0.0636
+              "nonprofit",
+              0.0888
             ],
             [
               "organization",
-              0.0521
+              0.0666
             ],
             [
-              "management",
-              0.0402
-            ],
-            [
-              "community",
-              0.0301
-            ],
-            [
-              "innovation",
-              0.0236
-            ],
-            [
-              "urban",
-              0.0203
-            ],
-            [
-              "building",
-              0.0202
-            ],
-            [
-              "responsibility",
-              0.0185
-            ],
-            [
-              "party",
-              0.0175
-            ],
-            [
-              "new",
-              0.0166
-            ],
-            [
-              "path",
-              0.0157
+              "legal",
+              0.0398
             ],
             [
               "system",
-              0.0148
+              0.0291
             ],
             [
-              "construction",
-              0.014
+              "private",
+              0.0261
             ],
             [
-              "practice",
-              0.0128
+              "university",
+              0.0212
+            ],
+            [
+              "regulation",
+              0.0194
+            ],
+            [
+              "foundation",
+              0.0185
+            ],
+            [
+              "financial",
+              0.0185
+            ],
+            [
+              "management",
+              0.0158
+            ],
+            [
+              "institution",
+              0.0152
+            ],
+            [
+              "development",
+              0.0142
+            ],
+            [
+              "college",
+              0.0129
+            ],
+            [
+              "reform",
+              0.0124
+            ],
+            [
+              "welfare",
+              0.0122
             ]
           ]
         },
@@ -4679,64 +4419,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "government",
-              0.1322
-            ],
-            [
-              "organization",
-              0.1253
-            ],
-            [
-              "non",
-              0.1097
-            ],
-            [
-              "international",
-              0.0315
-            ],
-            [
-              "role",
-              0.0277
-            ],
-            [
-              "development",
-              0.0222
-            ],
-            [
-              "profit",
-              0.0217
-            ],
-            [
               "social",
-              0.0139
-            ],
-            [
-              "relationship",
-              0.0128
-            ],
-            [
-              "participation",
-              0.0117
-            ],
-            [
-              "poverty",
-              0.0117
-            ],
-            [
-              "function",
-              0.0115
-            ],
-            [
-              "united",
-              0.0112
+              0.1055
             ],
             [
               "governance",
-              0.0101
+              0.1037
             ],
             [
-              "cooperation",
-              0.0094
+              "organization",
+              0.0488
+            ],
+            [
+              "community",
+              0.0414
+            ],
+            [
+              "management",
+              0.0283
+            ],
+            [
+              "innovation",
+              0.0206
+            ],
+            [
+              "urban",
+              0.0192
+            ],
+            [
+              "path",
+              0.0173
+            ],
+            [
+              "rural",
+              0.0143
+            ],
+            [
+              "participation",
+              0.0139
+            ],
+            [
+              "city",
+              0.0106
+            ],
+            [
+              "development",
+              0.0105
+            ],
+            [
+              "grassroots",
+              0.0099
+            ],
+            [
+              "area",
+              0.0099
+            ],
+            [
+              "example",
+              0.0098
             ]
           ]
         },
@@ -4745,63 +4485,63 @@
           "terms": [
             [
               "governance",
-              0.0899
+              0.0541
             ],
             [
-              "rural",
-              0.0345
+              "sector",
+              0.0454
             ],
             [
-              "law",
-              0.0325
+              "state",
+              0.0421
             ],
             [
-              "rule",
-              0.0238
+              "third",
+              0.0347
             ],
             [
-              "community",
-              0.0179
+              "implication",
+              0.0206
+            ],
+            [
+              "united",
+              0.0201
+            ],
+            [
+              "development",
+              0.0189
+            ],
+            [
+              "system",
+              0.0168
+            ],
+            [
+              "youth",
+              0.012
+            ],
+            [
+              "reform",
+              0.012
+            ],
+            [
+              "comparative",
+              0.0116
             ],
             [
               "mechanism",
-              0.0172
+              0.0111
             ],
             [
-              "structure",
-              0.0156
-            ],
-            [
-              "construction",
-              0.0155
-            ],
-            [
-              "social",
-              0.0151
-            ],
-            [
-              "framework",
-              0.0124
-            ],
-            [
-              "organizational",
-              0.0104
-            ],
-            [
-              "subject",
-              0.0101
+              "ecological",
+              0.0108
             ],
             [
               "enterprise",
-              0.0099
+              0.0104
             ],
             [
-              "logic",
-              0.0099
-            ],
-            [
-              "association",
-              0.0097
+              "construction",
+              0.0102
             ]
           ]
         },
@@ -4809,64 +4549,64 @@
           "topic_id": 4,
           "terms": [
             [
-              "social",
-              0.0599
+              "organization",
+              0.1228
             ],
             [
-              "organization",
-              0.0542
+              "nongovernment",
+              0.1169
+            ],
+            [
+              "international",
+              0.0423
+            ],
+            [
+              "development",
+              0.0258
             ],
             [
               "governance",
-              0.0485
+              0.0237
+            ],
+            [
+              "dilemma",
+              0.0232
+            ],
+            [
+              "global",
+              0.0229
+            ],
+            [
+              "countermeasure",
+              0.0214
             ],
             [
               "participation",
-              0.0312
+              0.0206
             ],
             [
-              "sector",
-              0.0293
+              "role",
+              0.0178
             ],
             [
-              "public",
-              0.0271
+              "poverty",
+              0.0157
             ],
             [
-              "third",
-              0.0269
+              "ngo",
+              0.014
             ],
             [
-              "area",
-              0.02
+              "cultural",
+              0.0121
             ],
             [
-              "crisis",
-              0.0181
+              "way",
+              0.0106
             ],
             [
               "example",
-              0.018
-            ],
-            [
-              "taking",
-              0.0141
-            ],
-            [
-              "ethnic",
-              0.0099
-            ],
-            [
-              "environmental",
-              0.0097
-            ],
-            [
-              "management",
-              0.0096
-            ],
-            [
-              "regional",
-              0.0092
+              0.0102
             ]
           ]
         },
@@ -4874,64 +4614,64 @@
           "topic_id": 5,
           "terms": [
             [
-              "non",
-              0.0636
+              "government",
+              0.0994
             ],
             [
-              "profit",
-              0.0634
-            ],
-            [
-              "organization",
-              0.0483
-            ],
-            [
-              "legal",
-              0.0378
-            ],
-            [
-              "private",
-              0.0287
-            ],
-            [
-              "right",
-              0.0261
-            ],
-            [
-              "system",
-              0.0253
+              "service",
+              0.0971
             ],
             [
               "public",
-              0.0207
-            ],
-            [
-              "university",
-              0.0178
-            ],
-            [
-              "management",
-              0.0165
-            ],
-            [
-              "financial",
-              0.0165
-            ],
-            [
-              "regulation",
-              0.0157
+              0.0849
             ],
             [
               "law",
-              0.0143
+              0.0505
             ],
             [
-              "institution",
-              0.0128
+              "social",
+              0.0333
             ],
             [
-              "college",
-              0.0122
+              "purchase",
+              0.0303
+            ],
+            [
+              "rule",
+              0.0236
+            ],
+            [
+              "organization",
+              0.0164
+            ],
+            [
+              "provision",
+              0.0142
+            ],
+            [
+              "system",
+              0.0124
+            ],
+            [
+              "sport",
+              0.0112
+            ],
+            [
+              "local",
+              0.01
+            ],
+            [
+              "support",
+              0.0088
+            ],
+            [
+              "supply",
+              0.0087
+            ],
+            [
+              "good",
+              0.0086
             ]
           ]
         },
@@ -4939,64 +4679,64 @@
           "topic_id": 6,
           "terms": [
             [
-              "service",
-              0.0998
+              "government",
+              0.043
             ],
             [
               "public",
-              0.0828
+              0.0397
             ],
             [
-              "government",
-              0.0818
+              "governance",
+              0.0334
             ],
             [
-              "social",
-              0.0336
+              "npo",
+              0.0327
             ],
             [
-              "purchase",
-              0.0312
+              "right",
+              0.0317
+            ],
+            [
+              "relationship",
+              0.0226
+            ],
+            [
+              "crisis",
+              0.0217
+            ],
+            [
+              "environmental",
+              0.0185
+            ],
+            [
+              "theory",
+              0.0183
             ],
             [
               "organization",
-              0.025
+              0.0182
             ],
             [
-              "sport",
-              0.0225
+              "protection",
+              0.0175
             ],
             [
-              "example",
-              0.0174
+              "management",
+              0.0175
             ],
             [
-              "community",
-              0.0174
+              "non",
+              0.0117
             ],
             [
-              "welfare",
-              0.0137
+              "mechanism",
+              0.0111
             ],
             [
-              "taking",
-              0.0133
-            ],
-            [
-              "project",
-              0.0115
-            ],
-            [
-              "city",
-              0.0112
-            ],
-            [
-              "provision",
-              0.011
-            ],
-            [
-              "participation",
-              0.01
+              "resource",
+              0.0108
             ]
           ]
         },
@@ -5004,64 +4744,64 @@
           "topic_id": 7,
           "terms": [
             [
+              "social",
+              0.099
+            ],
+            [
+              "organization",
+              0.0738
+            ],
+            [
               "society",
-              0.0961
+              0.0706
             ],
             [
               "civil",
-              0.0508
-            ],
-            [
-              "governance",
-              0.0456
-            ],
-            [
-              "state",
-              0.0351
-            ],
-            [
-              "education",
-              0.0266
+              0.0373
             ],
             [
               "government",
-              0.0254
-            ],
-            [
-              "reform",
-              0.0157
-            ],
-            [
-              "national",
-              0.013
-            ],
-            [
-              "system",
-              0.0124
-            ],
-            [
-              "performance",
-              0.0122
-            ],
-            [
-              "higher",
-              0.0116
-            ],
-            [
-              "change",
-              0.0114
-            ],
-            [
-              "evaluation",
-              0.0113
-            ],
-            [
-              "relationship",
-              0.0112
+              0.0311
             ],
             [
               "development",
-              0.011
+              0.0294
+            ],
+            [
+              "building",
+              0.0217
+            ],
+            [
+              "function",
+              0.0194
+            ],
+            [
+              "state",
+              0.0178
+            ],
+            [
+              "responsibility",
+              0.015
+            ],
+            [
+              "relationship",
+              0.0145
+            ],
+            [
+              "construction",
+              0.0132
+            ],
+            [
+              "new",
+              0.0129
+            ],
+            [
+              "party",
+              0.0116
+            ],
+            [
+              "corporate",
+              0.0112
             ]
           ]
         },
@@ -5069,64 +4809,64 @@
           "topic_id": 8,
           "terms": [
             [
-              "social",
-              0.0695
+              "education",
+              0.0676
             ],
             [
-              "development",
-              0.0562
+              "public",
+              0.0236
             ],
             [
-              "organization",
-              0.0544
+              "higher",
+              0.022
             ],
             [
-              "government",
-              0.03
+              "school",
+              0.0195
             ],
             [
-              "policy",
-              0.0238
+              "ngo",
+              0.0153
             ],
             [
-              "institutional",
-              0.018
+              "growth",
+              0.0142
             ],
             [
-              "path",
-              0.0177
+              "association",
+              0.0134
             ],
             [
-              "dilemma",
-              0.0168
+              "worker",
+              0.0131
             ],
             [
-              "strategy",
-              0.0165
-            ],
-            [
-              "control",
-              0.0135
-            ],
-            [
-              "choice",
-              0.0129
-            ],
-            [
-              "period",
+              "trade",
               0.0128
             ],
             [
-              "npo",
-              0.0127
+              "right",
+              0.0125
             ],
             [
-              "management",
-              0.0109
+              "migrant",
+              0.0124
             ],
             [
-              "system",
-              0.0108
+              "interest",
+              0.0096
+            ],
+            [
+              "media",
+              0.0095
+            ],
+            [
+              "democracy",
+              0.0092
+            ],
+            [
+              "group",
+              0.0091
             ]
           ]
         }
@@ -15274,15 +15014,15 @@
   "Turkey": {
     "selected_k": 2,
     "n_docs": 2039,
-    "rationale": "Large corpus (n=2039). Perplexity: k=2: 559.8, k=3: 584.3, k=4: 622.4, k=5: 653.8, k=6: 703.3, k=7: 698.4, k=8: 716.5. k=2 selected via elbow method.",
+    "rationale": "Large corpus (n=2039). Perplexity: k=2: 559.5, k=3: 584.1, k=4: 619.6, k=5: 652.3, k=6: 704.1, k=7: 699.3, k=8: 718.0. k=2 selected via elbow method.",
     "perplexity_scores": {
-      "2": 559.8,
-      "3": 584.3,
-      "4": 622.4,
-      "5": 653.8,
-      "6": 703.3,
-      "7": 698.4,
-      "8": 716.5
+      "2": 559.5,
+      "3": 584.1,
+      "4": 619.6,
+      "5": 652.3,
+      "6": 704.1,
+      "7": 699.3,
+      "8": 718.0
     },
     "topics": [
       {
@@ -15322,7 +15062,7 @@
           ],
           [
             "institution",
-            0.0077
+            0.0076
           ],
           [
             "example",
@@ -15367,7 +15107,7 @@
           ],
           [
             "nongovernment",
-            0.0253
+            0.0254
           ],
           [
             "association",
@@ -15455,7 +15195,7 @@
             ],
             [
               "institution",
-              0.0077
+              0.0076
             ],
             [
               "example",
@@ -15500,7 +15240,7 @@
             ],
             [
               "nongovernment",
-              0.0253
+              0.0254
             ],
             [
               "association",
@@ -15559,27 +15299,23 @@
             ],
             [
               "nongovernment",
-              0.0451
+              0.0453
             ],
             [
               "civil society",
-              0.0221
+              0.0219
             ],
             [
               "association",
-              0.015
+              0.0154
             ],
             [
               "education",
-              0.0138
+              0.0137
             ],
             [
               "role",
-              0.0127
-            ],
-            [
-              "public",
-              0.0119
+              0.0131
             ],
             [
               "volunteer",
@@ -15594,24 +15330,28 @@
               0.0116
             ],
             [
+              "public",
+              0.0115
+            ],
+            [
               "ngo",
               0.0097
+            ],
+            [
+              "volunteering",
+              0.0097
+            ],
+            [
+              "nonprofit",
+              0.0094
             ],
             [
               "community",
               0.0094
             ],
             [
-              "volunteering",
-              0.0093
-            ],
-            [
-              "nonprofit",
-              0.0091
-            ],
-            [
               "evaluation",
-              0.0089
+              0.0091
             ]
           ]
         },
@@ -15620,11 +15360,11 @@
           "terms": [
             [
               "social",
-              0.0899
+              0.09
             ],
             [
               "civil society",
-              0.0399
+              0.0401
             ],
             [
               "entrepreneurship",
@@ -15632,23 +15372,23 @@
             ],
             [
               "association",
-              0.0187
+              0.0183
             ],
             [
               "context",
-              0.0126
-            ],
-            [
-              "role",
               0.0122
             ],
             [
+              "role",
+              0.0118
+            ],
+            [
               "relationship",
-              0.0112
+              0.0113
             ],
             [
               "process",
-              0.0107
+              0.0108
             ],
             [
               "responsibility",
@@ -15656,27 +15396,27 @@
             ],
             [
               "corporate",
-              0.0092
+              0.0093
             ],
             [
               "policy",
-              0.0088
+              0.009
             ],
             [
               "media",
               0.008
             ],
             [
-              "culture",
-              0.0076
-            ],
-            [
               "political",
-              0.007
+              0.0071
             ],
             [
               "voluntary",
-              0.0067
+              0.0068
+            ],
+            [
+              "local",
+              0.0066
             ]
           ]
         },
@@ -15752,63 +15492,63 @@
           "terms": [
             [
               "organization",
-              0.0799
+              0.0759
             ],
             [
               "nongovernment",
-              0.0477
+              0.0475
             ],
             [
               "social",
-              0.0232
+              0.0248
             ],
             [
               "civil society",
-              0.0162
+              0.0146
+            ],
+            [
+              "public",
+              0.0127
             ],
             [
               "volunteer",
-              0.0125
-            ],
-            [
-              "education",
               0.0124
             ],
             [
               "activity",
-              0.0121
-            ],
-            [
-              "public",
               0.012
             ],
             [
               "corporate",
-              0.0117
+              0.0116
+            ],
+            [
+              "education",
+              0.0115
             ],
             [
               "role",
-              0.0113
+              0.0103
             ],
             [
               "responsibility",
-              0.0102
+              0.0101
             ],
             [
-              "community",
-              0.01
+              "nonprofit",
+              0.0099
             ],
             [
               "ngo",
               0.0099
             ],
             [
-              "nonprofit",
-              0.0096
+              "community",
+              0.0099
             ],
             [
-              "association",
-              0.0092
+              "volunteering",
+              0.0097
             ]
           ]
         },
@@ -15817,62 +15557,62 @@
           "terms": [
             [
               "social",
-              0.0779
+              0.0772
             ],
             [
               "civil society",
-              0.0547
+              0.0573
             ],
             [
               "entrepreneurship",
-              0.0312
+              0.0317
             ],
             [
               "association",
-              0.0223
+              0.0219
             ],
             [
               "role",
-              0.0149
-            ],
-            [
-              "context",
-              0.013
+              0.017
             ],
             [
               "woman",
-              0.0126
+              0.0165
             ],
             [
-              "relationship",
-              0.012
-            ],
-            [
-              "process",
-              0.0107
-            ],
-            [
-              "policy",
-              0.0106
+              "context",
+              0.0134
             ],
             [
               "organization",
-              0.0091
+              0.0132
             ],
             [
-              "university",
-              0.0084
+              "policy",
+              0.0117
+            ],
+            [
+              "relationship",
+              0.0111
+            ],
+            [
+              "process",
+              0.0108
             ],
             [
               "political",
-              0.0082
-            ],
-            [
-              "media",
-              0.0079
+              0.0083
             ],
             [
               "voluntary",
+              0.008
+            ],
+            [
+              "local",
+              0.0078
+            ],
+            [
+              "capital",
               0.0078
             ]
           ]
@@ -15882,35 +15622,35 @@
           "terms": [
             [
               "waqf",
-              0.0676
+              0.066
             ],
             [
               "foundation",
-              0.0628
+              0.063
             ],
             [
               "ottoman",
-              0.0431
+              0.0426
             ],
             [
               "cash",
-              0.0182
+              0.018
             ],
             [
               "law",
-              0.0179
+              0.0177
             ],
             [
               "economic",
-              0.0135
+              0.0134
             ],
             [
               "institution",
-              0.0121
+              0.0117
             ],
             [
               "pasha",
-              0.0115
+              0.0113
             ],
             [
               "al",
@@ -15918,27 +15658,27 @@
             ],
             [
               "empire",
-              0.011
+              0.0109
             ],
             [
               "evaluation",
-              0.0102
+              0.0106
             ],
             [
               "association",
-              0.0089
+              0.01
             ],
             [
               "period",
-              0.008
+              0.0078
             ],
             [
               "islamic",
-              0.0073
+              0.0071
             ],
             [
               "legal",
-              0.0071
+              0.007
             ]
           ]
         },
@@ -15947,55 +15687,51 @@
           "terms": [
             [
               "foundation",
-              0.0987
+              0.0981
             ],
             [
               "century",
-              0.0389
+              0.039
             ],
             [
               "waqf",
-              0.0364
+              0.0375
             ],
             [
               "th",
-              0.0265
+              0.0266
             ],
             [
               "ottoman",
-              0.0152
+              0.0153
             ],
             [
               "n",
-              0.0134
+              0.0135
             ],
             [
               "period",
-              0.0112
+              0.0114
             ],
             [
               "book",
-              0.0109
+              0.0108
             ],
             [
               "sultan",
-              0.0103
+              0.0104
             ],
             [
               "example",
-              0.0097
+              0.0095
             ],
             [
               "h",
-              0.0078
-            ],
-            [
-              "work",
-              0.0066
+              0.0079
             ],
             [
               "r",
-              0.0064
+              0.0065
             ],
             [
               "efendi",
@@ -16004,6 +15740,10 @@
             [
               "e",
               0.006
+            ],
+            [
+              "property",
+              0.0056
             ]
           ]
         }
@@ -16014,63 +15754,63 @@
           "terms": [
             [
               "organization",
-              0.0859
+              0.0849
             ],
             [
               "nongovernment",
-              0.0568
+              0.0566
             ],
             [
               "social",
-              0.0225
-            ],
-            [
-              "education",
-              0.0153
+              0.0222
             ],
             [
               "volunteer",
-              0.0149
+              0.0147
             ],
             [
               "civil society",
               0.0144
             ],
             [
-              "corporate",
+              "education",
               0.0139
             ],
             [
               "activity",
-              0.0139
+              0.0138
+            ],
+            [
+              "corporate",
+              0.0138
             ],
             [
               "responsibility",
-              0.0121
-            ],
-            [
-              "ngo",
-              0.0107
-            ],
-            [
-              "management",
-              0.0104
-            ],
-            [
-              "community",
-              0.0101
-            ],
-            [
-              "nonprofit",
-              0.0097
-            ],
-            [
-              "public",
-              0.0091
+              0.012
             ],
             [
               "volunteering",
-              0.009
+              0.0112
+            ],
+            [
+              "management",
+              0.011
+            ],
+            [
+              "ngo",
+              0.0105
+            ],
+            [
+              "community",
+              0.0104
+            ],
+            [
+              "nonprofit",
+              0.01
+            ],
+            [
+              "public",
+              0.0095
             ]
           ]
         },
@@ -16083,58 +15823,58 @@
             ],
             [
               "organization",
-              0.0286
+              0.0289
             ],
             [
               "woman",
-              0.0281
+              0.0254
             ],
             [
               "association",
-              0.0193
+              0.0198
             ],
             [
               "context",
-              0.0176
+              0.0188
             ],
             [
               "social",
-              0.0162
-            ],
-            [
-              "voluntary",
-              0.0162
-            ],
-            [
-              "public",
-              0.0161
+              0.0176
             ],
             [
               "role",
-              0.0155
+              0.016
+            ],
+            [
+              "voluntary",
+              0.0158
+            ],
+            [
+              "public",
+              0.0153
             ],
             [
               "policy",
-              0.0136
+              0.0137
             ],
             [
               "local",
-              0.0122
+              0.0121
             ],
             [
               "evaluation",
-              0.0106
-            ],
-            [
-              "governance",
-              0.0088
-            ],
-            [
-              "new",
-              0.0087
+              0.0098
             ],
             [
               "ngo",
+              0.0088
+            ],
+            [
+              "governance",
+              0.0087
+            ],
+            [
+              "new",
               0.0086
             ]
           ]
@@ -16144,63 +15884,63 @@
           "terms": [
             [
               "waqf",
-              0.0756
+              0.075
             ],
             [
               "foundation",
-              0.0633
+              0.063
             ],
             [
               "ottoman",
-              0.0492
+              0.0494
             ],
             [
               "cash",
-              0.0186
+              0.0191
             ],
             [
               "law",
-              0.0183
-            ],
-            [
-              "century",
-              0.0142
+              0.0174
             ],
             [
               "empire",
-              0.0129
+              0.0133
             ],
             [
               "al",
-              0.0116
+              0.0118
             ],
             [
               "economic",
+              0.0109
+            ],
+            [
+              "century",
               0.0106
             ],
             [
               "period",
-              0.0105
-            ],
-            [
-              "th",
-              0.0099
+              0.0104
             ],
             [
               "pasha",
-              0.0092
+              0.0093
             ],
             [
               "evaluation",
-              0.0086
+              0.0088
             ],
             [
               "islamic",
-              0.0082
+              0.0084
             ],
             [
               "institution",
-              0.0077
+              0.0079
+            ],
+            [
+              "th",
+              0.0076
             ]
           ]
         },
@@ -16209,63 +15949,63 @@
           "terms": [
             [
               "foundation",
-              0.1073
+              0.1059
             ],
             [
               "waqf",
-              0.0359
+              0.0378
             ],
             [
               "century",
-              0.0291
+              0.033
             ],
             [
               "th",
-              0.0196
-            ],
-            [
-              "sultan",
-              0.0124
+              0.0221
             ],
             [
               "ottoman",
+              0.0128
+            ],
+            [
+              "book",
+              0.0121
+            ],
+            [
+              "sultan",
               0.0121
             ],
             [
               "n",
-              0.0111
-            ],
-            [
-              "book",
-              0.011
+              0.0119
             ],
             [
               "institution",
-              0.011
+              0.0106
             ],
             [
               "example",
+              0.0082
+            ],
+            [
+              "period",
               0.0079
             ],
             [
               "bursa",
-              0.0079
-            ],
-            [
-              "period",
               0.0077
             ],
             [
               "mosque",
-              0.0069
+              0.007
             ],
             [
               "province",
-              0.0069
+              0.0067
             ],
             [
-              "city",
-              0.006
+              "accounting",
+              0.0064
             ]
           ]
         },
@@ -16274,63 +16014,63 @@
           "terms": [
             [
               "social",
-              0.1035
+              0.104
             ],
             [
               "entrepreneurship",
-              0.0444
+              0.0451
             ],
             [
               "association",
-              0.0281
-            ],
-            [
-              "student",
-              0.0178
+              0.0282
             ],
             [
               "civil society",
-              0.0162
+              0.016
+            ],
+            [
+              "student",
+              0.0149
             ],
             [
               "role",
               0.0144
             ],
             [
-              "university",
-              0.013
+              "foundation",
+              0.0125
             ],
             [
               "relationship",
-              0.0119
+              0.0112
             ],
             [
-              "foundation",
-              0.0116
-            ],
-            [
-              "capital",
-              0.011
-            ],
-            [
-              "school",
-              0.0093
+              "university",
+              0.0105
             ],
             [
               "example",
-              0.0092
+              0.0095
+            ],
+            [
+              "school",
+              0.0091
+            ],
+            [
+              "capital",
+              0.0088
             ],
             [
               "cultural",
-              0.0083
+              0.0084
             ],
             [
               "state",
-              0.0082
+              0.0081
             ],
             [
               "teacher",
-              0.0078
+              0.008
             ]
           ]
         }
@@ -16341,63 +16081,63 @@
           "terms": [
             [
               "organization",
-              0.0975
+              0.0959
             ],
             [
               "nongovernment",
-              0.0632
+              0.0639
             ],
             [
               "civil society",
-              0.0225
+              0.0222
             ],
             [
               "volunteer",
-              0.0165
+              0.0166
             ],
             [
               "education",
-              0.0161
-            ],
-            [
-              "role",
-              0.0133
+              0.0157
             ],
             [
               "activity",
               0.0132
             ],
             [
-              "ngo",
-              0.0124
-            ],
-            [
-              "volunteering",
-              0.0123
+              "role",
+              0.0127
             ],
             [
               "nonprofit",
-              0.0114
+              0.0121
+            ],
+            [
+              "ngo",
+              0.012
+            ],
+            [
+              "volunteering",
+              0.012
             ],
             [
               "social",
-              0.0104
+              0.0112
             ],
             [
               "woman",
-              0.0102
+              0.0101
+            ],
+            [
+              "management",
+              0.0097
             ],
             [
               "public",
               0.0097
             ],
             [
-              "management",
-              0.0094
-            ],
-            [
               "communication",
-              0.0088
+              0.0089
             ]
           ]
         },
@@ -16406,23 +16146,23 @@
           "terms": [
             [
               "civil society",
-              0.0828
+              0.0833
             ],
             [
               "social",
-              0.0401
+              0.0373
             ],
             [
               "organization",
-              0.0253
+              0.0282
             ],
             [
               "policy",
-              0.0223
+              0.0222
             ],
             [
               "context",
-              0.019
+              0.0203
             ],
             [
               "responsibility",
@@ -16430,31 +16170,31 @@
             ],
             [
               "process",
-              0.0148
+              0.0147
             ],
             [
               "public",
               0.0136
             ],
             [
-              "corporate",
-              0.0135
-            ],
-            [
-              "state",
-              0.0126
+              "association",
+              0.0134
             ],
             [
               "role",
-              0.0126
+              0.0132
             ],
             [
-              "association",
-              0.0122
+              "corporate",
+              0.0125
             ],
             [
               "voluntary",
-              0.0118
+              0.0123
+            ],
+            [
+              "state",
+              0.0119
             ],
             [
               "local",
@@ -16462,7 +16202,7 @@
             ],
             [
               "capital",
-              0.0099
+              0.0098
             ]
           ]
         },
@@ -16471,55 +16211,51 @@
           "terms": [
             [
               "waqf",
-              0.0853
+              0.0857
             ],
             [
               "foundation",
-              0.0616
+              0.0597
             ],
             [
               "ottoman",
-              0.0355
+              0.0349
             ],
             [
               "century",
-              0.0236
+              0.0237
             ],
             [
               "cash",
-              0.0219
+              0.0215
             ],
             [
               "law",
-              0.0158
+              0.0156
             ],
             [
               "th",
-              0.0122
+              0.0133
             ],
             [
               "economic",
               0.0121
             ],
             [
-              "institution",
-              0.0117
+              "al",
+              0.011
+            ],
+            [
+              "period",
+              0.0109
             ],
             [
               "accounting",
               0.0109
             ],
             [
-              "period",
-              0.0108
-            ],
-            [
               "evaluation",
-              0.0107
-            ],
-            [
-              "al",
-              0.0105
+              0.0104
             ],
             [
               "islamic",
@@ -16527,7 +16263,11 @@
             ],
             [
               "register",
-              0.0085
+              0.0084
+            ],
+            [
+              "financial",
+              0.0083
             ]
           ]
         },
@@ -16536,63 +16276,63 @@
           "terms": [
             [
               "foundation",
-              0.1114
+              0.1149
             ],
             [
               "waqf",
-              0.0259
-            ],
-            [
-              "th",
-              0.0213
+              0.0253
             ],
             [
               "century",
               0.0208
             ],
             [
-              "n",
-              0.0173
+              "th",
+              0.0203
             ],
             [
               "book",
-              0.0166
+              0.0164
             ],
             [
               "ottoman",
-              0.015
+              0.0156
             ],
             [
               "sultan",
-              0.014
-            ],
-            [
-              "period",
-              0.0096
+              0.0143
             ],
             [
               "institution",
-              0.009
+              0.0136
             ],
             [
-              "r",
-              0.0088
+              "period",
+              0.0095
             ],
             [
               "woman",
-              0.0087
+              0.0089
             ],
             [
-              "efendi",
-              0.0081
+              "r",
+              0.0082
             ],
             [
               "h",
-              0.0077
+              0.0079
             ],
             [
               "f",
+              0.0074
+            ],
+            [
+              "n",
               0.0073
+            ],
+            [
+              "sanjak",
+              0.007
             ]
           ]
         },
@@ -16601,63 +16341,63 @@
           "terms": [
             [
               "social",
-              0.1225
+              0.1237
             ],
             [
               "entrepreneurship",
-              0.0548
+              0.0545
             ],
             [
               "student",
-              0.022
+              0.0218
             ],
             [
               "association",
-              0.0196
+              0.0206
             ],
             [
               "university",
-              0.0171
+              0.0202
             ],
             [
               "school",
-              0.0154
-            ],
-            [
-              "foundation",
               0.0147
             ],
             [
               "role",
-              0.0138
+              0.0139
+            ],
+            [
+              "foundation",
+              0.0135
             ],
             [
               "relationship",
-              0.0116
+              0.0108
             ],
             [
               "service",
-              0.0113
+              0.0107
             ],
             [
               "media",
-              0.0106
-            ],
-            [
-              "example",
-              0.01
+              0.0105
             ],
             [
               "teacher",
               0.0099
             ],
             [
+              "example",
+              0.0098
+            ],
+            [
               "investigation",
               0.0092
             ],
             [
-              "level",
-              0.009
+              "solidarity",
+              0.0084
             ]
           ]
         },
@@ -16665,16 +16405,16 @@
           "topic_id": 6,
           "terms": [
             [
-              "ottoman",
-              0.0352
+              "foundation",
+              0.0359
             ],
             [
-              "foundation",
-              0.0344
+              "ottoman",
+              0.0348
             ],
             [
               "association",
-              0.0291
+              0.029
             ],
             [
               "community",
@@ -16682,43 +16422,43 @@
             ],
             [
               "waqf",
-              0.0261
+              0.0249
             ],
             [
               "empire",
-              0.0153
-            ],
-            [
-              "problem",
-              0.0117
-            ],
-            [
-              "society",
-              0.0114
+              0.016
             ],
             [
               "legal",
-              0.011
+              0.0119
+            ],
+            [
+              "problem",
+              0.0116
+            ],
+            [
+              "society",
+              0.0115
             ],
             [
               "development",
-              0.0091
+              0.0092
             ],
             [
               "example",
-              0.009
+              0.0088
             ],
             [
               "health",
-              0.0087
+              0.0086
+            ],
+            [
+              "tourism",
+              0.0082
             ],
             [
               "istanbul",
-              0.0083
-            ],
-            [
-              "service",
-              0.0081
+              0.008
             ],
             [
               "role",
@@ -16733,62 +16473,62 @@
           "terms": [
             [
               "organization",
-              0.1228
+              0.1233
             ],
             [
               "nongovernment",
-              0.0839
-            ],
-            [
-              "role",
-              0.0166
+              0.0856
             ],
             [
               "civil society",
-              0.0163
+              0.0164
             ],
             [
               "volunteer",
-              0.0154
+              0.0159
             ],
             [
               "nonprofit",
-              0.0148
+              0.0158
+            ],
+            [
+              "role",
+              0.0152
             ],
             [
               "social",
-              0.0128
-            ],
-            [
-              "management",
-              0.0121
+              0.0129
             ],
             [
               "ngo",
-              0.012
+              0.0118
             ],
             [
-              "public",
-              0.0113
+              "management",
+              0.0118
             ],
             [
               "environmental",
-              0.011
+              0.0112
+            ],
+            [
+              "public",
+              0.0111
             ],
             [
               "activity",
-              0.0107
+              0.0108
             ],
             [
               "communication",
-              0.0105
+              0.0106
             ],
             [
               "education",
-              0.0087
+              0.0091
             ],
             [
-              "service",
+              "relation",
               0.008
             ]
           ]
@@ -16798,23 +16538,27 @@
           "terms": [
             [
               "civil society",
-              0.1037
+              0.1048
             ],
             [
               "organization",
-              0.0415
+              0.0436
             ],
             [
               "policy",
-              0.027
+              0.0265
             ],
             [
               "context",
-              0.0243
+              0.0244
             ],
             [
               "role",
-              0.0177
+              0.0179
+            ],
+            [
+              "woman",
+              0.0178
             ],
             [
               "state",
@@ -16822,15 +16566,11 @@
             ],
             [
               "voluntary",
-              0.0174
-            ],
-            [
-              "woman",
-              0.0166
+              0.0162
             ],
             [
               "local",
-              0.0154
+              0.0155
             ],
             [
               "political",
@@ -16838,7 +16578,7 @@
             ],
             [
               "association",
-              0.0132
+              0.0133
             ],
             [
               "process",
@@ -16846,15 +16586,15 @@
             ],
             [
               "public",
-              0.012
+              0.0118
+            ],
+            [
+              "relationship",
+              0.0114
             ],
             [
               "right",
               0.0114
-            ],
-            [
-              "relationship",
-              0.0113
             ]
           ]
         },
@@ -16863,27 +16603,27 @@
           "terms": [
             [
               "waqf",
-              0.0908
+              0.0909
             ],
             [
               "foundation",
-              0.0742
+              0.0739
             ],
             [
               "ottoman",
-              0.0629
+              0.0632
             ],
             [
               "cash",
-              0.0255
+              0.0256
             ],
             [
               "law",
-              0.0178
+              0.0179
             ],
             [
               "empire",
-              0.0177
+              0.0178
             ],
             [
               "economic",
@@ -16891,11 +16631,7 @@
             ],
             [
               "institution",
-              0.0134
-            ],
-            [
-              "period",
-              0.0096
+              0.0119
             ],
             [
               "islamic",
@@ -16903,7 +16639,7 @@
             ],
             [
               "evaluation",
-              0.0094
+              0.0095
             ],
             [
               "system",
@@ -16911,11 +16647,15 @@
             ],
             [
               "education",
-              0.009
+              0.0091
+            ],
+            [
+              "period",
+              0.0089
             ],
             [
               "light",
-              0.007
+              0.0071
             ],
             [
               "library",
@@ -16928,59 +16668,59 @@
           "terms": [
             [
               "foundation",
-              0.0906
+              0.0911
             ],
             [
               "waqf",
-              0.0508
+              0.0514
             ],
             [
               "century",
-              0.05
+              0.0502
             ],
             [
               "th",
-              0.034
+              0.0342
             ],
             [
               "book",
-              0.0176
+              0.0177
             ],
             [
               "ottoman",
-              0.0173
-            ],
-            [
-              "n",
-              0.0133
+              0.0174
             ],
             [
               "period",
-              0.0124
+              0.0132
             ],
             [
               "mosque",
-              0.0119
+              0.012
             ],
             [
               "sultan",
               0.0113
             ],
             [
+              "n",
+              0.0109
+            ],
+            [
               "h",
-              0.01
+              0.0101
             ],
             [
               "accounting",
-              0.0096
+              0.0093
             ],
             [
               "life",
-              0.0091
+              0.0086
             ],
             [
               "r",
-              0.0082
+              0.0083
             ],
             [
               "record",
@@ -16993,15 +16733,15 @@
           "terms": [
             [
               "foundation",
-              0.0428
+              0.0421
             ],
             [
               "association",
-              0.0359
+              0.0364
             ],
             [
               "example",
-              0.0195
+              0.0196
             ],
             [
               "al",
@@ -17013,15 +16753,15 @@
             ],
             [
               "school",
-              0.0117
-            ],
-            [
-              "culture",
-              0.0115
+              0.012
             ],
             [
               "civil",
               0.0107
+            ],
+            [
+              "culture",
+              0.0106
             ],
             [
               "child",
@@ -17032,24 +16772,24 @@
               0.0103
             ],
             [
-              "established",
-              0.0103
-            ],
-            [
               "ons",
               0.0102
             ],
             [
               "family",
-              0.01
+              0.0098
+            ],
+            [
+              "established",
+              0.0092
             ],
             [
               "nature",
               0.0089
             ],
             [
-              "social",
-              0.0089
+              "role",
+              0.008
             ]
           ]
         },
@@ -17058,63 +16798,63 @@
           "terms": [
             [
               "association",
-              0.0538
+              0.0449
             ],
             [
               "foundation",
-              0.0371
+              0.0382
             ],
             [
               "community",
-              0.0312
+              0.0307
             ],
             [
               "social",
-              0.0183
+              0.0174
             ],
             [
               "service",
-              0.0165
-            ],
-            [
-              "health",
-              0.0142
+              0.017
             ],
             [
               "role",
-              0.0133
+              0.0159
             ],
             [
-              "public",
-              0.0111
+              "health",
+              0.0139
             ],
             [
               "institution",
-              0.0108
+              0.0138
+            ],
+            [
+              "public",
+              0.0117
+            ],
+            [
+              "government",
+              0.0103
             ],
             [
               "tool",
-              0.0098
+              0.0096
             ],
             [
               "youth",
-              0.0097
+              0.0095
             ],
             [
               "tourism",
-              0.009
-            ],
-            [
-              "solidarity",
-              0.0089
+              0.0091
             ],
             [
               "example",
-              0.0083
+              0.0089
             ],
             [
-              "importance",
-              0.0081
+              "solidarity",
+              0.0087
             ]
           ]
         },
@@ -17123,63 +16863,63 @@
           "terms": [
             [
               "social",
-              0.126
+              0.1343
             ],
             [
               "entrepreneurship",
-              0.0473
+              0.0466
             ],
             [
               "volunteering",
-              0.0229
+              0.0226
             ],
             [
               "corporate",
-              0.0204
+              0.0201
             ],
             [
               "responsibility",
-              0.0178
+              0.0176
             ],
             [
               "student",
-              0.0174
+              0.0172
             ],
             [
               "university",
-              0.0171
+              0.0168
             ],
             [
               "civil society",
-              0.0166
+              0.016
             ],
             [
               "relationship",
-              0.0137
+              0.013
             ],
             [
               "capital",
-              0.0117
-            ],
-            [
-              "perception",
               0.0115
             ],
             [
-              "media",
-              0.0113
+              "perception",
+              0.0114
             ],
             [
-              "investigation",
+              "media",
               0.0112
             ],
             [
+              "investigation",
+              0.011
+            ],
+            [
               "teacher",
-              0.0107
+              0.0106
             ],
             [
               "activity",
-              0.0098
+              0.0091
             ]
           ]
         }
@@ -17190,19 +16930,23 @@
           "terms": [
             [
               "organization",
-              0.1373
+              0.1406
             ],
             [
               "nongovernment",
-              0.0861
+              0.0874
             ],
             [
               "civil society",
-              0.0279
+              0.0275
             ],
             [
               "role",
-              0.0229
+              0.0192
+            ],
+            [
+              "nonprofit",
+              0.0171
             ],
             [
               "education",
@@ -17210,39 +16954,35 @@
             ],
             [
               "ngo",
-              0.0142
-            ],
-            [
-              "nonprofit",
-              0.0139
-            ],
-            [
-              "public",
-              0.012
+              0.0133
             ],
             [
               "relation",
-              0.0119
-            ],
-            [
-              "activity",
-              0.0116
-            ],
-            [
-              "woman",
-              0.0113
-            ],
-            [
-              "environmental",
-              0.0112
+              0.0117
             ],
             [
               "social",
-              0.0111
+              0.0116
+            ],
+            [
+              "environmental",
+              0.0113
+            ],
+            [
+              "public",
+              0.0113
+            ],
+            [
+              "activity",
+              0.0112
+            ],
+            [
+              "woman",
+              0.011
             ],
             [
               "communication",
-              0.0107
+              0.0108
             ],
             [
               "volunteer",
@@ -17255,63 +16995,63 @@
           "terms": [
             [
               "civil society",
-              0.1017
+              0.0949
             ],
             [
               "policy",
-              0.0342
+              0.0345
             ],
             [
               "organization",
-              0.0303
-            ],
-            [
-              "social",
-              0.0227
+              0.0281
             ],
             [
               "context",
-              0.0223
+              0.023
             ],
             [
               "public",
-              0.0221
+              0.023
             ],
             [
               "association",
-              0.0219
+              0.022
+            ],
+            [
+              "social",
+              0.0198
             ],
             [
               "state",
-              0.0188
-            ],
-            [
-              "process",
-              0.0154
+              0.0187
             ],
             [
               "political",
-              0.0152
+              0.0153
+            ],
+            [
+              "process",
+              0.0149
             ],
             [
               "local",
-              0.0137
+              0.0139
             ],
             [
               "problem",
-              0.0124
+              0.0126
             ],
             [
-              "decision",
-              0.0114
+              "sector",
+              0.0119
             ],
             [
               "union",
-              0.0109
+              0.011
             ],
             [
-              "role",
-              0.0102
+              "voluntary",
+              0.0109
             ]
           ]
         },
@@ -17320,39 +17060,39 @@
           "terms": [
             [
               "waqf",
-              0.1049
+              0.1052
             ],
             [
               "foundation",
-              0.0524
+              0.0526
             ],
             [
               "ottoman",
-              0.0322
+              0.0321
             ],
             [
               "cash",
-              0.0302
+              0.0305
             ],
             [
               "century",
-              0.0217
+              0.0219
             ],
             [
               "al",
-              0.0214
+              0.0216
             ],
             [
               "economic",
-              0.0187
+              0.0189
             ],
             [
               "th",
-              0.0161
+              0.0164
             ],
             [
               "accounting",
-              0.0135
+              0.0136
             ],
             [
               "evaluation",
@@ -17360,23 +17100,23 @@
             ],
             [
               "record",
-              0.0114
-            ],
-            [
-              "system",
-              0.0109
-            ],
-            [
-              "islamic",
-              0.01
+              0.0115
             ],
             [
               "structure",
-              0.0097
+              0.0098
+            ],
+            [
+              "system",
+              0.0098
             ],
             [
               "register",
-              0.0097
+              0.0098
+            ],
+            [
+              "islamic",
+              0.0095
             ]
           ]
         },
@@ -17385,35 +17125,35 @@
           "terms": [
             [
               "foundation",
-              0.1098
+              0.1106
             ],
             [
               "waqf",
-              0.0375
+              0.0381
             ],
             [
               "century",
-              0.036
+              0.0358
             ],
             [
               "ottoman",
-              0.0236
+              0.0245
             ],
             [
               "th",
-              0.0232
+              0.0231
             ],
             [
               "institution",
-              0.0158
+              0.015
             ],
             [
               "book",
-              0.0146
+              0.0145
             ],
             [
               "period",
-              0.0124
+              0.0128
             ],
             [
               "sultan",
@@ -17424,20 +17164,20 @@
               0.0118
             ],
             [
+              "mosque",
+              0.0117
+            ],
+            [
               "h",
               0.0112
             ],
             [
-              "mosque",
-              0.0109
-            ],
-            [
               "dated",
-              0.009
+              0.0089
             ],
             [
               "example",
-              0.0086
+              0.0089
             ],
             [
               "efendi",
@@ -17450,63 +17190,63 @@
           "terms": [
             [
               "foundation",
-              0.0651
+              0.0575
             ],
             [
               "association",
-              0.0514
+              0.0494
             ],
             [
               "woman",
-              0.0314
-            ],
-            [
-              "ottoman",
-              0.02
-            ],
-            [
-              "example",
-              0.0194
+              0.0312
             ],
             [
               "culture",
-              0.0184
+              0.0209
+            ],
+            [
+              "ottoman",
+              0.0189
+            ],
+            [
+              "example",
+              0.0168
             ],
             [
               "cultural",
-              0.0172
-            ],
-            [
-              "established",
-              0.0152
+              0.0167
             ],
             [
               "philanthropy",
-              0.0136
+              0.0131
             ],
             [
               "new",
-              0.0135
-            ],
-            [
-              "civil",
               0.013
             ],
             [
-              "child",
-              0.0122
+              "established",
+              0.013
             ],
             [
-              "law",
-              0.0119
+              "civil",
+              0.0125
+            ],
+            [
+              "child",
+              0.0118
+            ],
+            [
+              "society",
+              0.0112
             ],
             [
               "ons",
-              0.0115
+              0.0111
             ],
             [
               "network",
-              0.0115
+              0.011
             ]
           ]
         },
@@ -17515,27 +17255,31 @@
           "terms": [
             [
               "foundation",
-              0.04
+              0.0412
             ],
             [
               "association",
-              0.0331
+              0.0328
             ],
             [
               "role",
-              0.027
+              0.0314
             ],
             [
               "social",
-              0.0237
+              0.0243
             ],
             [
               "development",
-              0.0236
+              0.0189
+            ],
+            [
+              "community",
+              0.0175
             ],
             [
               "health",
-              0.016
+              0.0174
             ],
             [
               "factor",
@@ -17543,31 +17287,27 @@
             ],
             [
               "management",
-              0.0143
-            ],
-            [
-              "community",
-              0.0133
-            ],
-            [
-              "sector",
-              0.0116
+              0.0135
             ],
             [
               "urban",
-              0.0111
-            ],
-            [
-              "service",
-              0.0109
+              0.011
             ],
             [
               "process",
-              0.0096
+              0.0104
+            ],
+            [
+              "service",
+              0.0101
+            ],
+            [
+              "example",
+              0.0099
             ],
             [
               "historical",
-              0.0087
+              0.0086
             ],
             [
               "affecting",
@@ -17580,23 +17320,23 @@
           "terms": [
             [
               "social",
-              0.1252
+              0.1221
             ],
             [
               "entrepreneurship",
-              0.0489
+              0.049
             ],
             [
               "volunteering",
-              0.0237
+              0.0238
             ],
             [
               "student",
-              0.0186
+              0.0187
             ],
             [
               "responsibility",
-              0.0184
+              0.0185
             ],
             [
               "university",
@@ -17608,7 +17348,7 @@
             ],
             [
               "relationship",
-              0.0156
+              0.0153
             ],
             [
               "investigation",
@@ -17616,22 +17356,22 @@
             ],
             [
               "volunteer",
-              0.0119
-            ],
-            [
-              "media",
-              0.0113
+              0.012
             ],
             [
               "perception",
-              0.0113
+              0.0116
             ],
             [
-              "activity",
-              0.0104
+              "media",
+              0.0114
             ],
             [
               "capital",
+              0.0099
+            ],
+            [
+              "activity",
               0.0099
             ],
             [
@@ -17645,43 +17385,43 @@
           "terms": [
             [
               "ottoman",
-              0.0354
+              0.0348
             ],
             [
               "waqf",
-              0.035
+              0.0344
             ],
             [
               "law",
-              0.0319
-            ],
-            [
-              "period",
-              0.0245
+              0.0326
             ],
             [
               "foundation",
-              0.0238
+              0.0266
             ],
             [
-              "empire",
-              0.0155
+              "period",
+              0.0235
             ],
             [
               "civil society",
-              0.0155
+              0.0163
+            ],
+            [
+              "empire",
+              0.0157
             ],
             [
               "light",
-              0.0123
+              0.0122
             ],
             [
-              "k",
+              "comparison",
               0.0106
             ],
             [
-              "community",
-              0.0103
+              "k",
+              0.0105
             ],
             [
               "muslim",
@@ -17693,15 +17433,15 @@
             ],
             [
               "concept",
-              0.0087
-            ],
-            [
-              "comparison",
-              0.0087
+              0.0086
             ],
             [
               "property",
               0.0086
+            ],
+            [
+              "community",
+              0.008
             ]
           ]
         }
