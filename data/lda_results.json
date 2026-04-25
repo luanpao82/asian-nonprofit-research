@@ -2437,9 +2437,9 @@
     }
   },
   "China": {
-    "selected_k": 2,
+    "selected_k": 5,
     "n_docs": 5712,
-    "rationale": "Large corpus (n=5712). Perplexity: k=2: 460.2, k=3: 471.9, k=4: 490.2, k=5: 504.6, k=6: 522.1, k=7: 526.2, k=8: 534.5. k=2 selected via elbow method.",
+    "rationale": "Large corpus (n=5712). Perplexity: k=2: 460.2, k=3: 471.9, k=4: 490.2, k=5: 504.6, k=6: 522.1, k=7: 526.2, k=8: 534.5. k=5 selected for richer topic granularity.",
     "perplexity_scores": {
       "2": 460.2,
       "3": 471.9,
@@ -2454,64 +2454,44 @@
         "topic_id": 1,
         "terms": [
           [
+            "social",
+            0.25771
+          ],
+          [
             "organization",
-            0.0529
+            0.21023
           ],
           [
-            "public",
-            0.036
+            "policy",
+            0.04291
           ],
           [
-            "government",
-            0.0335
-          ],
-          [
-            "nongovernment",
-            0.0297
-          ],
-          [
-            "service",
-            0.0277
-          ],
-          [
-            "nonprofit",
-            0.0257
-          ],
-          [
-            "development",
-            0.0128
-          ],
-          [
-            "system",
-            0.0121
-          ],
-          [
-            "legal",
-            0.0107
-          ],
-          [
-            "international",
-            0.0107
-          ],
-          [
-            "sector",
-            0.0093
+            "function",
+            0.01941
           ],
           [
             "education",
-            0.0087
+            0.01756
           ],
           [
-            "purchase",
-            0.0087
+            "relation",
+            0.01572
           ],
           [
-            "right",
-            0.0085
+            "care",
+            0.01111
           ],
           [
-            "management",
-            0.0085
+            "financial",
+            0.01111
+          ],
+          [
+            "trust",
+            0.01019
+          ],
+          [
+            "path",
+            0.00926
           ]
         ]
       },
@@ -2519,64 +2499,179 @@
         "topic_id": 2,
         "terms": [
           [
-            "social",
-            0.0797
-          ],
-          [
-            "governance",
-            0.0627
-          ],
-          [
             "organization",
-            0.0451
+            0.16085
           ],
           [
-            "society",
-            0.0202
-          ],
-          [
-            "community",
-            0.0167
-          ],
-          [
-            "government",
-            0.0149
+            "social",
+            0.14753
           ],
           [
             "development",
-            0.0139
+            0.11215
+          ],
+          [
+            "pathway",
+            0.04002
+          ],
+          [
+            "institutional",
+            0.02761
+          ],
+          [
+            "dilemma",
+            0.01659
+          ],
+          [
+            "society",
+            0.01567
+          ],
+          [
+            "political",
+            0.01015
+          ],
+          [
+            "contemporary",
+            0.00924
+          ],
+          [
+            "reflection",
+            0.00924
+          ]
+        ]
+      },
+      {
+        "topic_id": 3,
+        "terms": [
+          [
+            "nonprofit",
+            0.15786
+          ],
+          [
+            "build",
+            0.04507
           ],
           [
             "management",
-            0.0131
+            0.04507
           ],
           [
-            "path",
-            0.0122
+            "mechanism",
+            0.04043
           ],
           [
-            "new",
-            0.011
+            "party",
+            0.01908
           ],
           [
-            "construction",
-            0.011
+            "law",
+            0.01815
           ],
           [
-            "civil",
-            0.0107
+            "theory",
+            0.01815
           ],
           [
-            "innovation",
-            0.0106
+            "performance",
+            0.01768
           ],
           [
-            "rural",
-            0.0103
+            "regulation",
+            0.01768
+          ],
+          [
+            "legal",
+            0.01676
+          ]
+        ]
+      },
+      {
+        "topic_id": 4,
+        "terms": [
+          [
+            "government",
+            0.11987
+          ],
+          [
+            "public",
+            0.06979
+          ],
+          [
+            "service",
+            0.06604
+          ],
+          [
+            "role",
+            0.03983
+          ],
+          [
+            "contract",
+            0.03141
+          ],
+          [
+            "sector",
+            0.03
+          ],
+          [
+            "3",
+            0.02298
+          ],
+          [
+            "community",
+            0.02298
+          ],
+          [
+            "response",
+            0.02251
+          ],
+          [
+            "dilemma",
+            0.02251
+          ]
+        ]
+      },
+      {
+        "topic_id": 5,
+        "terms": [
+          [
+            "ngo",
+            0.18503
+          ],
+          [
+            "governance",
+            0.1181
           ],
           [
             "participation",
-            0.0096
+            0.07906
+          ],
+          [
+            "system",
+            0.04002
+          ],
+          [
+            "international",
+            0.03212
+          ],
+          [
+            "innovation",
+            0.02747
+          ],
+          [
+            "environmental",
+            0.02096
+          ],
+          [
+            "implication",
+            0.01864
+          ],
+          [
+            "logic",
+            0.01771
+          ],
+          [
+            "transformation",
+            0.01306
           ]
         ]
       }
@@ -3178,64 +3273,44 @@
           "topic_id": 1,
           "terms": [
             [
-              "nonprofit",
-              0.0346
-            ],
-            [
-              "legal",
-              0.0298
-            ],
-            [
-              "npo",
-              0.0232
+              "social",
+              0.25771
             ],
             [
               "organization",
-              0.0213
+              0.21023
             ],
             [
-              "public",
-              0.0204
+              "policy",
+              0.04291
             ],
             [
-              "system",
-              0.0194
+              "function",
+              0.01941
             ],
             [
-              "right",
-              0.017
+              "education",
+              0.01756
             ],
             [
-              "university",
-              0.0159
+              "relation",
+              0.01572
             ],
             [
-              "foundation",
-              0.0159
-            ],
-            [
-              "private",
-              0.0151
-            ],
-            [
-              "regulation",
-              0.0139
+              "care",
+              0.01111
             ],
             [
               "financial",
-              0.0138
+              0.01111
             ],
             [
-              "institution",
-              0.0133
+              "trust",
+              0.01019
             ],
             [
-              "reform",
-              0.0129
-            ],
-            [
-              "management",
-              0.0108
+              "path",
+              0.00926
             ]
           ]
         },
@@ -3243,64 +3318,44 @@
           "topic_id": 2,
           "terms": [
             [
-              "social",
-              0.1007
-            ],
-            [
-              "governance",
-              0.0811
-            ],
-            [
               "organization",
-              0.0522
+              0.16085
             ],
             [
-              "management",
-              0.027
-            ],
-            [
-              "community",
-              0.0266
-            ],
-            [
-              "path",
-              0.0192
-            ],
-            [
-              "innovation",
-              0.0176
+              "social",
+              0.14753
             ],
             [
               "development",
-              0.0156
+              0.11215
             ],
             [
-              "rural",
-              0.0152
+              "pathway",
+              0.04002
             ],
             [
-              "participation",
-              0.0146
+              "institutional",
+              0.02761
             ],
             [
-              "urban",
-              0.0131
+              "dilemma",
+              0.01659
             ],
             [
-              "example",
-              0.0125
+              "society",
+              0.01567
             ],
             [
-              "taking",
-              0.0107
+              "political",
+              0.01015
             ],
             [
-              "new",
-              0.0097
+              "contemporary",
+              0.00924
             ],
             [
-              "city",
-              0.0096
+              "reflection",
+              0.00924
             ]
           ]
         },
@@ -3308,64 +3363,44 @@
           "topic_id": 3,
           "terms": [
             [
-              "society",
-              0.0658
+              "nonprofit",
+              0.15786
             ],
             [
-              "governance",
-              0.0509
+              "build",
+              0.04507
             ],
             [
-              "civil",
-              0.0348
+              "management",
+              0.04507
             ],
             [
-              "social",
-              0.0254
-            ],
-            [
-              "organization",
-              0.0247
-            ],
-            [
-              "building",
-              0.0221
-            ],
-            [
-              "state",
-              0.0185
-            ],
-            [
-              "development",
-              0.0171
+              "mechanism",
+              0.04043
             ],
             [
               "party",
-              0.0155
+              0.01908
             ],
             [
-              "sector",
-              0.0144
+              "law",
+              0.01815
             ],
             [
-              "construction",
-              0.0135
+              "theory",
+              0.01815
             ],
             [
-              "government",
-              0.0127
+              "performance",
+              0.01768
             ],
             [
-              "third",
-              0.0118
+              "regulation",
+              0.01768
             ],
             [
-              "new",
-              0.0097
-            ],
-            [
-              "relationship",
-              0.0093
+              "legal",
+              0.01676
             ]
           ]
         },
@@ -3373,64 +3408,44 @@
           "topic_id": 4,
           "terms": [
             [
-              "organization",
-              0.1113
+              "government",
+              0.11987
             ],
             [
-              "nongovernment",
-              0.0764
+              "public",
+              0.06979
             ],
             [
-              "nonprofit",
-              0.0341
-            ],
-            [
-              "international",
-              0.0276
-            ],
-            [
-              "development",
-              0.0237
-            ],
-            [
-              "state",
-              0.0204
-            ],
-            [
-              "ngo",
-              0.0168
+              "service",
+              0.06604
             ],
             [
               "role",
-              0.0161
+              0.03983
             ],
             [
-              "global",
-              0.0149
+              "contract",
+              0.03141
             ],
             [
-              "united",
-              0.0128
+              "sector",
+              0.03
             ],
             [
-              "governance",
-              0.0123
+              "3",
+              0.02298
             ],
             [
-              "participation",
-              0.0119
+              "community",
+              0.02298
+            ],
+            [
+              "response",
+              0.02251
             ],
             [
               "dilemma",
-              0.0103
-            ],
-            [
-              "policy",
-              0.0096
-            ],
-            [
-              "environmental",
-              0.0083
+              0.02251
             ]
           ]
         },
@@ -3438,64 +3453,44 @@
           "topic_id": 5,
           "terms": [
             [
-              "government",
-              0.1049
+              "ngo",
+              0.18503
             ],
             [
-              "service",
-              0.0629
+              "governance",
+              0.1181
             ],
             [
-              "public",
-              0.0526
-            ],
-            [
-              "social",
-              0.0489
-            ],
-            [
-              "law",
-              0.0327
-            ],
-            [
-              "organization",
-              0.0304
-            ],
-            [
-              "purchase",
-              0.0197
-            ],
-            [
-              "rule",
-              0.0153
-            ],
-            [
-              "responsibility",
-              0.0133
-            ],
-            [
-              "education",
-              0.0113
-            ],
-            [
-              "sport",
-              0.0097
-            ],
-            [
-              "relationship",
-              0.0097
-            ],
-            [
-              "sector",
-              0.0093
-            ],
-            [
-              "provision",
-              0.0092
+              "participation",
+              0.07906
             ],
             [
               "system",
-              0.009
+              0.04002
+            ],
+            [
+              "international",
+              0.03212
+            ],
+            [
+              "innovation",
+              0.02747
+            ],
+            [
+              "environmental",
+              0.02096
+            ],
+            [
+              "implication",
+              0.01864
+            ],
+            [
+              "logic",
+              0.01771
+            ],
+            [
+              "transformation",
+              0.01306
             ]
           ]
         }
