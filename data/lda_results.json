@@ -17446,77 +17446,79 @@
   "Vietnam": {
     "selected_k": 3,
     "n_docs": 61,
-    "rationale": "Small corpus (n=61). Perplexity: k=2: 59.0, k=3: 62.0, k=4: 78.9, k=5: 84.7, k=6: 89.2. k=3 selected via elbow method.",
+    "rationale": "Small corpus (n=61). Perplexity (Gibbs): k=2: 40.32, k=3: 39.89, k=4: 39.22, k=5: 39.42, k=6: 39.15, k=7: 38.58, k=8: 38.55. Perplexity flat across k values (no meaningful inflection). k=3 selected via qualitative inspection of frequency analysis.",
     "perplexity_scores": {
-      "2": 59.0,
-      "3": 62.0,
-      "4": 78.9,
-      "5": 84.7,
-      "6": 89.2
+      "2": 40.32,
+      "3": 39.89,
+      "4": 39.22,
+      "5": 39.42,
+      "6": 39.15,
+      "7": 38.58,
+      "8": 38.55
     },
     "topics": [
       {
         "topic_id": 1,
         "terms": [
           [
-            "enterprise",
-            0.1851
+            "activity",
+            0.1312
           ],
           [
-            "social",
-            0.1795
+            "charity",
+            0.0879
           ],
           [
-            "development",
-            0.0637
+            "role",
+            0.0553
+          ],
+          [
+            "current",
+            0.0553
           ],
           [
             "law",
-            0.0372
+            0.0553
           ],
           [
-            "legal",
-            0.0299
+            "country",
+            0.0445
           ],
           [
-            "entity",
-            0.0286
+            "promote",
+            0.0336
           ],
           [
             "experience",
-            0.0284
+            0.0336
+          ],
+          [
+            "mekong",
+            0.0336
           ],
           [
             "university",
-            0.0205
+            0.0336
           ],
           [
-            "recommendation",
-            0.0202
+            "capital",
+            0.0336
           ],
           [
-            "world",
-            0.0202
+            "profit",
+            0.0336
           ],
           [
-            "assessing",
-            0.0202
+            "issue",
+            0.0336
           ],
           [
-            "ecosystem",
-            0.0202
+            "legal",
+            0.0336
           ],
           [
-            "ethnic",
-            0.0202
-          ],
-          [
-            "minority",
-            0.0202
-          ],
-          [
-            "international",
-            0.0202
+            "market",
+            0.0228
           ]
         ]
       },
@@ -17524,64 +17526,64 @@
         "topic_id": 2,
         "terms": [
           [
-            "civil society",
-            0.1329
+            "social",
+            0.4287
           ],
           [
             "organization",
-            0.0777
+            0.0888
           ],
           [
-            "nonprofit",
-            0.0618
+            "community",
+            0.0669
           ],
           [
-            "capital",
-            0.047
-          ],
-          [
-            "country",
-            0.0336
-          ],
-          [
-            "market",
-            0.0333
-          ],
-          [
-            "socialist",
-            0.0333
-          ],
-          [
-            "economy",
-            0.0333
-          ],
-          [
-            "oriented",
-            0.0333
-          ],
-          [
-            "nongovernment",
-            0.0333
-          ],
-          [
-            "support",
-            0.0329
-          ],
-          [
-            "theoretical",
-            0.0325
+            "delta",
+            0.045
           ],
           [
             "rural",
-            0.0195
+            0.034
           ],
           [
-            "direction",
-            0.0193
+            "develop",
+            0.034
           ],
           [
-            "framework",
-            0.0193
+            "support",
+            0.034
+          ],
+          [
+            "government",
+            0.023
+          ],
+          [
+            "trend",
+            0.023
+          ],
+          [
+            "world",
+            0.023
+          ],
+          [
+            "network",
+            0.023
+          ],
+          [
+            "policy",
+            0.023
+          ],
+          [
+            "ethnic",
+            0.023
+          ],
+          [
+            "suggestion",
+            0.023
+          ],
+          [
+            "commercial",
+            0.023
           ]
         ]
       },
@@ -17589,64 +17591,64 @@
         "topic_id": 3,
         "terms": [
           [
-            "social",
-            0.1399
+            "enterprise",
+            0.1967
           ],
           [
-            "activity",
-            0.0909
-          ],
-          [
-            "charity",
-            0.0687
+            "society",
+            0.089
           ],
           [
             "charitable",
-            0.0686
+            0.089
+          ],
+          [
+            "civil",
+            0.0793
+          ],
+          [
+            "development",
+            0.0793
           ],
           [
             "buddhism",
-            0.054
-          ],
-          [
-            "community",
-            0.0465
-          ],
-          [
-            "role",
-            0.0319
-          ],
-          [
-            "delta",
-            0.0251
+            0.0695
           ],
           [
             "assistance",
-            0.0246
+            0.0303
           ],
           [
-            "state",
-            0.0244
-          ],
-          [
-            "promoting",
-            0.0242
+            "economy",
+            0.0205
           ],
           [
             "concept",
-            0.0235
+            0.0205
           ],
           [
-            "organization",
-            0.0234
+            "voluntary",
+            0.0205
           ],
           [
-            "mekong",
-            0.0175
+            "sustainable",
+            0.0205
           ],
           [
-            "hao",
-            0.0172
+            "people",
+            0.0205
+          ],
+          [
+            "recommendation",
+            0.0205
+          ],
+          [
+            "ecosystem",
+            0.0205
+          ],
+          [
+            "household",
+            0.0205
           ]
         ]
       }
@@ -17658,63 +17660,63 @@
           "terms": [
             [
               "social",
-              0.1869
+              0.2712
             ],
             [
               "enterprise",
-              0.1018
-            ],
-            [
-              "activity",
-              0.0592
-            ],
-            [
-              "charitable",
-              0.0449
+              0.1463
             ],
             [
               "charity",
-              0.0444
+              0.0631
             ],
             [
-              "development",
-              0.0357
+              "organization",
+              0.0492
             ],
             [
               "buddhism",
-              0.0356
+              0.0492
             ],
             [
-              "community",
-              0.0302
+              "current",
+              0.0354
             ],
             [
-              "legal",
-              0.0213
+              "country",
+              0.0284
             ],
             [
-              "delta",
-              0.0209
+              "concept",
+              0.0215
             ],
             [
-              "law",
-              0.0193
+              "rural",
+              0.0215
             ],
             [
-              "mekong",
-              0.0166
-            ],
-            [
-              "entity",
-              0.0166
+              "experience",
+              0.0215
             ],
             [
               "assistance",
-              0.0166
+              0.0215
             ],
             [
-              "developing",
-              0.0163
+              "issue",
+              0.0215
+            ],
+            [
+              "support",
+              0.0215
+            ],
+            [
+              "trend",
+              0.0146
+            ],
+            [
+              "market",
+              0.0146
             ]
           ]
         },
@@ -17722,64 +17724,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "civil society",
-              0.0861
+              "activity",
+              0.0895
             ],
             [
-              "organization",
-              0.0764
+              "civil",
+              0.0673
+            ],
+            [
+              "society",
+              0.0673
+            ],
+            [
+              "charitable",
+              0.0673
+            ],
+            [
+              "development",
+              0.0599
+            ],
+            [
+              "community",
+              0.0451
             ],
             [
               "role",
-              0.0488
+              0.0377
             ],
             [
-              "nonprofit",
-              0.0407
+              "law",
+              0.0377
             ],
             [
-              "state",
-              0.0397
+              "delta",
+              0.0303
             ],
             [
-              "rural",
-              0.0314
+              "legal",
+              0.0303
             ],
             [
-              "promoting",
-              0.0312
+              "promote",
+              0.0229
             ],
             [
-              "concept",
-              0.0311
+              "develop",
+              0.0229
             ],
             [
-              "today",
-              0.0306
+              "mekong",
+              0.0229
+            ],
+            [
+              "university",
+              0.0229
             ],
             [
               "capital",
-              0.0304
-            ],
-            [
-              "country",
-              0.0238
-            ],
-            [
-              "economy",
-              0.0226
-            ],
-            [
-              "oriented",
-              0.0226
-            ],
-            [
-              "socialist",
-              0.0226
-            ],
-            [
-              "market",
-              0.0226
+              0.0229
             ]
           ]
         }
@@ -17789,64 +17791,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "enterprise",
-              0.1851
+              "activity",
+              0.1312
             ],
             [
-              "social",
-              0.1795
+              "charity",
+              0.0879
             ],
             [
-              "development",
-              0.0637
+              "role",
+              0.0553
+            ],
+            [
+              "current",
+              0.0553
             ],
             [
               "law",
-              0.0372
+              0.0553
             ],
             [
-              "legal",
-              0.0299
+              "country",
+              0.0445
             ],
             [
-              "entity",
-              0.0286
+              "promote",
+              0.0336
             ],
             [
               "experience",
-              0.0284
+              0.0336
+            ],
+            [
+              "mekong",
+              0.0336
             ],
             [
               "university",
-              0.0205
+              0.0336
             ],
             [
-              "recommendation",
-              0.0202
+              "capital",
+              0.0336
             ],
             [
-              "world",
-              0.0202
+              "profit",
+              0.0336
             ],
             [
-              "assessing",
-              0.0202
+              "issue",
+              0.0336
             ],
             [
-              "ecosystem",
-              0.0202
+              "legal",
+              0.0336
             ],
             [
-              "ethnic",
-              0.0202
-            ],
-            [
-              "minority",
-              0.0202
-            ],
-            [
-              "international",
-              0.0202
+              "market",
+              0.0228
             ]
           ]
         },
@@ -17854,64 +17856,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "civil society",
-              0.1329
+              "social",
+              0.4287
             ],
             [
               "organization",
-              0.0777
+              0.0888
             ],
             [
-              "nonprofit",
-              0.0618
+              "community",
+              0.0669
             ],
             [
-              "capital",
-              0.047
-            ],
-            [
-              "country",
-              0.0336
-            ],
-            [
-              "market",
-              0.0333
-            ],
-            [
-              "socialist",
-              0.0333
-            ],
-            [
-              "economy",
-              0.0333
-            ],
-            [
-              "oriented",
-              0.0333
-            ],
-            [
-              "nongovernment",
-              0.0333
-            ],
-            [
-              "support",
-              0.0329
-            ],
-            [
-              "theoretical",
-              0.0325
+              "delta",
+              0.045
             ],
             [
               "rural",
-              0.0195
+              0.034
             ],
             [
-              "direction",
-              0.0193
+              "develop",
+              0.034
             ],
             [
-              "framework",
-              0.0193
+              "support",
+              0.034
+            ],
+            [
+              "government",
+              0.023
+            ],
+            [
+              "trend",
+              0.023
+            ],
+            [
+              "world",
+              0.023
+            ],
+            [
+              "network",
+              0.023
+            ],
+            [
+              "policy",
+              0.023
+            ],
+            [
+              "ethnic",
+              0.023
+            ],
+            [
+              "suggestion",
+              0.023
+            ],
+            [
+              "commercial",
+              0.023
             ]
           ]
         },
@@ -17919,64 +17921,64 @@
           "topic_id": 3,
           "terms": [
             [
-              "social",
-              0.1399
+              "enterprise",
+              0.1967
             ],
             [
-              "activity",
-              0.0909
-            ],
-            [
-              "charity",
-              0.0687
+              "society",
+              0.089
             ],
             [
               "charitable",
-              0.0686
+              0.089
+            ],
+            [
+              "civil",
+              0.0793
+            ],
+            [
+              "development",
+              0.0793
             ],
             [
               "buddhism",
-              0.054
-            ],
-            [
-              "community",
-              0.0465
-            ],
-            [
-              "role",
-              0.0319
-            ],
-            [
-              "delta",
-              0.0251
+              0.0695
             ],
             [
               "assistance",
-              0.0246
+              0.0303
             ],
             [
-              "state",
-              0.0244
-            ],
-            [
-              "promoting",
-              0.0242
+              "economy",
+              0.0205
             ],
             [
               "concept",
-              0.0235
+              0.0205
             ],
             [
-              "organization",
-              0.0234
+              "voluntary",
+              0.0205
             ],
             [
-              "mekong",
-              0.0175
+              "sustainable",
+              0.0205
             ],
             [
-              "hao",
-              0.0172
+              "people",
+              0.0205
+            ],
+            [
+              "recommendation",
+              0.0205
+            ],
+            [
+              "ecosystem",
+              0.0205
+            ],
+            [
+              "household",
+              0.0205
             ]
           ]
         }
@@ -17986,64 +17988,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "enterprise",
-              0.0835
-            ],
-            [
-              "social",
-              0.0756
-            ],
-            [
-              "legal",
-              0.058
-            ],
-            [
-              "law",
-              0.058
-            ],
-            [
-              "nonprofit",
-              0.0448
+              "civil",
+              0.1375
             ],
             [
               "organization",
-              0.0447
+              0.1224
             ],
             [
               "development",
-              0.0446
+              0.1224
             ],
             [
-              "entity",
-              0.0443
+              "current",
+              0.0619
             ],
             [
-              "experience",
-              0.0309
+              "profit",
+              0.0468
             ],
             [
-              "minority",
-              0.0308
+              "assistance",
+              0.0468
             ],
             [
-              "ethnic",
-              0.0308
+              "issue",
+              0.0468
             ],
             [
-              "assessing",
-              0.0307
+              "support",
+              0.0468
             ],
             [
-              "suggestion",
-              0.0307
+              "trend",
+              0.0317
             ],
             [
-              "household",
-              0.0304
+              "promote",
+              0.0317
             ],
             [
-              "charitable",
-              0.024
+              "survey",
+              0.0317
+            ],
+            [
+              "direction",
+              0.0317
+            ],
+            [
+              "theoretical",
+              0.0317
+            ],
+            [
+              "framework",
+              0.0317
+            ],
+            [
+              "economy",
+              0.0166
             ]
           ]
         },
@@ -18051,64 +18053,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "civil society",
-              0.1867
-            ],
-            [
-              "country",
-              0.0461
-            ],
-            [
-              "state",
-              0.0454
-            ],
-            [
-              "oriented",
-              0.0454
-            ],
-            [
-              "socialist",
-              0.0454
-            ],
-            [
-              "market",
-              0.0454
-            ],
-            [
-              "economy",
-              0.0454
-            ],
-            [
-              "direction",
-              0.0454
-            ],
-            [
-              "practice",
-              0.0433
-            ],
-            [
-              "framework",
-              0.0257
-            ],
-            [
-              "theoretical",
-              0.0256
-            ],
-            [
-              "nongovernment",
-              0.0254
-            ],
-            [
-              "capital",
-              0.0254
-            ],
-            [
-              "organization",
-              0.0253
+              "social",
+              0.4935
             ],
             [
               "law",
-              0.0253
+              0.0661
+            ],
+            [
+              "delta",
+              0.0402
+            ],
+            [
+              "mekong",
+              0.0402
+            ],
+            [
+              "government",
+              0.0272
+            ],
+            [
+              "voluntary",
+              0.0272
+            ],
+            [
+              "sustainable",
+              0.0272
+            ],
+            [
+              "policy",
+              0.0272
+            ],
+            [
+              "household",
+              0.0272
+            ],
+            [
+              "assess",
+              0.0272
+            ],
+            [
+              "hoa",
+              0.0272
+            ],
+            [
+              "suggestion",
+              0.0272
+            ],
+            [
+              "responsibility",
+              0.0272
+            ],
+            [
+              "practice",
+              0.0142
+            ],
+            [
+              "promote",
+              0.0142
             ]
           ]
         },
@@ -18116,64 +18118,64 @@
           "topic_id": 3,
           "terms": [
             [
-              "social",
-              0.1297
+              "enterprise",
+              0.3049
             ],
             [
-              "role",
-              0.0728
+              "society",
+              0.1315
             ],
             [
-              "organization",
-              0.0569
+              "country",
+              0.0592
             ],
             [
-              "community",
-              0.0561
+              "legal",
+              0.0592
             ],
             [
               "concept",
-              0.039
+              0.0448
             ],
             [
-              "today",
-              0.039
+              "develop",
+              0.0448
             ],
             [
-              "charity",
-              0.0389
+              "experience",
+              0.0448
             ],
             [
-              "promoting",
-              0.0389
+              "socialist",
+              0.0303
             ],
             [
-              "rural",
-              0.0386
+              "people",
+              0.0303
             ],
             [
-              "voluntary",
-              0.0385
+              "recommendation",
+              0.0303
             ],
             [
-              "right",
-              0.0384
+              "ecosystem",
+              0.0303
             ],
             [
-              "participating",
-              0.0384
+              "participate",
+              0.0303
             ],
             [
-              "state",
-              0.0383
+              "minority",
+              0.0303
             ],
             [
-              "charitable",
-              0.0271
+              "commercial",
+              0.0303
             ],
             [
-              "responsibility",
-              0.0216
+              "economy",
+              0.0159
             ]
           ]
         },
@@ -18181,64 +18183,64 @@
           "topic_id": 4,
           "terms": [
             [
-              "social",
-              0.1904
-            ],
-            [
-              "enterprise",
-              0.11
-            ],
-            [
               "activity",
-              0.0874
-            ],
-            [
-              "buddhism",
-              0.0518
-            ],
-            [
-              "charitable",
-              0.0458
+              0.1528
             ],
             [
               "charity",
-              0.0448
+              0.1149
             ],
             [
-              "development",
-              0.0374
+              "charitable",
+              0.1149
             ],
             [
-              "mekong",
-              0.0232
-            ],
-            [
-              "assistance",
-              0.0232
-            ],
-            [
-              "delta",
-              0.0232
-            ],
-            [
-              "developing",
-              0.0232
+              "buddhism",
+              0.0896
             ],
             [
               "community",
-              0.023
+              0.077
+            ],
+            [
+              "role",
+              0.0644
+            ],
+            [
+              "rural",
+              0.0391
             ],
             [
               "university",
-              0.0161
+              0.0391
+            ],
+            [
+              "market",
+              0.0265
+            ],
+            [
+              "orient",
+              0.0265
+            ],
+            [
+              "network",
+              0.0265
+            ],
+            [
+              "capital",
+              0.0265
             ],
             [
               "hao",
-              0.0161
+              0.0265
             ],
             [
-              "hoa",
-              0.0161
+              "operate",
+              0.0265
+            ],
+            [
+              "entity",
+              0.0265
             ]
           ]
         }
@@ -18248,64 +18250,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "development",
-              0.1764
+              "charity",
+              0.1888
             ],
             [
-              "social",
-              0.1141
+              "civil",
+              0.1888
             ],
             [
-              "enterprise",
-              0.11
+              "legal",
+              0.0851
             ],
             [
-              "organization",
-              0.0473
+              "entity",
+              0.0643
             ],
             [
-              "world",
-              0.0473
+              "economy",
+              0.0436
+            ],
+            [
+              "people",
+              0.0436
+            ],
+            [
+              "capital",
+              0.0436
+            ],
+            [
+              "issue",
+              0.0436
+            ],
+            [
+              "responsibility",
+              0.0436
             ],
             [
               "country",
-              0.0473
+              0.0228
             ],
             [
-              "support",
-              0.0259
+              "practice",
+              0.0228
             ],
             [
-              "assessing",
-              0.0259
+              "policy",
+              0.0228
             ],
             [
-              "recommendation",
-              0.0259
+              "ethnic",
+              0.0228
             ],
             [
-              "value",
-              0.0259
+              "assistance",
+              0.0228
             ],
             [
-              "experience",
-              0.0259
-            ],
-            [
-              "trend",
-              0.0258
-            ],
-            [
-              "household",
-              0.0258
-            ],
-            [
-              "rural",
-              0.0258
-            ],
-            [
-              "nonprofit",
-              0.0258
+              "ensure",
+              0.0228
             ]
           ]
         },
@@ -18313,64 +18315,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "nonprofit",
-              0.0788
+              "social",
+              0.4801
             ],
             [
-              "civil society",
-              0.0788
+              "society",
+              0.121
             ],
             [
-              "law",
-              0.0544
-            ],
-            [
-              "country",
-              0.0542
-            ],
-            [
-              "market",
-              0.0542
-            ],
-            [
-              "economy",
-              0.0542
-            ],
-            [
-              "oriented",
-              0.0542
-            ],
-            [
-              "socialist",
-              0.0542
+              "development",
+              0.1077
             ],
             [
               "organization",
-              0.0334
+              0.0412
             ],
             [
-              "theoretical",
-              0.0297
+              "promote",
+              0.0412
+            ],
+            [
+              "sustainable",
+              0.0279
+            ],
+            [
+              "hoa",
+              0.0279
             ],
             [
               "suggestion",
-              0.0297
+              0.0279
             ],
             [
-              "practice",
-              0.0297
+              "commercial",
+              0.0279
             ],
             [
-              "capital",
-              0.0296
+              "world",
+              0.0146
             ],
             [
-              "university",
-              0.0296
+              "assistance",
+              0.0146
             ],
             [
-              "nongovernment",
-              0.0296
+              "government",
+              0.0013
+            ],
+            [
+              "trend",
+              0.0013
+            ],
+            [
+              "country",
+              0.0013
+            ],
+            [
+              "economy",
+              0.0013
             ]
           ]
         },
@@ -18378,64 +18380,64 @@
           "topic_id": 3,
           "terms": [
             [
-              "social",
-              0.1405
+              "activity",
+              0.1941
+            ],
+            [
+              "buddhism",
+              0.1241
             ],
             [
               "organization",
-              0.0791
+              0.0892
             ],
             [
-              "community",
-              0.0626
+              "current",
+              0.0542
             ],
             [
-              "role",
-              0.0625
+              "develop",
+              0.0542
             ],
             [
-              "today",
-              0.0623
+              "university",
+              0.0542
             ],
             [
-              "promoting",
-              0.043
+              "support",
+              0.0542
             ],
             [
-              "charity",
-              0.043
+              "trend",
+              0.0367
             ],
             [
-              "rural",
-              0.0429
+              "orient",
+              0.0367
             ],
             [
-              "voluntary",
-              0.0429
+              "socialist",
+              0.0367
             ],
             [
-              "responsibility",
-              0.0235
+              "international",
+              0.0367
             ],
             [
-              "right",
-              0.0234
+              "operate",
+              0.0367
             ],
             [
-              "capital",
-              0.0234
+              "direction",
+              0.0367
             ],
             [
-              "participating",
-              0.0234
+              "world",
+              0.0192
             ],
             [
-              "ensuring",
-              0.0234
-            ],
-            [
-              "work",
-              0.0234
+              "mekong",
+              0.0192
             ]
           ]
         },
@@ -18443,64 +18445,64 @@
           "topic_id": 4,
           "terms": [
             [
-              "social",
-              0.1992
-            ],
-            [
               "enterprise",
-              0.1198
+              0.3754
             ],
             [
-              "activity",
-              0.0714
+              "role",
+              0.0907
             ],
             [
-              "buddhism",
-              0.053
+              "country",
+              0.0552
             ],
             [
-              "charity",
-              0.0383
+              "social",
+              0.0552
             ],
             [
-              "charitable",
-              0.0324
+              "experience",
+              0.0552
             ],
             [
-              "legal",
-              0.0308
+              "profit",
+              0.0552
             ],
             [
-              "mekong",
-              0.0235
+              "current",
+              0.0374
             ],
             [
-              "entity",
-              0.0235
-            ],
-            [
-              "assistance",
-              0.0235
-            ],
-            [
-              "delta",
-              0.0235
-            ],
-            [
-              "developing",
-              0.0235
+              "assess",
+              0.0374
             ],
             [
               "hao",
-              0.0162
+              0.0374
             ],
             [
-              "hoa",
-              0.0162
+              "minority",
+              0.0374
             ],
             [
-              "policy",
-              0.0162
+              "practice",
+              0.0196
+            ],
+            [
+              "community",
+              0.0196
+            ],
+            [
+              "ethnic",
+              0.0196
+            ],
+            [
+              "issue",
+              0.0196
+            ],
+            [
+              "government",
+              0.0018
             ]
           ]
         },
@@ -18508,64 +18510,64 @@
           "topic_id": 5,
           "terms": [
             [
-              "civil society",
-              0.1328
-            ],
-            [
               "charitable",
-              0.0856
+              0.1487
             ],
             [
-              "activity",
-              0.0578
-            ],
-            [
-              "concept",
-              0.0472
-            ],
-            [
-              "state",
-              0.0471
-            ],
-            [
-              "direction",
-              0.0471
-            ],
-            [
-              "framework",
-              0.0471
-            ],
-            [
-              "people",
-              0.0471
-            ],
-            [
-              "operating",
-              0.0258
-            ],
-            [
-              "international",
-              0.0258
-            ],
-            [
-              "towards",
-              0.0257
-            ],
-            [
-              "experience",
-              0.0257
-            ],
-            [
-              "household",
-              0.0257
+              "law",
+              0.0833
             ],
             [
               "community",
-              0.0257
+              0.0833
             ],
             [
-              "trend",
-              0.0257
+              "delta",
+              0.067
+            ],
+            [
+              "concept",
+              0.0507
+            ],
+            [
+              "rural",
+              0.0507
+            ],
+            [
+              "government",
+              0.0343
+            ],
+            [
+              "market",
+              0.0343
+            ],
+            [
+              "voluntary",
+              0.0343
+            ],
+            [
+              "network",
+              0.0343
+            ],
+            [
+              "recommendation",
+              0.0343
+            ],
+            [
+              "mekong",
+              0.0343
+            ],
+            [
+              "ecosystem",
+              0.0343
+            ],
+            [
+              "household",
+              0.0343
+            ],
+            [
+              "survey",
+              0.0343
             ]
           ]
         }
@@ -18575,64 +18577,64 @@
           "topic_id": 1,
           "terms": [
             [
-              "enterprise",
-              0.16
-            ],
-            [
               "social",
-              0.1599
+              0.654
             ],
             [
-              "development",
-              0.0992
+              "economy",
+              0.038
             ],
             [
-              "legal",
-              0.0385
+              "people",
+              0.038
             ],
             [
-              "organization",
-              0.0384
+              "capital",
+              0.038
             ],
             [
-              "experience",
-              0.0263
-            ],
-            [
-              "world",
-              0.0263
-            ],
-            [
-              "sustainable",
-              0.0263
-            ],
-            [
-              "assessing",
-              0.0263
-            ],
-            [
-              "ethnic",
-              0.0263
-            ],
-            [
-              "minority",
-              0.0263
-            ],
-            [
-              "nonprofit",
-              0.0263
+              "responsibility",
+              0.038
             ],
             [
               "country",
-              0.0263
+              0.0199
             ],
             [
-              "entity",
-              0.0263
+              "practice",
+              0.0199
             ],
             [
-              "law",
-              0.0263
+              "policy",
+              0.0199
+            ],
+            [
+              "issue",
+              0.0199
+            ],
+            [
+              "ensure",
+              0.0199
+            ],
+            [
+              "government",
+              0.0018
+            ],
+            [
+              "organization",
+              0.0018
+            ],
+            [
+              "trend",
+              0.0018
+            ],
+            [
+              "market",
+              0.0018
+            ],
+            [
+              "orient",
+              0.0018
             ]
           ]
         },
@@ -18640,64 +18642,64 @@
           "topic_id": 2,
           "terms": [
             [
-              "social",
-              0.0786
+              "civil",
+              0.1928
             ],
             [
-              "enterprise",
-              0.0778
+              "development",
+              0.1716
             ],
             [
-              "university",
-              0.0591
+              "organization",
+              0.1504
             ],
             [
-              "developing",
-              0.059
-            ],
-            [
-              "civil society",
-              0.059
-            ],
-            [
-              "state",
-              0.0405
+              "buddhism",
+              0.1081
             ],
             [
               "country",
-              0.0405
+              0.0657
             ],
             [
-              "nonprofit",
-              0.0404
+              "current",
+              0.0657
             ],
             [
-              "role",
-              0.0404
+              "society",
+              0.0233
             ],
             [
-              "oriented",
-              0.0404
+              "sustainable",
+              0.0233
             ],
             [
-              "market",
-              0.0404
+              "community",
+              0.0233
             ],
             [
-              "socialist",
-              0.0404
+              "ethnic",
+              0.0233
             ],
             [
-              "economy",
-              0.0404
+              "assistance",
+              0.0233
             ],
             [
               "theoretical",
-              0.0404
+              0.0233
             ],
             [
-              "mekong",
-              0.0237
+              "government",
+              0.0021
+            ],
+            [
+              "trend",
+              0.0021
+            ],
+            [
+              "economy",
+              0.0021
             ]
           ]
         },
@@ -18705,64 +18707,64 @@
           "topic_id": 3,
           "terms": [
             [
-              "social",
-              0.1735
+              "activity",
+              0.2564
             ],
             [
-              "community",
-              0.0767
+              "promote",
+              0.0657
             ],
             [
-              "organization",
-              0.0524
+              "develop",
+              0.0657
             ],
             [
-              "rural",
-              0.0524
+              "university",
+              0.0657
             ],
             [
-              "role",
-              0.0524
+              "support",
+              0.0657
             ],
             [
-              "charity",
-              0.0524
+              "entity",
+              0.0657
             ],
             [
-              "voluntary",
-              0.0524
+              "international",
+              0.0445
             ],
             [
-              "capital",
-              0.0282
+              "hoa",
+              0.0445
             ],
             [
-              "today",
-              0.0282
+              "suggestion",
+              0.0445
             ],
             [
-              "responsibility",
-              0.0282
+              "direction",
+              0.0445
             ],
             [
-              "work",
-              0.0282
+              "commercial",
+              0.0445
             ],
             [
-              "delta",
-              0.0282
+              "socialist",
+              0.0233
             ],
             [
-              "charitable",
-              0.0282
+              "assistance",
+              0.0233
             ],
             [
-              "experience",
-              0.0282
+              "issue",
+              0.0233
             ],
             [
-              "promoting",
-              0.0282
+              "legal",
+              0.0233
             ]
           ]
         },
@@ -18770,64 +18772,64 @@
           "topic_id": 4,
           "terms": [
             [
-              "social",
-              0.1888
-            ],
-            [
-              "activity",
-              0.102
-            ],
-            [
-              "buddhism",
-              0.0895
-            ],
-            [
-              "charity",
-              0.0646
-            ],
-            [
               "enterprise",
-              0.052
+              0.3392
             ],
             [
-              "charitable",
-              0.0396
+              "society",
+              0.1302
             ],
             [
-              "assistance",
-              0.0396
-            ],
-            [
-              "policy",
-              0.0271
-            ],
-            [
-              "ecosystem",
-              0.0271
-            ],
-            [
-              "hao",
-              0.0271
-            ],
-            [
-              "hoa",
-              0.0271
+              "role",
+              0.082
             ],
             [
               "community",
-              0.027
+              0.0498
             ],
             [
-              "towards",
-              0.027
+              "buddhism",
+              0.0338
             ],
             [
-              "mekong",
-              0.0258
+              "social",
+              0.0338
             ],
             [
-              "delta",
-              0.0258
+              "current",
+              0.0338
+            ],
+            [
+              "world",
+              0.0338
+            ],
+            [
+              "minority",
+              0.0338
+            ],
+            [
+              "legal",
+              0.0338
+            ],
+            [
+              "organization",
+              0.0177
+            ],
+            [
+              "trend",
+              0.0177
+            ],
+            [
+              "orient",
+              0.0177
+            ],
+            [
+              "socialist",
+              0.0177
+            ],
+            [
+              "sustainable",
+              0.0177
             ]
           ]
         },
@@ -18835,64 +18837,64 @@
           "topic_id": 5,
           "terms": [
             [
-              "civil society",
-              0.1392
+              "charity",
+              0.2013
             ],
             [
               "charitable",
-              0.0715
+              0.2013
             ],
             [
-              "activity",
-              0.0714
+              "experience",
+              0.0686
             ],
             [
-              "organization",
-              0.0489
+              "voluntary",
+              0.0465
             ],
             [
-              "concept",
-              0.0489
+              "assess",
+              0.0465
             ],
             [
-              "promoting",
-              0.0489
+              "hao",
+              0.0465
             ],
             [
-              "framework",
-              0.0489
-            ],
-            [
-              "direction",
-              0.0489
-            ],
-            [
-              "today",
-              0.0263
-            ],
-            [
-              "household",
-              0.0263
-            ],
-            [
-              "ensuring",
-              0.0263
+              "operate",
+              0.0465
             ],
             [
               "trend",
-              0.0263
+              0.0243
             ],
             [
-              "people",
-              0.0263
+              "orient",
+              0.0243
             ],
             [
-              "nongovernment",
-              0.0263
+              "social",
+              0.0243
             ],
             [
-              "legal",
-              0.0263
+              "practice",
+              0.0243
+            ],
+            [
+              "recommendation",
+              0.0243
+            ],
+            [
+              "capital",
+              0.0243
+            ],
+            [
+              "profit",
+              0.0243
+            ],
+            [
+              "ethnic",
+              0.0243
             ]
           ]
         },
@@ -18901,63 +18903,1042 @@
           "terms": [
             [
               "law",
-              0.1122
+              0.1081
+            ],
+            [
+              "delta",
+              0.0869
+            ],
+            [
+              "concept",
+              0.0657
+            ],
+            [
+              "rural",
+              0.0657
+            ],
+            [
+              "government",
+              0.0445
+            ],
+            [
+              "market",
+              0.0445
+            ],
+            [
+              "network",
+              0.0445
+            ],
+            [
+              "mekong",
+              0.0445
+            ],
+            [
+              "ecosystem",
+              0.0445
+            ],
+            [
+              "community",
+              0.0445
+            ],
+            [
+              "household",
+              0.0445
+            ],
+            [
+              "survey",
+              0.0445
+            ],
+            [
+              "participate",
+              0.0445
+            ],
+            [
+              "profit",
+              0.0445
+            ],
+            [
+              "framework",
+              0.0445
+            ]
+          ]
+        }
+      ],
+      "7": [
+        {
+          "topic_id": 1,
+          "terms": [
+            [
+              "community",
+              0.1269
             ],
             [
               "charitable",
-              0.0606
+              0.102
             ],
             [
-              "suggestion",
-              0.0604
+              "civil",
+              0.0771
             ],
             [
-              "charity",
-              0.0604
+              "delta",
+              0.0771
             ],
             [
-              "entity",
-              0.0603
-            ],
-            [
-              "activity",
-              0.0603
-            ],
-            [
-              "right",
-              0.0603
-            ],
-            [
-              "participating",
-              0.0603
-            ],
-            [
-              "capital",
-              0.0086
-            ],
-            [
-              "towards",
-              0.0086
+              "issue",
+              0.0771
             ],
             [
               "practice",
-              0.0086
+              0.0522
             ],
             [
-              "today",
-              0.0086
+              "development",
+              0.0522
+            ],
+            [
+              "sustainable",
+              0.0522
+            ],
+            [
+              "mekong",
+              0.0522
+            ],
+            [
+              "participate",
+              0.0522
+            ],
+            [
+              "theoretical",
+              0.0522
+            ],
+            [
+              "market",
+              0.0274
             ],
             [
               "social",
-              0.0086
+              0.0274
             ],
             [
-              "operating",
-              0.0086
+              "capital",
+              0.0274
             ],
             [
-              "nonprofit",
-              0.0086
+              "minority",
+              0.0274
+            ]
+          ]
+        },
+        {
+          "topic_id": 2,
+          "terms": [
+            [
+              "charity",
+              0.2209
+            ],
+            [
+              "enterprise",
+              0.1723
+            ],
+            [
+              "charitable",
+              0.1238
+            ],
+            [
+              "promote",
+              0.0752
+            ],
+            [
+              "profit",
+              0.0752
+            ],
+            [
+              "recommendation",
+              0.051
+            ],
+            [
+              "ecosystem",
+              0.051
+            ],
+            [
+              "rural",
+              0.0267
+            ],
+            [
+              "experience",
+              0.0267
+            ],
+            [
+              "community",
+              0.0267
+            ],
+            [
+              "legal",
+              0.0267
+            ],
+            [
+              "government",
+              0.0024
+            ],
+            [
+              "organization",
+              0.0024
+            ],
+            [
+              "trend",
+              0.0024
+            ],
+            [
+              "country",
+              0.0024
+            ]
+          ]
+        },
+        {
+          "topic_id": 3,
+          "terms": [
+            [
+              "social",
+              0.6724
+            ],
+            [
+              "current",
+              0.0977
+            ],
+            [
+              "people",
+              0.0402
+            ],
+            [
+              "assistance",
+              0.0402
+            ],
+            [
+              "direction",
+              0.0402
+            ],
+            [
+              "government",
+              0.0019
+            ],
+            [
+              "organization",
+              0.0019
+            ],
+            [
+              "trend",
+              0.0019
+            ],
+            [
+              "country",
+              0.0019
+            ],
+            [
+              "economy",
+              0.0019
+            ],
+            [
+              "market",
+              0.0019
+            ],
+            [
+              "orient",
+              0.0019
+            ],
+            [
+              "role",
+              0.0019
+            ],
+            [
+              "socialist",
+              0.0019
+            ],
+            [
+              "activity",
+              0.0019
+            ]
+          ]
+        },
+        {
+          "topic_id": 4,
+          "terms": [
+            [
+              "society",
+              0.1716
+            ],
+            [
+              "country",
+              0.0657
+            ],
+            [
+              "entity",
+              0.0657
+            ],
+            [
+              "legal",
+              0.0657
+            ],
+            [
+              "government",
+              0.0445
+            ],
+            [
+              "trend",
+              0.0445
+            ],
+            [
+              "economy",
+              0.0445
+            ],
+            [
+              "social",
+              0.0445
+            ],
+            [
+              "rural",
+              0.0445
+            ],
+            [
+              "world",
+              0.0445
+            ],
+            [
+              "network",
+              0.0445
+            ],
+            [
+              "survey",
+              0.0445
+            ],
+            [
+              "operate",
+              0.0445
+            ],
+            [
+              "commercial",
+              0.0445
+            ],
+            [
+              "responsibility",
+              0.0445
+            ]
+          ]
+        },
+        {
+          "topic_id": 5,
+          "terms": [
+            [
+              "organization",
+              0.2177
+            ],
+            [
+              "civil",
+              0.164
+            ],
+            [
+              "role",
+              0.1371
+            ],
+            [
+              "socialist",
+              0.0565
+            ],
+            [
+              "concept",
+              0.0565
+            ],
+            [
+              "ethnic",
+              0.0565
+            ],
+            [
+              "framework",
+              0.0565
+            ],
+            [
+              "market",
+              0.0296
+            ],
+            [
+              "orient",
+              0.0296
+            ],
+            [
+              "delta",
+              0.0296
+            ],
+            [
+              "minority",
+              0.0296
+            ],
+            [
+              "government",
+              0.0027
+            ],
+            [
+              "trend",
+              0.0027
+            ],
+            [
+              "country",
+              0.0027
+            ],
+            [
+              "economy",
+              0.0027
+            ]
+          ]
+        },
+        {
+          "topic_id": 6,
+          "terms": [
+            [
+              "activity",
+              0.2677
+            ],
+            [
+              "development",
+              0.135
+            ],
+            [
+              "develop",
+              0.0686
+            ],
+            [
+              "university",
+              0.0686
+            ],
+            [
+              "support",
+              0.0686
+            ],
+            [
+              "voluntary",
+              0.0465
+            ],
+            [
+              "household",
+              0.0465
+            ],
+            [
+              "assess",
+              0.0465
+            ],
+            [
+              "ensure",
+              0.0465
+            ],
+            [
+              "country",
+              0.0243
+            ],
+            [
+              "society",
+              0.0243
+            ],
+            [
+              "concept",
+              0.0243
+            ],
+            [
+              "assistance",
+              0.0243
+            ],
+            [
+              "government",
+              0.0022
+            ],
+            [
+              "organization",
+              0.0022
+            ]
+          ]
+        },
+        {
+          "topic_id": 7,
+          "terms": [
+            [
+              "enterprise",
+              0.2987
+            ],
+            [
+              "buddhism",
+              0.1504
+            ],
+            [
+              "law",
+              0.1081
+            ],
+            [
+              "experience",
+              0.0445
+            ],
+            [
+              "international",
+              0.0445
+            ],
+            [
+              "policy",
+              0.0445
+            ],
+            [
+              "capital",
+              0.0445
+            ],
+            [
+              "hao",
+              0.0445
+            ],
+            [
+              "hoa",
+              0.0445
+            ],
+            [
+              "suggestion",
+              0.0445
+            ],
+            [
+              "social",
+              0.0233
+            ],
+            [
+              "government",
+              0.0021
+            ],
+            [
+              "organization",
+              0.0021
+            ],
+            [
+              "trend",
+              0.0021
+            ],
+            [
+              "country",
+              0.0021
+            ]
+          ]
+        }
+      ],
+      "8": [
+        {
+          "topic_id": 1,
+          "terms": [
+            [
+              "civil",
+              0.1784
+            ],
+            [
+              "delta",
+              0.0906
+            ],
+            [
+              "issue",
+              0.0906
+            ],
+            [
+              "practice",
+              0.0614
+            ],
+            [
+              "development",
+              0.0614
+            ],
+            [
+              "sustainable",
+              0.0614
+            ],
+            [
+              "participate",
+              0.0614
+            ],
+            [
+              "theoretical",
+              0.0614
+            ],
+            [
+              "market",
+              0.0322
+            ],
+            [
+              "social",
+              0.0322
+            ],
+            [
+              "mekong",
+              0.0322
+            ],
+            [
+              "community",
+              0.0322
+            ],
+            [
+              "capital",
+              0.0322
+            ],
+            [
+              "minority",
+              0.0322
+            ],
+            [
+              "government",
+              0.0029
+            ]
+          ]
+        },
+        {
+          "topic_id": 2,
+          "terms": [
+            [
+              "social",
+              0.4707
+            ],
+            [
+              "charity",
+              0.1777
+            ],
+            [
+              "charitable",
+              0.1191
+            ],
+            [
+              "promote",
+              0.0605
+            ],
+            [
+              "rural",
+              0.0215
+            ],
+            [
+              "enterprise",
+              0.0215
+            ],
+            [
+              "ecosystem",
+              0.0215
+            ],
+            [
+              "government",
+              0.002
+            ],
+            [
+              "organization",
+              0.002
+            ],
+            [
+              "trend",
+              0.002
+            ],
+            [
+              "country",
+              0.002
+            ],
+            [
+              "economy",
+              0.002
+            ],
+            [
+              "market",
+              0.002
+            ],
+            [
+              "orient",
+              0.002
+            ],
+            [
+              "role",
+              0.002
+            ]
+          ]
+        },
+        {
+          "topic_id": 3,
+          "terms": [
+            [
+              "current",
+              0.1449
+            ],
+            [
+              "community",
+              0.1449
+            ],
+            [
+              "organization",
+              0.0881
+            ],
+            [
+              "profit",
+              0.0881
+            ],
+            [
+              "entity",
+              0.0881
+            ],
+            [
+              "rural",
+              0.0597
+            ],
+            [
+              "people",
+              0.0597
+            ],
+            [
+              "recommendation",
+              0.0597
+            ],
+            [
+              "commercial",
+              0.0597
+            ],
+            [
+              "experience",
+              0.0312
+            ],
+            [
+              "ecosystem",
+              0.0312
+            ],
+            [
+              "government",
+              0.0028
+            ],
+            [
+              "trend",
+              0.0028
+            ],
+            [
+              "country",
+              0.0028
+            ],
+            [
+              "economy",
+              0.0028
+            ]
+          ]
+        },
+        {
+          "topic_id": 4,
+          "terms": [
+            [
+              "social",
+              0.2898
+            ],
+            [
+              "society",
+              0.1571
+            ],
+            [
+              "country",
+              0.0686
+            ],
+            [
+              "charitable",
+              0.0686
+            ],
+            [
+              "government",
+              0.0465
+            ],
+            [
+              "trend",
+              0.0465
+            ],
+            [
+              "world",
+              0.0465
+            ],
+            [
+              "survey",
+              0.0465
+            ],
+            [
+              "operate",
+              0.0465
+            ],
+            [
+              "direction",
+              0.0465
+            ],
+            [
+              "responsibility",
+              0.0243
+            ],
+            [
+              "organization",
+              0.0022
+            ],
+            [
+              "economy",
+              0.0022
+            ],
+            [
+              "market",
+              0.0022
+            ],
+            [
+              "orient",
+              0.0022
+            ]
+          ]
+        },
+        {
+          "topic_id": 5,
+          "terms": [
+            [
+              "role",
+              0.1584
+            ],
+            [
+              "legal",
+              0.1273
+            ],
+            [
+              "civil",
+              0.0963
+            ],
+            [
+              "economy",
+              0.0652
+            ],
+            [
+              "network",
+              0.0652
+            ],
+            [
+              "mekong",
+              0.0652
+            ],
+            [
+              "university",
+              0.0652
+            ],
+            [
+              "assistance",
+              0.0652
+            ],
+            [
+              "framework",
+              0.0652
+            ],
+            [
+              "orient",
+              0.0342
+            ],
+            [
+              "responsibility",
+              0.0342
+            ],
+            [
+              "government",
+              0.0031
+            ],
+            [
+              "organization",
+              0.0031
+            ],
+            [
+              "trend",
+              0.0031
+            ],
+            [
+              "country",
+              0.0031
+            ]
+          ]
+        },
+        {
+          "topic_id": 6,
+          "terms": [
+            [
+              "enterprise",
+              0.1685
+            ],
+            [
+              "organization",
+              0.1409
+            ],
+            [
+              "concept",
+              0.0856
+            ],
+            [
+              "support",
+              0.0856
+            ],
+            [
+              "socialist",
+              0.058
+            ],
+            [
+              "voluntary",
+              0.058
+            ],
+            [
+              "ethnic",
+              0.058
+            ],
+            [
+              "ensure",
+              0.058
+            ],
+            [
+              "market",
+              0.0304
+            ],
+            [
+              "orient",
+              0.0304
+            ],
+            [
+              "society",
+              0.0304
+            ],
+            [
+              "delta",
+              0.0304
+            ],
+            [
+              "minority",
+              0.0304
+            ],
+            [
+              "government",
+              0.0028
+            ],
+            [
+              "trend",
+              0.0028
+            ]
+          ]
+        },
+        {
+          "topic_id": 7,
+          "terms": [
+            [
+              "activity",
+              0.2867
+            ],
+            [
+              "development",
+              0.1445
+            ],
+            [
+              "law",
+              0.1209
+            ],
+            [
+              "develop",
+              0.0735
+            ],
+            [
+              "household",
+              0.0498
+            ],
+            [
+              "assess",
+              0.0498
+            ],
+            [
+              "country",
+              0.0261
+            ],
+            [
+              "society",
+              0.0261
+            ],
+            [
+              "experience",
+              0.0261
+            ],
+            [
+              "hoa",
+              0.0261
+            ],
+            [
+              "assistance",
+              0.0261
+            ],
+            [
+              "suggestion",
+              0.0261
+            ],
+            [
+              "government",
+              0.0024
+            ],
+            [
+              "organization",
+              0.0024
+            ],
+            [
+              "trend",
+              0.0024
+            ]
+          ]
+        },
+        {
+          "topic_id": 8,
+          "terms": [
+            [
+              "enterprise",
+              0.3507
+            ],
+            [
+              "buddhism",
+              0.1766
+            ],
+            [
+              "international",
+              0.0522
+            ],
+            [
+              "policy",
+              0.0522
+            ],
+            [
+              "capital",
+              0.0522
+            ],
+            [
+              "hao",
+              0.0522
+            ],
+            [
+              "social",
+              0.0274
+            ],
+            [
+              "experience",
+              0.0274
+            ],
+            [
+              "university",
+              0.0274
+            ],
+            [
+              "hoa",
+              0.0274
+            ],
+            [
+              "suggestion",
+              0.0274
+            ],
+            [
+              "government",
+              0.0025
+            ],
+            [
+              "organization",
+              0.0025
+            ],
+            [
+              "trend",
+              0.0025
+            ],
+            [
+              "country",
+              0.0025
             ]
           ]
         }
