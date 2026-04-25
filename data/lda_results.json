@@ -15007,7 +15007,7 @@
     }
   },
   "Turkey": {
-    "selected_k": 2,
+    "selected_k": 3,
     "n_docs": 2039,
     "rationale": "Large corpus (n=2039). Perplexity: k=2: 559.5, k=3: 584.1, k=4: 619.6, k=5: 652.3, k=6: 704.1, k=7: 699.3, k=8: 718.0. k=2 selected via elbow method.",
     "perplexity_scores": {
@@ -15024,64 +15024,64 @@
         "topic_id": 1,
         "terms": [
           [
-            "foundation",
-            0.0817
+            "organization",
+            0.0828
           ],
           [
-            "waqf",
-            0.0535
+            "nongovernment",
+            0.0453
           ],
           [
-            "ottoman",
-            0.0302
+            "civil society",
+            0.0219
           ],
           [
-            "century",
-            0.0193
+            "association",
+            0.0154
           ],
           [
-            "th",
+            "education",
+            0.0137
+          ],
+          [
+            "role",
             0.0131
           ],
           [
-            "period",
+            "volunteer",
+            0.0118
+          ],
+          [
+            "management",
+            0.0118
+          ],
+          [
+            "activity",
+            0.0116
+          ],
+          [
+            "public",
+            0.0115
+          ],
+          [
+            "ngo",
             0.0097
           ],
           [
-            "cash",
-            0.0096
+            "volunteering",
+            0.0097
           ],
           [
-            "law",
+            "nonprofit",
             0.0094
           ],
           [
-            "institution",
-            0.0076
+            "community",
+            0.0094
           ],
           [
-            "example",
-            0.0076
-          ],
-          [
-            "al",
-            0.0071
-          ],
-          [
-            "book",
-            0.0068
-          ],
-          [
-            "empire",
-            0.0067
-          ],
-          [
-            "n",
-            0.0067
-          ],
-          [
-            "pasha",
-            0.0061
+            "evaluation",
+            0.0091
           ]
         ]
       },
@@ -15090,63 +15090,128 @@
         "terms": [
           [
             "social",
-            0.0479
-          ],
-          [
-            "organization",
-            0.0464
+            0.09
           ],
           [
             "civil society",
-            0.0336
+            0.0401
           ],
           [
-            "nongovernment",
-            0.0254
+            "entrepreneurship",
+            0.0268
           ],
           [
             "association",
             0.0183
           ],
           [
-            "entrepreneurship",
-            0.0143
+            "context",
+            0.0122
           ],
           [
             "role",
-            0.0132
+            0.0118
           ],
           [
             "relationship",
+            0.0113
+          ],
+          [
+            "process",
+            0.0108
+          ],
+          [
+            "responsibility",
+            0.0101
+          ],
+          [
+            "corporate",
             0.0093
           ],
           [
-            "public",
-            0.0087
+            "policy",
+            0.009
           ],
           [
-            "context",
+            "media",
+            0.008
+          ],
+          [
+            "political",
+            0.0071
+          ],
+          [
+            "voluntary",
+            0.0068
+          ],
+          [
+            "local",
+            0.0066
+          ]
+        ]
+      },
+      {
+        "topic_id": 3,
+        "terms": [
+          [
+            "foundation",
+            0.0939
+          ],
+          [
+            "waqf",
+            0.0614
+          ],
+          [
+            "ottoman",
+            0.0346
+          ],
+          [
+            "century",
+            0.0221
+          ],
+          [
+            "th",
+            0.015
+          ],
+          [
+            "period",
+            0.0112
+          ],
+          [
+            "cash",
+            0.011
+          ],
+          [
+            "law",
+            0.0108
+          ],
+          [
+            "institution",
+            0.0093
+          ],
+          [
+            "al",
             0.0082
           ],
           [
-            "evaluation",
+            "book",
             0.0078
           ],
           [
-            "ngo",
-            0.0077
+            "empire",
+            0.0076
           ],
           [
-            "education",
-            0.0077
+            "example",
+            0.0075
           ],
           [
-            "activity",
-            0.0074
+            "pasha",
+            0.0069
           ],
           [
-            "volunteering",
-            0.007
+            "accounting",
+            0.0062
           ]
         ]
       }
