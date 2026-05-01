@@ -70,7 +70,7 @@
       else if (d.lda_cosine >= 0.35) interp = 'Moderate similarity';
       else interp = 'Low similarity';
 
-      html += '<tr><td><strong>' + c + '</strong></td>';
+      html += '<tr><td><strong>' + window.countryDisplay(c) + '</strong></td>';
       html += '<td>' + d.nvsq_n + ' articles</td>';
       html += '<td>' + d.local_n.toLocaleString() + ' articles</td>';
       html += '<td>' + d.jaccard.toFixed(3) + '</td>';
@@ -92,8 +92,8 @@
     countries.forEach(function (c, idx) {
       var d = data[c];
       html += '<div class="section">';
-      html += '<p class="section-label">' + c + '</p>';
-      html += '<h2 style="border-bottom:none;margin-top:0.5rem;">' + c + ': English (' + d.nvsq_n + ') vs Local (' + d.local_n.toLocaleString() + ')</h2>';
+      html += '<p class="section-label">' + window.countryDisplay(c) + '</p>';
+      html += '<h2 style="border-bottom:none;margin-top:0.5rem;">' + window.countryDisplay(c) + ': English (' + d.nvsq_n + ') vs Local (' + d.local_n.toLocaleString() + ')</h2>';
 
       // Similarity scores
       var interp = d.lda_cosine >= 0.55 ? 'high' : d.lda_cosine >= 0.35 ? 'moderate' : 'low';

@@ -20,9 +20,11 @@
       var country = data.countries[countryKey];
       if (!country) { document.getElementById('country-content').innerHTML = '<p>Country not found. <a href="index.html">Go back</a>.</p>'; return; }
 
+      var displayName = window.countryDisplay(country.name);
+
       // Set page title
-      document.title = country.name + ' | Asian Nonprofit Research';
-      document.getElementById('country-title').textContent = country.name;
+      document.title = displayName + ' | Asian Nonprofit Research';
+      document.getElementById('country-title').textContent = displayName;
       document.getElementById('country-subtitle').textContent =
         country.total_papers.toLocaleString() + ' papers · ' +
         (country.year_range[0] || '?') + '–' + (country.year_range[1] || '?');
@@ -35,7 +37,7 @@
           .sort(function (a, b) { return b[1].total_papers - a[1].total_papers; })
           .forEach(function (entry) {
             var active = entry[0] === countryKey ? ' active' : '';
-            html += '<a href="country.html?c=' + encodeURIComponent(entry[0]) + '" class="' + active + '">' + esc(entry[1].name) + '</a>';
+            html += '<a href="country.html?c=' + encodeURIComponent(entry[0]) + '" class="' + active + '">' + esc(window.countryDisplay(entry[1].name)) + '</a>';
           });
         nav.innerHTML = html;
       }
@@ -50,8 +52,8 @@
       renderTopWords(country);
       renderBigrams(country);
       renderPairs(country);
-      renderNetwork('bigram-network', country.bigram_network, 'Bigram Network: ' + country.name);
-      renderNetwork('pair-network', country.pair_network, 'Co-occurrence Network: ' + country.name);
+      renderNetwork('bigram-network', country.bigram_network, 'Bigram Network: ' + displayName);
+      renderNetwork('pair-network', country.pair_network, 'Co-occurrence Network: ' + displayName);
       renderLDA(countryKey);
       renderWordCloud(country);
     })
@@ -82,7 +84,7 @@
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          title: { display: true, text: 'Publications by Year: ' + c.name, font: { size: 14, weight: '600' } }
+          title: { display: true, text: 'Publications by Year: ' + window.countryDisplay(c.name), font: { size: 14, weight: '600' } }
         },
         scales: {
           y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.06)' } },
@@ -119,7 +121,7 @@
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          title: { display: true, text: 'Top 25 Words: ' + c.name, font: { size: 14, weight: '600' } }
+          title: { display: true, text: 'Top 25 Words: ' + window.countryDisplay(c.name), font: { size: 14, weight: '600' } }
         },
         scales: {
           x: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.06)' } },
@@ -167,7 +169,7 @@
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          title: { display: true, text: 'Top 20 Bigrams: ' + c.name, font: { size: 14, weight: '600' } }
+          title: { display: true, text: 'Top 20 Bigrams: ' + window.countryDisplay(c.name), font: { size: 14, weight: '600' } }
         },
         scales: {
           x: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.06)' } },
@@ -216,7 +218,7 @@
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          title: { display: true, text: 'Top 20 Co-occurrence Pairs: ' + c.name, font: { size: 14, weight: '600' } }
+          title: { display: true, text: 'Top 20 Co-occurrence Pairs: ' + window.countryDisplay(c.name), font: { size: 14, weight: '600' } }
         },
         scales: {
           x: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.06)' } },

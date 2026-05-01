@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asian Nonprofit Research Database</title>
-  <meta name="description" content="Text analysis of nonprofit research across 8 Asian locations: 16,000+ article titles analyzed for trends, keywords, and thematic patterns.">
+  <meta name="description" content="Text analysis of nonprofit research across 8 Asian locations: 20,000+ article titles analyzed for trends, keywords, and thematic patterns.">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 </head>
 <body>
 
@@ -28,9 +30,14 @@
     <div class="hero">
       <h1>Asian Nonprofit<br>Research Database</h1>
       <p class="subtitle">A comprehensive text analysis of nonprofit research article titles across eight Asian locations. Explore publication trends, dominant research themes, and cross-location comparisons.</p>
-      <div class="callout" style="text-align:center; border-left:3px solid var(--accent); background:var(--primary-bg);">
+      <div class="callout" style="text-align:center;">
         <p style="font-size:1.05rem; font-weight:600; color:var(--ink); margin-bottom:0.4rem;">Have suggestions or improvements?</p>
         <p style="margin-bottom:0;">Please contact <strong>Dr. Seongho An</strong> at <a href="mailto:Seongho.An@ucf.edu" style="font-weight:600;">Seongho.An@ucf.edu</a></p>
+      </div>
+
+      <div class="region-map">
+        <div class="map-caption">Coverage</div>
+        <div id="asia-map" class="map-frame"></div>
       </div>
     </div>
   </div>
@@ -38,7 +45,7 @@
   <!-- Stats -->
   <div class="stats-bar">
     <div class="stat-card">
-      <span class="number" id="stat-total">16,158</span>
+      <span class="number" id="stat-total">20,343</span>
       <span class="label">Articles</span>
     </div>
     <div class="stat-card">
@@ -46,12 +53,8 @@
       <span class="label">Locations</span>
     </div>
     <div class="stat-card">
-      <span class="number" id="stat-years">1984–2026</span>
+      <span class="number" id="stat-years">1938–2026</span>
       <span class="label">Year Range</span>
-    </div>
-    <div class="stat-card">
-      <span class="number" id="stat-peak">Japan</span>
-      <span class="label">Most Papers</span>
     </div>
   </div>
 

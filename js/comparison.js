@@ -42,14 +42,14 @@
     // Header row
     html += '<tr><td style="width:120px;"></td>';
     for (var j = 0; j < n; j++) {
-      html += '<td style="width:' + cellSize + 'px;text-align:center;font-size:0.72rem;font-weight:600;padding:6px 2px;color:#333;writing-mode:vertical-lr;transform:rotate(180deg);height:80px;">' + countries[j] + '</td>';
+      html += '<td style="width:' + cellSize + 'px;text-align:center;font-size:0.72rem;font-weight:600;padding:6px 2px;color:#333;writing-mode:vertical-lr;transform:rotate(180deg);height:80px;">' + window.countryDisplay(countries[j]) + '</td>';
     }
     html += '</tr>';
 
     // Data rows
     for (var i = 0; i < n; i++) {
       html += '<tr>';
-      html += '<td style="text-align:right;padding-right:8px;font-size:0.82rem;font-weight:600;color:#333;">' + countries[i] + '</td>';
+      html += '<td style="text-align:right;padding-right:8px;font-size:0.82rem;font-weight:600;color:#333;">' + window.countryDisplay(countries[i]) + '</td>';
       for (var j2 = 0; j2 < n; j2++) {
         var val = matrix[i][j2];
         var displayVal = (val !== null && !isNaN(val)) ? val.toFixed(2) : '—';
@@ -99,7 +99,7 @@
       var simVal = (p.similarity !== null && !isNaN(p.similarity)) ? p.similarity.toFixed(3) : '—';
       var termsStr = p.shared_terms.length > 0 ? p.shared_terms.map(function (t) { return '<code>' + t + '</code>'; }).join(' ') : '<span style="color:#999;">none</span>';
       html += '<tr>';
-      html += '<td><strong>' + p.c1 + ' &harr; ' + p.c2 + '</strong></td>';
+      html += '<td><strong>' + window.countryDisplay(p.c1) + ' &harr; ' + window.countryDisplay(p.c2) + '</strong></td>';
       html += '<td>' + simVal + '</td>';
       html += '<td>' + termsStr + '</td>';
       html += '</tr>';
