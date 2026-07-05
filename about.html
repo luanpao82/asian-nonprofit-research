@@ -115,7 +115,7 @@
       <h3 id="unigrams">Unigram Frequency Analysis</h3>
       <p>Unigram frequency analysis counts the occurrence of individual words (after preprocessing) across all article titles within a location. The top 25 most frequent words are reported for each location.</p>
       <p><strong>What it reveals:</strong> The most common single words reflect the dominant themes and concerns in a location's nonprofit research literature. High-frequency terms identify the core conceptual vocabulary of the field. The concentration ratio (what proportion of total word occurrences the top 10 terms account for) indicates whether the field has a narrow focus around a few key concepts or a broadly distributed vocabulary across diverse topics.</p>
-      <p><strong>Example interpretation:</strong> If &ldquo;volunteer&rdquo; is the top term in Japan with 2,399 occurrences, this suggests that volunteerism is central to Japanese nonprofit discourse. A high concentration ratio (e.g., top 10 terms = 19% of all words) indicates diverse research foci, while a very high ratio (e.g., 61%) suggests a field dominated by a handful of key concepts.</p>
+      <p><strong>Example interpretation:</strong> If &ldquo;volunteer&rdquo; is the top term in Japan with 2,400 occurrences, this suggests that volunteerism is central to Japanese nonprofit discourse. A high concentration ratio (e.g., top 10 terms = 19% of all words) indicates diverse research foci, while a very high ratio (e.g., 61%) suggests a field dominated by a handful of key concepts.</p>
 
       <!-- Bigram -->
       <h3 id="bigrams">Bigram Frequency Analysis</h3>
@@ -152,7 +152,7 @@
 
       <p><strong>Model specification:</strong></p>
       <ul>
-        <li><strong>Number of topics:</strong> Selected per location via perplexity elbow analysis across <em>k</em> = 2 through 8 (e.g., Japan: k=7, Korea: k=3, China: k=4)</li>
+        <li><strong>Number of topics:</strong> Selected per location via perplexity elbow analysis across <em>k</em> = 2 through 8 (e.g., China: k=5, Japan: k=3, Taiwan: k=2)</li>
         <li><strong>Estimation:</strong> Variational Bayes inference via scikit-learn's <code>LatentDirichletAllocation</code> with default priors</li>
         <li><strong>Minimum term frequency:</strong> Terms appearing fewer than 2 times in the document-term matrix are excluded</li>
         <li><strong>Exclusion criteria:</strong> Locations with fewer than 20 valid documents or insufficient unique terms are excluded from topic modeling</li>
