@@ -54,7 +54,7 @@
         <p>WoS was selected as the primary database because the study aimed to assess scholarly research published in impactful English-language journals. WoS is regarded as an authoritative database for capturing peer-reviewed scholarly articles and is widely used in bibliometric analyses (Singh et al., 2021).</p>
 
         <h3>Location Classification</h3>
-        <p>Locations and regions were defined using the United Nations and World Bank classifications. Articles were assigned to locations based on the geographic focus of the research (the &ldquo;Location&rdquo; field in the dataset). The distribution is heavily skewed: China leads with 572 articles, followed by India (306), Bangladesh (149), South Korea (70), Taiwan (68), Japan (54), Türkiye (44), Nepal (35), and Vietnam (24).</p>
+        <p>Locations and regions were defined using the United Nations and World Bank classifications. Articles were assigned to locations based on the geographic focus of the research (the &ldquo;Location&rdquo; field in the dataset). Among the eight locations in this study, the distribution is heavily skewed: China leads with 619 articles, followed by Bangladesh (166), Japan (95), South Korea (93), Taiwan (83), Türkiye (57), Nepal (41), and Vietnam (30).</p>
 
         <div class="table-wrap">
           <table>
@@ -62,14 +62,14 @@
               <tr><th>Location</th><th>English (Onishi et al./WoS)</th><th>Local Language</th><th>Notes</th></tr>
             </thead>
             <tbody>
-              <tr><td>China</td><td>572</td><td>5,712</td><td>Largest English corpus</td></tr>
-              <tr><td>Bangladesh</td><td>149</td><td>103</td><td>More English than local articles</td></tr>
-              <tr><td>Korea</td><td>70</td><td>5,105</td><td>Large local corpus, small English sample</td></tr>
-              <tr><td>Taiwan</td><td>68</td><td>1,530</td><td></td></tr>
-              <tr><td>Japan</td><td>54</td><td>5,627</td><td>Largest local corpus, small English sample</td></tr>
-              <tr><td>Türkiye</td><td>44</td><td>2,039</td><td></td></tr>
-              <tr><td>Nepal</td><td>35</td><td>166</td><td></td></tr>
-              <tr><td>Vietnam</td><td>24</td><td>61</td><td>Smallest samples in both</td></tr>
+              <tr><td>China</td><td>619</td><td>5,712</td><td>Largest corpus in both languages</td></tr>
+              <tr><td>Bangladesh</td><td>166</td><td>103</td><td>More English than local articles</td></tr>
+              <tr><td>Japan</td><td>95</td><td>5,627</td><td>Highest local-to-English ratio (59.2:1)</td></tr>
+              <tr><td>Korea</td><td>93</td><td>5,105</td><td>Large local corpus, small English sample</td></tr>
+              <tr><td>Taiwan</td><td>83</td><td>1,530</td><td></td></tr>
+              <tr><td>Türkiye</td><td>57</td><td>2,039</td><td></td></tr>
+              <tr><td>Nepal</td><td>41</td><td>166</td><td></td></tr>
+              <tr><td>Vietnam</td><td>30</td><td>61</td><td>Smallest samples in both</td></tr>
             </tbody>
           </table>
         </div>
@@ -127,7 +127,7 @@
 
         <h3>Caveats</h3>
         <ul>
-          <li><strong>Sample size imbalance:</strong> NVSQ samples are much smaller than local corpora (e.g., Korea: 70 vs 5,105). LDA estimates from small samples are less stable.</li>
+          <li><strong>Sample size imbalance:</strong> NVSQ samples are much smaller than local corpora (e.g., Korea: 93 vs 5,105). LDA estimates from small samples are less stable.</li>
           <li><strong>Scope of English data:</strong> The English corpus comes from Onishi et al.&rsquo;s (2025) systematic review of Web of Science, which captures peer-reviewed journal articles but may not include all English-language publications (e.g., books, reports, non-indexed journals).</li>
           <li><strong>Translation effects:</strong> Local-language titles were machine-translated (DeepL or similar), which may introduce vocabulary differences unrelated to thematic content.</li>
         </ul>
